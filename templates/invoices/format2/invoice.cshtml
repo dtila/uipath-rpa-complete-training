@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
 
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/dtila/uipath-rpa-complete-training/templates/invoices/format1/styles.css">
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/dtila/uipath-rpa-complete-training/main/templates/invoices/format2/styles.css">
 
     <style type="text/css">
         .invoice-box {
@@ -21,10 +21,6 @@
             background-color: white;
         }
 
-        .text-right {
-            text-align: right;
-        }
-
         .invoice-box .title img {
             width: 100%;
             max-width: 200px;
@@ -37,12 +33,10 @@
         }
 
         .invoice-box table td {
-            padding: 5px;
+            padding: 5px 20px;
             vertical-align: top;
-        }
-
-        .invoice-box table tr td:nth-child(2) {
-            text-align: right;
+            overflow: hidden;
+            white-space: nowrap;
         }
 
         .invoice-box table tr.top table td {
@@ -65,10 +59,6 @@
             font-weight: bold;
         }
 
-        .invoice-box table tr.details td {
-            padding-bottom: 20px;
-        }
-
         .invoice-box table tr.item td {
             border-bottom: 1px solid #eee;
         }
@@ -77,22 +67,39 @@
             border-bottom: none;
         }
 
-        .invoice-box table tr.total td:nth-child(2) {
-            border-top: 2px solid #eee;
-            font-weight: bold;
+		footer {
+			margin-bottom: 20px;
+		}
+		footer .thanks {
+			margin-bottom: 40px;
+			color: #555;
+			font-size: 1.16666666666667em;
+			font-weight: 600;
+		}
+		footer .notice {
+			margin-bottom: 25px;
+		}
+		footer .end {
+			padding-top: 5px;
+			border-top: 2px solid #555;
+			text-align: center;
+		}
+
+        .fit {
+            width: 100%;
         }
 
-        .rtl {
-            direction: rtl;
-            font-family: Tahoma, 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
-        }
-
-        .rtl table {
+        .text-right {
             text-align: right;
         }
 
-        .rtl table tr td:nth-child(2) {
-            text-align: left;
+        .wrap { 
+            white-space: normal;
+        }
+
+        .text-important {
+            border-top: 2px solid #eee;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -101,7 +108,7 @@
     <div class="invoice-box">
         <table cellpadding="0" cellspacing="0">
             <tr class="top">
-                <td colspan="2">
+                <td colspan="3">
                     <table>
                         <tr>
                             <td class="title">
@@ -120,7 +127,7 @@
             </tr>
 
             <tr class="information">
-                <td colspan="2">
+                <td colspan="3">
                     <table>
                         <tr>
                             <td>
@@ -141,25 +148,39 @@
 
             <tr class="heading">
                 <td>Item</td>
+                <td class="text-right">Quantity</td>
                 <td class="text-right">Price</td>
             </tr>
 
             @foreach (var kvp in Model.Items)
             {
             <tr class="item">
-                <td>@kvp.Name</td>
+                <td class="fit wrap">@kvp.Name</td>
+                <td class="text-right">@kvp.Quantity</td>
                 <td class="text-right">@kvp.Price</td>
             </tr>
             }
 
             <tr class="total">
                 <td></td>
+                <td></td>
 
-                <td class="text-right">
+                <td class="text-right text-important">
                     Total: @Model.Amount
                 </td>
             </tr>
         </table>
+
+        <footer>
+            <div class="container">
+                <div class="thanks">Thank you!</div>
+                <div class="notice">
+                    <div>NOTICE:</div>
+                    <div>A finance charge of 1.5% will be made on unpaid balances after 30 days.</div>
+                </div>
+                <div class="end">Invoice was created on a computer and is valid without the signature and seal.</div>
+            </div>
+        </footer>
     </div>
 </body>
 
