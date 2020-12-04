@@ -1,0 +1,1753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.letour.fr/en/team/TJV/team-jumbo-visma by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 09:59:28 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"cf66f13e0d",applicationID:"216096607"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+    <title>Profil of TEAM JUMBO - VISMA - Tour de France 2021</title>
+    <meta name="description" content="All informations about team TEAM JUMBO - VISMA" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="image" content="https://img.aso.fr/core_app/img-cycling-tdf-jpg/tjv/18282/0:0,400:400-300-0-70/e2429" />
+<meta name="lang" content="en" />
+<meta name="race" content="tdf" />
+<meta name="year" content="2021" />
+<meta name="team" content="team-jumbo-visma" />
+<meta name="pageKey" content="equipe::team-jumbo-visma" />
+<meta property="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+<meta property="og:url" content="https://www.letour.fr/en/team/TJV/team-jumbo-visma" />
+<meta property="og:image" content="https://img.aso.fr/core_app/img-cycling-tdf-jpg/tjv/18282/0:0,400:400-300-0-70/e2429" />
+<meta property="og:type" content="website" />
+<meta property="og:site-name" content="Tour de France 2021 2021" />
+<meta property="og:description" content="All informations about team TEAM JUMBO - VISMA" />
+<meta property="og:title" content="Profil of TEAM JUMBO - VISMA - Tour de France 2021" />
+
+
+            <link rel="apple-touch-icon" sizes="180x180" href="../../../apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../../favicon-16x16.png">
+<link rel="manifest" href="https://www.letour.fr/manifest.json" crossorigin="use-credentials">
+<link rel="mask-icon" href="https://www.letour.fr/safari-pinned-tab.svg" color="#555555">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+    
+    <!--[if lte IE 8]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+                <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            '../../../../www.googletagmanager.com/gtm5445.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-WN5XRZT');</script>
+    <!-- End Google Tag Manager -->
+
+    
+    <script>
+        var customEvents = {};
+        window.fbAsyncInit = function () {
+            // init the FB JS SDK
+
+            FB.init({
+                appId: 454906931320498,
+                status: true,
+                xfbml: true
+            });
+        };
+
+        // Load the SDK asynchronously
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "../../../../connect.facebook.net/en_US/all.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        function getCookie(c_name) {
+            if (document.cookie.length > 0) {
+                c_start = document.cookie.indexOf(c_name + "=");
+                if (c_start != -1) {
+                    c_start = c_start + c_name.length + 1;
+                    c_end = document.cookie.indexOf(";", c_start);
+                    if (c_end == -1) {
+                        c_end = document.cookie.length;
+                    }
+                    return unescape(document.cookie.substring(c_start, c_end));
+                }
+            }
+            return "";
+        }
+        function checkCookieForRedirect() {
+            document.body.style.display = 'none';
+            var lang = getCookie('_lang');
+            if (/^\/[a-zA-Z]{2}(?:.+|$)/.test(window.location.pathname) && /^[a-zA-Z]{2}$/.test(lang)) {
+                if (!(new RegExp('^\/' + lang + '(?:.+|$)')).test(window.location.pathname)) {
+                    var link = document.querySelector('.header__lang__menu .nav__link[data-lang='+lang+']');
+                    if (link) {
+                        link = link.href;
+                        document.location.href = link;
+                        return;
+                    }
+                }
+            }
+            document.body.style.display = 'block';
+        }
+
+        window.translations = {
+            slidePrev: 'Previous slide',
+            slideNext: 'Next slide'
+        };
+    </script>
+
+    <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i" rel="stylesheet">-->
+            <link rel="preload" href="../../../dist/js/scripts.jquery.db424ca.js" as="script">
+        <link rel="preload" href="../../../dist/css/4.style.8e01910.css" as="style">
+        <link rel="preload" href="../../../dist/css/9.style.c010164.css" as="style">
+        <link rel="preload" href="../../../dist/css/7.style.72f6c6e.css" as="style">
+        <link rel="preload" href="../../../dist/js/scripts.vendor.c010164.js" as="script">
+                    <link rel="preload" href="../../../dist/js/scripts.runtime.e4ce55e.js" as="script">
+            <link rel="preload" href="../../../dist/js/scripts.vendors.5205df1.js" as="script">
+                <link rel="preload" href="../../../dist/js/scripts.main.72f6c6e.js" as="script">
+        <link href="../../../dist/css/4.style.8e01910.css" rel="stylesheet">
+        <link href="../../../dist/css/9.style.c010164.css" rel="stylesheet">
+        <link href="../../../dist/css/7.style.72f6c6e.css" rel="stylesheet">
+            
+            
+<script>
+    // Appel asynchrone au tag DFP
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function() {
+        var gads = document.createElement("script");
+        gads.async = true;
+        gads.type = "text/javascript";
+        var useSSL = "https:" == document.location.protocol;
+        gads.src = (useSSL ? "https:" : "http:") + "//www.googletagservices.com/tag/js/gpt.js";
+        var node =document.getElementsByTagName("script")[0];
+        node.parentNode.insertBefore(gads, node);
+    })();
+    googletag.cmd.push(function() {
+
+        var mp_bannierehaute = googletag.sizeMapping().
+        addSize([0, 0], [[1, 1],[320, 50],[320, 100]]).
+        addSize([728, 500], [[1, 1],[728, 90]]). // Tablet
+        addSize([1000, 500], [[1, 1],[728, 90],[1000, 90],[1000, 250]]). // Desktop
+        build();
+
+        var AdUnit = '/366560878/ASO/TOUR-DE-FRANCE';
+        googletag.defineSlot(AdUnit, [1, 1], 'dfp_banniere-haute').setTargeting('position', 'BANNIERE-HAUTE').defineSizeMapping(mp_bannierehaute).addService(googletag.pubads());
+        googletag.defineSlot(AdUnit, [1, 1], 'dfp_banniere-basse').setTargeting('position', 'BANNIERE-BASSE').defineSizeMapping(mp_bannierehaute).addService(googletag.pubads());
+        googletag.defineSlot(AdUnit, [1, 1], 'dfp_banniere-2').setTargeting('position', 'BANNIERE-2').defineSizeMapping(mp_bannierehaute).addService(googletag.pubads());
+        googletag.defineSlot(AdUnit, [1, 1], 'dfp_banniere-3').setTargeting('position', 'BANNIERE-3').defineSizeMapping(mp_bannierehaute).addService(googletag.pubads());
+        googletag.defineSlot(AdUnit, [[300,250]], 'dfp_pave-1').setTargeting('position', 'PAVE-1').addService(googletag.pubads());
+        googletag.defineSlot(AdUnit, [[300,250]], 'dfp_pave-2').setTargeting('position', 'PAVE-2').addService(googletag.pubads());
+        googletag.defineSlot(AdUnit, [[300,250]], 'dfp_pave-3').setTargeting('position', 'PAVE-3').addService(googletag.pubads());
+        googletag.defineSlot(AdUnit, [[300,250]], 'dfp_pave-4').setTargeting('position', 'PAVE-4').addService(googletag.pubads());
+        googletag.defineSlot(AdUnit, [[300,250]], 'dfp_pave-5').setTargeting('position', 'PAVE-5').addService(googletag.pubads());
+        googletag.defineSlot(AdUnit, [[300,250]], 'dfp_pave-6').setTargeting('position', 'PAVE-6').addService(googletag.pubads());
+        googletag.defineSlot(AdUnit, [[300,250]], 'dfp_chronometreur').setTargeting('position', 'CHRONOMETREUR').addService(googletag.pubads());
+        googletag.defineSlot(AdUnit, [[1,1]], 'dfp_background').setTargeting('position', 'BACKGROUND').addService(googletag.pubads());
+        googletag.defineOutOfPageSlot(AdUnit, 'dfp_interstitiel').setTargeting('position', 'INTERSTITIEL').addService(googletag.pubads());
+
+        // Targeting key/value
+        googletag.pubads().setTargeting('lang', 'EN');
+        googletag.pubads().setTargeting('pagetype', 'DEFAULT');
+                googletag.pubads().setTargeting('xtpage', ['equipe', '[Team]']);
+
+        if (window.location.hash !== '') {googletag.pubads().setTargeting('preview', window.location.hash.replace('#',''));}
+        // General
+        googletag.pubads().collapseEmptyDivs(true);
+        googletag.pubads().enableSingleRequest();
+        googletag.pubads().disableInitialLoad();
+        googletag.enableServices();
+    });
+</script>
+
+
+            
+            
+                        
+    <link rel="alternate" hreflang="fr" href="../../../fr/equipe/TJV/team-jumbo-visma.html"/>
+                        
+    <link rel="alternate" hreflang="de" href="../../../de/mannschaft/TJV/team-jumbo-visma.html"/>
+                        
+    <link rel="alternate" hreflang="es" href="../../../es/equipo/TJV/team-jumbo-visma.html"/>
+
+    
+</head>
+
+<body class="  has-timepeeker has-countdown  teams" data-countdown="2021/06/26 12:15:00"
+      data-cookie-referer="_page_alias_cycling_sports_bundle_team"
+            data-privacy="true"
+        >
+
+
+
+        <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WN5XRZT"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+                 
+
+    
+
+<div class="menu" id="menu">
+    <div class="menu-container">
+        <div class="menu-container__content" id="menu-container">
+                    </div>
+        <div class="menu-container__right-panel">
+            <div class="close-menu">
+                <span class="icon icon--close" id="close-menu"></span>
+            </div>
+
+                        <div class="js-empty hiding--sm">
+                <div class="navigation">
+                                    
+<form role="search" action="https://www.letour.fr/en/search/*query*" method="GET" class="nav__search__form search">
+    <a role="button" aria-label="Search" class="nav__search__icon js-btn-search icon icon--search" href="#" data-xtclick="header-top::nav-search::search" data-clicktype="A"></a>
+    <input class="nav__search__input" role="searchbox" aria-label="Enter your search" type="text" name="q" placeholder="Search">
+</form>
+                                </div>
+                <div class="burgerMenu__section">
+                    <div class="header__navigation" role="navigation">
+                                                        <nav class="navigation">
+        <ul class="accordion">
+                                                                                        
+                
+                                                    
+                                                                <li class="dropdown item js-dropdown-subnav">
+    <a class="nav js-dropdown" data-toggle="dropdown" id="menu-nav-route-mobile" aria-haspopup="true" role="button" data-target="dropdown-route-mobile" href="#" data-xtclick="header::navigation::2021-route" data-clicktype="A">
+        2021 Route
+        <span class="icon icon--cancel"></span>
+    </a>
+    </li>
+                            
+                
+                                                    
+                                                                                                <li class="item">
+    <a class="nav js-nav-item" href="../../2020edition.html" target="_self" data-xtclick="header::navigation::2020-edition" data-clicktype="N">
+        2020 Edition
+        
+    </a>
+    </li>
+                            
+                
+                                                    
+                                                                                                <li class="item">
+    <a class="nav js-nav-item" href="../../the-race/riding-info-the-future.html" target="_self" data-xtclick="header::navigation::riding-into-the-future" data-clicktype="N">
+        Riding Into The Future
+        
+    </a>
+    </li>
+                            
+                
+                                                    
+                                                                        <li class="item" id="tour-culture">
+    <a class="nav" href="#tour-culture" data-xtclick="header::navigation::tour-culture" data-clicktype="A">
+        Tour Culture
+        <span class="icon icon--cancel"></span>
+    </a>
+            <div class="subMenu">
+                            <a href="../../news.html" class="sub-nav">news</a>
+                            <a href="../../the-race/grands-departs.html" class="sub-nav">grands départs</a>
+                            <a href="../../the-race/key-figures.html" class="sub-nav">key figures</a>
+                            <a href="../../the-race/sporting-stakes.html" class="sub-nav">sporting stakes</a>
+                            <a href="../../the-jerseys-tour-de-france.html" class="sub-nav">the jerseys</a>
+                            <a href="../../the-race/continental.html" class="sub-nav">security</a>
+                            <a href="../../history.html" class="sub-nav">history</a>
+                            <a href="../../home-gallery.html" class="sub-nav">photos &amp; videos</a>
+                            <a href="../../partners.html" class="sub-nav">partners</a>
+                    </div>
+    </li>
+                    </ul>
+    </nav>
+            
+                                                                            
+    
+<div id="19e53b82a3dc0e3c7cbea1f8cd6a6b5e7">
+        
+        <script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('19e53b82a3dc0e3c7cbea1f8cd6a6b5e7', 'cycling_sport.block.service.stages_menu');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('19e53b82a3dc0e3c7cbea1f8cd6a6b5e7', 'cycling_sport.block.service.stages_menu', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET.html", "/en/ajax-block/cycling_sport.block.service.stages_menu/%7B%22menu%22:%22route%22,%22isMobile%22:true%7D/72e4b3e3006185202cb08804067f9695", true);
+                    xhttp.send();
+                };
+                                    var eventName = 'route-mobile';
+                    var newEvent;
+                    if (!customEvents[eventName]) {
+                        newEvent = document.createEvent('Event');
+                        newEvent.initEvent(eventName, true, true);
+                        customEvents[eventName] = newEvent;
+                    }
+                    document.body.addEventListener(eventName, function() {
+                        trigger();
+                    });
+                
+            })()
+
+        </script>
+</div>
+
+    
+<div id="18e3016f6a29b382c9bc921a34b83d37a">
+        
+        <script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('18e3016f6a29b382c9bc921a34b83d37a', 'cycling_sport.block.service.teams');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('18e3016f6a29b382c9bc921a34b83d37a', 'cycling_sport.block.service.teams', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET.html", "/en/ajax-block/cycling_sport.block.service.teams/%7B%22menu%22:%22teams%22,%22isMobile%22:true%7D/5e4ca06ae929d23ae335528a4cf81007", true);
+                    xhttp.send();
+                };
+                                    var eventName = 'teams-mobile';
+                    var newEvent;
+                    if (!customEvents[eventName]) {
+                        newEvent = document.createEvent('Event');
+                        newEvent.initEvent(eventName, true, true);
+                        customEvents[eventName] = newEvent;
+                    }
+                    document.body.addEventListener(eventName, function() {
+                        trigger();
+                    });
+                
+            })()
+
+        </script>
+</div>
+
+    
+<div id="1c89db1c4f76750022f6de9ba7d8687ce">
+        
+        <script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('1c89db1c4f76750022f6de9ba7d8687ce', 'cycling_sport.block.service.stages_menu');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('1c89db1c4f76750022f6de9ba7d8687ce', 'cycling_sport.block.service.stages_menu', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET.html", "/en/ajax-block/cycling_sport.block.service.stages_menu/%7B%22menu%22:%22tourism%22,%22isMobile%22:true%7D/a471ae73548f3811b3d7fad0a0c4500b", true);
+                    xhttp.send();
+                };
+                                    var eventName = 'tourism-mobile';
+                    var newEvent;
+                    if (!customEvents[eventName]) {
+                        newEvent = document.createEvent('Event');
+                        newEvent.initEvent(eventName, true, true);
+                        customEvents[eventName] = newEvent;
+                    }
+                    document.body.addEventListener(eventName, function() {
+                        trigger();
+                    });
+                
+            })()
+
+        </script>
+</div>
+
+                                            </div>
+                </div>
+            </div>
+
+            
+
+    <nav class="navigation">
+        <ul class="accordion">
+                                                                                <li class="item" id="news">
+                    <a href="../../news.html" class="nav">
+                        News
+                                            </a>
+                                    </li>
+                                                                                <li class="item" id="2020-edition">
+                    <a href="../../2020edition.html" class="nav">
+                        2020 Edition
+                                            </a>
+                                    </li>
+                                                                                <li class="item" id="grands-departs">
+                    <a href="../../the-race/grands-departs.html" class="nav">
+                        Grands Départs
+                                            </a>
+                                    </li>
+                                                                                <li class="item" id="riding-into-the-future">
+                    <a href="../../the-race/riding-info-the-future.html" class="nav">
+                        Riding Into the Future
+                                            </a>
+                                    </li>
+                                                                                <li class="item" id="tour-culture">
+                    <a href="#tour-culture" class="nav">
+                        Tour Culture
+                                                    <span class="icon icon--cancel"></span>
+                                            </a>
+                                            <div class="subMenu">
+                                                            <a href="../../the-race/sporting-stakes.html" class="sub-nav">Sporting stakes</a>
+                                                            <a href="../../the-race/key-figures.html" class="sub-nav">Key figures</a>
+                                                            <a href="../../the-jerseys-tour-de-france.html" class="sub-nav">The jerseys</a>
+                                                            <a href="../../the-race/continental.html" class="sub-nav">Safety</a>
+                                                    </div>
+                                    </li>
+                                                                                <li class="item" id="history">
+                    <a href="../../history.html" class="nav">
+                        History
+                                            </a>
+                                    </li>
+                                                                                <li class="item" id="official-app">
+                    <a href="../../mobiles-apps.html#" class="nav">
+                        Official App
+                                            </a>
+                                    </li>
+                                                                                <li class="item" id="photos-videos">
+                    <a href="../../home-gallery.html" class="nav">
+                        Photos &amp; Videos
+                                            </a>
+                                    </li>
+                                                                                <li class="item" id="partners">
+                    <a href="../../partners.html" class="nav">
+                        Partners
+                                            </a>
+                                    </li>
+                    </ul>
+    </nav>
+
+
+
+            <div class="burgerMenu__section js-empty hiding--sm">
+                                    <nav class="navigation">
+    <div class="header-top-container__menu-1">
+                <a href="http://www.tissotwatches.com/?utm_source=tourdefrance.com&amp;utm_medium=logo&amp;utm_content=logo&amp;utm_campaign=int_sponsoring" class="btn-menu nav__link logo-tissot btn-hover-primary">
+            <img alt="" class="header__sponsor__img lazyItem js-lazy"
+             src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+             data-src="/img/global/logo-timekeeper.png|/img/global/logo-timekeeper@2x.png">
+        </a>
+    
+                    <ul class="accordion">
+                                                                                                                                                
+<li class="dropdown item js-dropdown-subnav"><a class="nav js-dropdown link-1" id="top-item-otherRaces-mobile" data-toggle="dropdown" aria-haspopup="true" role="button" data-target="dropdown-top-otherRaces-mobile" href="#" data-xtclick="header::navigation::other-events" data-clicktype="A" >
+            Other events
+                        <span class="icon icon--cancel"></span></a></li>                                                                                                                                                    
+<li class="dropdown item js-dropdown-subnav"><a class="nav js-dropdown link-2" id="top-item-broadcasters-mobile" data-toggle="dropdown" aria-haspopup="true" role="button" data-target="dropdown-top-broadcasters-mobile" href="#" data-xtclick="header::navigation::official-broadcasters" data-clicktype="A" >
+            Official broadcasters
+                        <span class="icon icon--cancel"></span></a></li>                                                                                                                                                    
+<li class="item"><a class="js-connect nav link-3" href="../../media-area.html" target="_self" data-xtclick="header::navigation::media" data-clicktype="N" >
+            Media
+                        
+        </a></li>                                                </ul>
+            </div>
+    <div class="header-top-container__menu-2">
+                                    <ul class="accordion">
+                                                                                                                                
+<li class="dropdown item js-dropdown-subnav"><a class="nav js-dropdown link-1" id="top-item-games-mobile" data-toggle="dropdown" aria-haspopup="true" role="button" data-target="dropdown-top-games-mobile" href="#" data-xtclick="header::navigation::official-games" data-clicktype="A" >
+            Official Games
+                        <span class="icon icon--cancel"></span></a></li>                                                                                                                                                    
+<li class="item"><a class="js-connect nav link-2" href="http://boutique.letour.fr/stores/letour/en/?portal=O2S7IR1R&amp;CMP=PSC-O2S7IR1R" target="1" data-xtclick="header::navigation::store" data-clicktype="N" >
+            Store
+                        
+        </a></li>                                                </ul>
+            </div>
+</nav>
+
+                                                                        
+<div id="1459d1241014a91fee221cf6f684891d0">
+        
+        <script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('1459d1241014a91fee221cf6f684891d0', 'core_other_event.block.service.other_events');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('1459d1241014a91fee221cf6f684891d0', 'core_other_event.block.service.other_events', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET.html", "/en/ajax-block/core_other_event.block.service.other_events/%7B%22isMobile%22:true%7D/3592c44c60ff48433d98e369c1743fe1", true);
+                    xhttp.send();
+                };
+                                    var eventName = 'otherRaces-mobile';
+                    var newEvent;
+                    if (!customEvents[eventName]) {
+                        newEvent = document.createEvent('Event');
+                        newEvent.initEvent(eventName, true, true);
+                        customEvents[eventName] = newEvent;
+                    }
+                    document.body.addEventListener(eventName, function() {
+                        trigger();
+                    });
+                
+            })()
+
+        </script>
+</div>
+                                                                        
+<div id="1497a95be5eb8e0152112e3a1e467cd78">
+        
+        <script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('1497a95be5eb8e0152112e3a1e467cd78', 'core_broadcasters.block.service.broadcasters');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('1497a95be5eb8e0152112e3a1e467cd78', 'core_broadcasters.block.service.broadcasters', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET.html", "/en/ajax-block/core_broadcasters.block.service.broadcasters/%7B%22isMobile%22:true%7D/84aed65122cc53b17d0a4b002476e3de", true);
+                    xhttp.send();
+                };
+                                    var eventName = 'broadcasters-mobile';
+                    var newEvent;
+                    if (!customEvents[eventName]) {
+                        newEvent = document.createEvent('Event');
+                        newEvent.initEvent(eventName, true, true);
+                        customEvents[eventName] = newEvent;
+                    }
+                    document.body.addEventListener(eventName, function() {
+                        trigger();
+                    });
+                
+            })()
+
+        </script>
+</div>
+                                                                                                                    
+<div class="dropdown__menu dropdown__menu--otherRaces subnav flexbox js-dropdown-menu"
+     aria-labelledby="top-item-games-mobile"
+     data-target="dropdown-top-games-mobile">
+    <div class="subnav__header flexbox__header">
+        <a class="burgerButton burgerButton--prev is-ibl" role="button">
+            <i class="icon icon--arrowleft"></i>
+        </a>
+        <h2 class="subnav__title is-ibl">Official games</h2>
+    </div>
+    <div class="games subnavTabs flexbox js-tabs-wrapper">
+        <div class="container flexbox__container js-scroll-watcher">
+            <div class="row">
+                                    <ul class="clearfix subnav__races">
+                        <li class="hidingBar hidingBar--left"></li>
+                        <li class="hidingBar hidingBar--bottom"></li>
+                                                                                                            <li class="subnav__races__item">
+                                <a href="../../video-games-pro-cycling-manager-2020.html"
+                                   class="subnav__races__link"
+                                   target="_blank"
+                                   data-xtclick="subnav-games::subnav-games-item::pro-cycling-manager-2020-pc"
+                                   data-clicktype="N">
+                                    <span class="subnav__races__logo">
+                                        <img alt="PRO CYCLING MANAGER 2020(PC)" class="lazyItem subnav__races__img js-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/img/dyn/partners/page-logo/pro-cycling-manager-2020-pc_sm.png?update=1591174532|/img/dyn/partners/page-logo/pro-cycling-manager-2020-pc_sm@2x.png?update=1591174532">
+                                    </span>
+                                    <span class="subnav__races__name">
+                                        PRO CYCLING MANAGER 2020(PC)
+                                    </span>
+                                </a>
+                            </li>
+                                                                                                            <li class="subnav__races__item">
+                                <a href="../../video-games-le-tour-de-france-2020.html"
+                                   class="subnav__races__link"
+                                   target="_blank"
+                                   data-xtclick="subnav-games::subnav-games-item::jeux-videos-tour-de-france-2020-ps4"
+                                   data-clicktype="N">
+                                    <span class="subnav__races__logo">
+                                        <img alt="TOUR DE FRANCE 2020 - VIDEO GAMES (PS4)" class="lazyItem subnav__races__img js-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/img/dyn/partners/page-logo/jeux-videos-tour-de-france-2020-ps4_sm.png?update=1595836180|/img/dyn/partners/page-logo/jeux-videos-tour-de-france-2020-ps4_sm@2x.png?update=1595836180">
+                                    </span>
+                                    <span class="subnav__races__name">
+                                        TOUR DE FRANCE 2020 - VIDEO GAMES (PS4)
+                                    </span>
+                                </a>
+                            </li>
+                                                                                                            <li class="subnav__races__item">
+                                <a href="../../video-games-le-tour-de-france-2020.html"
+                                   class="subnav__races__link"
+                                   target="_blank"
+                                   data-xtclick="subnav-games::subnav-games-item::jeux-videos-tour-de-france-2020-xbox-one"
+                                   data-clicktype="N">
+                                    <span class="subnav__races__logo">
+                                        <img alt="TOUR DE FRANCE 2020 - VIDEO GAMES (XBOX ONE)" class="lazyItem subnav__races__img js-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/img/dyn/partners/page-logo/jeux-videos-tour-de-france-2020-xbox-one_sm.png?update=1591174664|/img/dyn/partners/page-logo/jeux-videos-tour-de-france-2020-xbox-one_sm@2x.png?update=1591174664">
+                                    </span>
+                                    <span class="subnav__races__name">
+                                        TOUR DE FRANCE 2020 - VIDEO GAMES (XBOX ONE)
+                                    </span>
+                                </a>
+                            </li>
+                                                                                                            <li class="subnav__races__item">
+                                <a href="../../mobile-game.html"
+                                   class="subnav__races__link"
+                                   target="_blank"
+                                   data-xtclick="subnav-games::subnav-games-item::tour-de-france-2020-ios-android"
+                                   data-clicktype="N">
+                                    <span class="subnav__races__logo">
+                                        <img alt="TOUR DE FRANCE 2020 (IOS / ANDROID)" class="lazyItem subnav__races__img js-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/img/dyn/partners/page-logo/tour-de-france-2020-ios-android_sm.png?update=1597066058|/img/dyn/partners/page-logo/tour-de-france-2020-ios-android_sm@2x.png?update=1597066058">
+                                    </span>
+                                    <span class="subnav__races__name">
+                                        TOUR DE FRANCE 2020 (IOS / ANDROID)
+                                    </span>
+                                </a>
+                            </li>
+                                            </ul>
+                            </div>
+        </div>
+    </div>
+</div>
+                                                                    
+                            </div>
+
+            <div class="menu-footer">
+                                
+<div class="social">
+    </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        if (window.innerWidth > 767) {
+            var $headerTopMenu = document.getElementById('menu');
+            if (typeof($headerTopMenu) != 'undefined' && $headerTopMenu != null) {
+                for (var i = 0; i < 3; i++) {
+                    var $jsEmptyElt = $headerTopMenu.getElementsByClassName('js-empty')[i];
+                    if (typeof($jsEmptyElt) != 'undefined' && $jsEmptyElt != null) {
+                        $jsEmptyElt.innerHTML = '';
+                    }
+                }
+            }
+        }
+    </script>
+</div>
+
+    <div class="header js-header">
+    
+
+<div class="header-top header__secondary" id="header-top-menu"><div class="header-top-container js-empty"><div class="header-top-container__menu-1"><a href="http://www.tissotwatches.com/?utm_source=tourdefrance.com&amp;utm_medium=logo&amp;utm_content=logo&amp;utm_campaign=int_sponsoring" class="btn-menu nav__link logo-tissot btn-hover-primary"><img alt="" class="header__sponsor__img lazyItem js-lazy"
+             src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+             data-src="/img/global/logo-timekeeper.png|/img/global/logo-timekeeper@2x.png"></a><div class="dropdown nav__item js-dropdown-subnav"><a class="js-dropdown nav__link btn-hover-primary link-1" id="top-item-otherRaces" data-toggle="dropdown" aria-haspopup="true" role="button" data-target="dropdown-top-otherRaces" href="#" data-xtclick="header::navigation::other-events" data-clicktype="A">
+                        Other events
+                                </a></div><div class="dropdown nav__item js-dropdown-subnav"><a class="js-dropdown nav__link btn-hover-primary link-2" id="top-item-broadcasters" data-toggle="dropdown" aria-haspopup="true" role="button" data-target="dropdown-top-broadcasters" href="#" data-xtclick="header::navigation::official-broadcasters" data-clicktype="A">
+                        Official broadcasters
+                                </a></div><div class="nav__item"><a class="js-connect nav__link btn-hover-primary link-3" href="../../media-area.html" target="_self" data-xtclick="header::navigation::media" data-clicktype="N">
+                        Media
+                                </a></div></div><div class="header-top-container__menu-2"><div class="dropdown nav__item js-dropdown-subnav"><a class="js-dropdown nav__link btn-hover-primary link-1" id="top-item-games" data-toggle="dropdown" aria-haspopup="true" role="button" data-target="dropdown-top-games" href="#" data-xtclick="header::navigation::official-games" data-clicktype="A">
+                        Official Games
+                                </a></div><div class="nav__item"><a class="js-connect nav__link btn-hover-primary link-2" href="http://boutique.letour.fr/stores/letour/en/?portal=O2S7IR1R&amp;CMP=PSC-O2S7IR1R" target="1" data-xtclick="header::navigation::store" data-clicktype="N">
+                        Store
+                                </a></div></div><div class="header-top-container__social"><a href="http://www.facebook.com/letour"
+               aria-label="Facebook: Open in a new window"
+                                    target="_blank"
+                               class="icon icon--facebook" data-xtclick="header-top::header-social::facebook" data-clicktype="N"></a><a href="https://twitter.com/letour"
+               aria-label="Twitter: Open in a new window"
+                                    target="_blank"
+                               class="icon icon--twitter" data-xtclick="header-top::header-social::twitter" data-clicktype="N"></a><a href="https://www.instagram.com/letourdefrance"
+               aria-label="Instagram: Open in a new window"
+                                    target="_blank"
+                               class="icon icon--instagram" data-xtclick="header-top::header-social::instagram" data-clicktype="N"></a><a href="../../mobiles-apps.html"
+               aria-label="Phone: Open in a new window"
+                                    target="_blank"
+                               class="icon icon--phone" data-xtclick="header-top::header-social::phone" data-clicktype="N"></a><a href="https://www.dailymotion.com/tourdefrance"
+               aria-label="Dailymotion: Open in a new window"
+                                    target="_blank"
+                               class="icon icon--dailymotion" data-xtclick="header-top::header-social::dailymotion" data-clicktype="N"></a><a href="https://bit.ly/31z9SYy"
+               aria-label="Newsletter: Open in a new window"
+                                    target="_blank"
+                               class="icon icon--newsletter" data-xtclick="header-top::header-social::newsletter" data-clicktype="N"></a></div></div><div class="js-empty"><div id="17caf18dcefa35e66d53da4005beb40f6"><script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('17caf18dcefa35e66d53da4005beb40f6', 'core_other_event.block.service.other_events');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('17caf18dcefa35e66d53da4005beb40f6', 'core_other_event.block.service.other_events', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET.html", "/en/ajax-block/core_other_event.block.service.other_events/%5B%5D/f858ac6f79f9db5808b30df7c43acb51", true);
+                    xhttp.send();
+                };
+                                    var eventName = 'otherRaces';
+                    var newEvent;
+                    if (!customEvents[eventName]) {
+                        newEvent = document.createEvent('Event');
+                        newEvent.initEvent(eventName, true, true);
+                        customEvents[eventName] = newEvent;
+                    }
+                    document.body.addEventListener(eventName, function() {
+                        trigger();
+                    });
+                
+            })()
+
+        </script></div><div id="12cef721df34a1184e80c0a92915a7634"><script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('12cef721df34a1184e80c0a92915a7634', 'core_broadcasters.block.service.broadcasters');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('12cef721df34a1184e80c0a92915a7634', 'core_broadcasters.block.service.broadcasters', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET.html", "/en/ajax-block/core_broadcasters.block.service.broadcasters/%5B%5D/5b62aad7da3d86146941642578b76ce9", true);
+                    xhttp.send();
+                };
+                                    var eventName = 'broadcasters';
+                    var newEvent;
+                    if (!customEvents[eventName]) {
+                        newEvent = document.createEvent('Event');
+                        newEvent.initEvent(eventName, true, true);
+                        customEvents[eventName] = newEvent;
+                    }
+                    document.body.addEventListener(eventName, function() {
+                        trigger();
+                    });
+                
+            })()
+
+        </script></div><div class="dropdown__menu dropdown__menu--otherRaces subnav flexbox js-dropdown-menu"
+     aria-labelledby="top-item-games"
+     data-target="dropdown-top-games"><div class="subnav__header flexbox__header"><a class="burgerButton burgerButton--prev is-ibl" role="button"><i class="icon icon--arrowleft"></i></a><h2 class="subnav__title is-ibl">Official games</h2></div><div class="games subnavTabs flexbox js-tabs-wrapper"><div class="container flexbox__container js-scroll-watcher"><div class="row"><ul class="clearfix subnav__races"><li class="hidingBar hidingBar--left"></li><li class="hidingBar hidingBar--bottom"></li><li class="subnav__races__item"><a href="../../video-games-pro-cycling-manager-2020.html"
+                                   class="subnav__races__link"
+                                   target="_blank"
+                                   data-xtclick="subnav-games::subnav-games-item::pro-cycling-manager-2020-pc"
+                                   data-clicktype="N"><span class="subnav__races__logo"><img alt="PRO CYCLING MANAGER 2020(PC)" class="lazyItem subnav__races__img js-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/img/dyn/partners/page-logo/pro-cycling-manager-2020-pc_sm.png?update=1591174532|/img/dyn/partners/page-logo/pro-cycling-manager-2020-pc_sm@2x.png?update=1591174532"></span><span class="subnav__races__name">
+                                        PRO CYCLING MANAGER 2020(PC)
+                                    </span></a></li><li class="subnav__races__item"><a href="../../video-games-le-tour-de-france-2020.html"
+                                   class="subnav__races__link"
+                                   target="_blank"
+                                   data-xtclick="subnav-games::subnav-games-item::jeux-videos-tour-de-france-2020-ps4"
+                                   data-clicktype="N"><span class="subnav__races__logo"><img alt="TOUR DE FRANCE 2020 - VIDEO GAMES (PS4)" class="lazyItem subnav__races__img js-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/img/dyn/partners/page-logo/jeux-videos-tour-de-france-2020-ps4_sm.png?update=1595836180|/img/dyn/partners/page-logo/jeux-videos-tour-de-france-2020-ps4_sm@2x.png?update=1595836180"></span><span class="subnav__races__name">
+                                        TOUR DE FRANCE 2020 - VIDEO GAMES (PS4)
+                                    </span></a></li><li class="subnav__races__item"><a href="../../video-games-le-tour-de-france-2020.html"
+                                   class="subnav__races__link"
+                                   target="_blank"
+                                   data-xtclick="subnav-games::subnav-games-item::jeux-videos-tour-de-france-2020-xbox-one"
+                                   data-clicktype="N"><span class="subnav__races__logo"><img alt="TOUR DE FRANCE 2020 - VIDEO GAMES (XBOX ONE)" class="lazyItem subnav__races__img js-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/img/dyn/partners/page-logo/jeux-videos-tour-de-france-2020-xbox-one_sm.png?update=1591174664|/img/dyn/partners/page-logo/jeux-videos-tour-de-france-2020-xbox-one_sm@2x.png?update=1591174664"></span><span class="subnav__races__name">
+                                        TOUR DE FRANCE 2020 - VIDEO GAMES (XBOX ONE)
+                                    </span></a></li><li class="subnav__races__item"><a href="../../mobile-game.html"
+                                   class="subnav__races__link"
+                                   target="_blank"
+                                   data-xtclick="subnav-games::subnav-games-item::tour-de-france-2020-ios-android"
+                                   data-clicktype="N"><span class="subnav__races__logo"><img alt="TOUR DE FRANCE 2020 (IOS / ANDROID)" class="lazyItem subnav__races__img js-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/img/dyn/partners/page-logo/tour-de-france-2020-ios-android_sm.png?update=1597066058|/img/dyn/partners/page-logo/tour-de-france-2020-ios-android_sm@2x.png?update=1597066058"></span><span class="subnav__races__name">
+                                        TOUR DE FRANCE 2020 (IOS / ANDROID)
+                                    </span></a></li></ul></div></div></div></div></div><script>
+        if (window.innerWidth < 768) {
+            var $headerTopMenu = document.getElementById('header-top-menu');
+            if (typeof($headerTopMenu) != 'undefined' && $headerTopMenu != null) {
+                for (var i = 0; i < 3; i++) {
+                    var $jsEmptyElt = $headerTopMenu.getElementsByClassName('js-empty')[i];
+                    if (typeof($jsEmptyElt) != 'undefined' && $jsEmptyElt != null) {
+                        $jsEmptyElt.innerHTML = '';
+                    }
+                }
+            }
+        }
+    </script></div>
+    <div class="header__navigation" id="header-menu">
+    <div class="header-container">
+        <div class="header-container__menu header-container__menu-1">
+            <div class="btn btn-lg btn-menu btn-hamburger hamburger hamburger--elastic" id="hamburger-mobile">
+                                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+                </button>
+            </div>
+            <div class="js-empty">
+                            <div class="nav__item js-dropdown-subnav"><a class="nav__link btn-menu btn-hover-primary js-dropdown" data-toggle="dropdown" id="menu-nav-route" aria-haspopup="true" role="button" data-target="dropdown-route" href="#" data-xtclick="header::navigation::2021-route" data-clicktype="A">2021 Route</a></div><div class="nav__item"><a class="nav__link btn-menu btn-hover-primary js-nav-item" href="../../2020edition.html" target="_self" data-xtclick="header::navigation::2020-edition" data-clicktype="N">2020 Edition</a></div><div class="nav__item"><a class="nav__link btn-menu btn-hover-primary js-nav-item" href="../../the-race/riding-info-the-future.html" target="_self" data-xtclick="header::navigation::riding-into-the-future" data-clicktype="N">Riding Into The Future</a></div><div class="nav__item js-dropdown-subnav"><a class="nav__link btn-menu btn-hover-primary js-dropdown" data-toggle="dropdown" id="menu-nav-3" aria-haspopup="true" role="button" data-target="dropdown-3" href="#" data-xtclick="header::navigation::tour-culture" data-clicktype="A">Tour Culture</a></div>
+                                                            <div class="dropdown__menu subnav subnav--simple js-dropdown-menu flexbox" role="menu" aria-labelledby="menu-nav-3" data-target="dropdown-3">
+                <div class="subnav__header flexbox__header">
+                    <a class="burgerButton burgerButton--prev is-ibl" role="button">
+                        <span class="burgerButton__bar burgerButton__bar--1"></span>
+                        <span class="burgerButton__bar burgerButton__bar--3"></span>
+                    </a>
+                    <h2 class="subnav__title is-ibl">Tour Culture</h2>
+                </div>
+                <div class="container flexbox__container js-scroll-watcher">
+                    <div class="row">
+                        <ul class="list">
+                                                            <li class="subnav__item">
+                                    <a class="subnav__link" href="../../news.html" data-xtclick="dropdown-menu::subnav-link::news" data-clicktype="N">news</a>
+                                </li>
+                                                            <li class="subnav__item">
+                                    <a class="subnav__link" href="../../the-race/grands-departs.html" data-xtclick="dropdown-menu::subnav-link::grands-departs" data-clicktype="N">grands départs</a>
+                                </li>
+                                                            <li class="subnav__item">
+                                    <a class="subnav__link" href="../../the-race/key-figures.html" data-xtclick="dropdown-menu::subnav-link::key-figures" data-clicktype="N">key figures</a>
+                                </li>
+                                                            <li class="subnav__item">
+                                    <a class="subnav__link" href="../../the-race/sporting-stakes.html" data-xtclick="dropdown-menu::subnav-link::sporting-stakes" data-clicktype="N">sporting stakes</a>
+                                </li>
+                                                            <li class="subnav__item">
+                                    <a class="subnav__link" href="../../the-jerseys-tour-de-france.html" data-xtclick="dropdown-menu::subnav-link::the-jerseys" data-clicktype="N">the jerseys</a>
+                                </li>
+                                                            <li class="subnav__item">
+                                    <a class="subnav__link" href="../../the-race/continental.html" data-xtclick="dropdown-menu::subnav-link::security" data-clicktype="N">security</a>
+                                </li>
+                                                            <li class="subnav__item">
+                                    <a class="subnav__link" href="../../history.html" data-xtclick="dropdown-menu::subnav-link::history" data-clicktype="N">history</a>
+                                </li>
+                                                            <li class="subnav__item">
+                                    <a class="subnav__link" href="../../home-gallery.html" data-xtclick="dropdown-menu::subnav-link::photos-videos" data-clicktype="N">photos &amp; videos</a>
+                                </li>
+                                                            <li class="subnav__item">
+                                    <a class="subnav__link" href="../../partners.html" data-xtclick="dropdown-menu::subnav-link::partners" data-clicktype="N">partners</a>
+                                </li>
+                                                    </ul>
+                    </div>
+                </div>
+            </div>
+            
+                        </div>
+        </div>
+
+        
+
+        
+        
+
+    <div class="header-container__logo"><span class="header-container__uci"><a class="header-container__uci__link" href="https://www.uci.org/" target="_blank"><img class="lazyItem js-lazy"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="/img/global/logo-uci.png|/img/global/logo-uci@2x.png"
+                    alt="UCI Logo"></a></span><a class="header-container__logo__link" href="https://www.letour.fr/en"><img
+            class="main-logo js-logo"
+            src="../../../img/global/logo%402x.png"
+            data-reversed="/img/global/logo-reversed@2x.png"
+            alt="Tour de France official website"></a></div><div class="header-container__dates">
+    <div class="dates">
+        <div class="dates-value">
+                                                06/26
+                    >
+                                07/18/2021
+                    </div>
+    </div>
+</div>
+
+
+
+        <div class="header-container__menu header-container__menu-2">
+            <div class="dropdown nav__item header__lang">
+                                    
+    <a class="nav__link nav__link--arrow js-dropdown dropdown__toggle js-display-click" id="nav-lang-en" data-toggle="dropdown" data-target="dropdown-navlang" aria-haspopup="true" role="button" data-xtclick="header::langue">
+        <span class="flag-wrapper">
+            <span class="flag js-display-lazy flag--en is-loaded" data-class="flag--en"></span>
+            en
+            <span class="arrow-bottom"></span>
+        </span>
+    </a>
+
+        <div class="dropdown__menu header__lang__menu js-dropdown-menu" role="menu" aria-labelledby="nav-lang-en" data-target="dropdown-navlang">
+
+        <ul class="list">
+                                                                                                    
+                                                                    
+                <li class="dropdown__menu__item">
+                    <a class="dropdown__menu__link nav__link" href="../../../fr/equipe/TJV/team-jumbo-visma.html" data-lang="fr">
+                        <span class="flag js-display-lazy" data-class="flag--fr"></span> <span class="is-ibl header__lang__label">fr</span>
+                    </a>
+                </li>
+                                                                                                    
+                                                                    
+                <li class="dropdown__menu__item">
+                    <a class="dropdown__menu__link nav__link" href="../../../de/mannschaft/TJV/team-jumbo-visma.html" data-lang="de">
+                        <span class="flag js-display-lazy" data-class="flag--de"></span> <span class="is-ibl header__lang__label">de</span>
+                    </a>
+                </li>
+                                                                                                    
+                                                                    
+                <li class="dropdown__menu__item">
+                    <a class="dropdown__menu__link nav__link" href="../../../es/equipo/TJV/team-jumbo-visma.html" data-lang="es">
+                        <span class="flag js-display-lazy" data-class="flag--es"></span> <span class="is-ibl header__lang__label">es</span>
+                    </a>
+                </li>
+                        <script>
+                checkCookieForRedirect();
+                var hostname = location.hostname;
+                if (hostname === 'www.dakar.com') {
+                    getJSON(geolocApiUrl, function(data) {
+                        if (data.countryCode === 'PL') {
+                            var idToGet = window.innerWidth < 1280 ? 'js-rewrite-link-mobile' : 'js-rewrite-link',
+                                $linkToRewrite = document.getElementById(idToGet);
+                            $linkToRewrite.setAttribute('href', '/en/visit-the-official-licensee-of-dakar');
+                        }
+                    });
+                }
+            </script>
+        </ul>
+    </div>
+
+            </div>
+                            
+
+<div class="btn btn-lg btn-menu nav__search js-nav-search" id="nav-search">
+    <form role="search" action="https://www.letour.fr/en/search/*query*" method="GET" class="nav__search__form search">
+        <a role="button" aria-label="Search" class="icon icon--search nav__search__icon js-btn-search"  href="#" data-xtclick="header-top::nav-search::search" data-clicktype="A"></a>
+        <div class="nav__search__block">
+            <input class="nav__search__input" role="searchbox" aria-label="Enter your search" type="text" name="q" placeholder="Search">
+            <span class="nav__search__close js-nav-search-close icon icon--close"></span>
+        </div>
+    </form>
+</div>
+    <script>
+        if (window.innerWidth < 768) {
+            var $navSearch = document.getElementById('nav-search');
+            if (typeof($navSearch) != 'undefined' && $navSearch != null) {
+                $navSearch.remove();
+            }
+        }
+    </script>
+                        <div class="btn btn-lg btn-menu btn-hamburger hamburger hamburger--elastic" id="hamburger-desktop">
+                                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+                </button>
+            </div>
+        </div>
+
+                    
+    
+<div id="14d19e97ef734246bc9b3fbceb124856d">
+        
+        <script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('14d19e97ef734246bc9b3fbceb124856d', 'cycling_sport.block.service.stages_menu');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('14d19e97ef734246bc9b3fbceb124856d', 'cycling_sport.block.service.stages_menu', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET.html", "/en/ajax-block/cycling_sport.block.service.stages_menu/%7B%22menu%22:%22route%22%7D/7f9c402e3372c06c6ff9cec6b7c9b806", true);
+                    xhttp.send();
+                };
+                                    var eventName = 'route';
+                    var newEvent;
+                    if (!customEvents[eventName]) {
+                        newEvent = document.createEvent('Event');
+                        newEvent.initEvent(eventName, true, true);
+                        customEvents[eventName] = newEvent;
+                    }
+                    document.body.addEventListener(eventName, function() {
+                        trigger();
+                    });
+                
+            })()
+
+        </script>
+</div>
+
+    
+<div id="1a8699ba981b4739af51498df58adf4c5">
+        
+        <script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('1a8699ba981b4739af51498df58adf4c5', 'cycling_sport.block.service.teams');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('1a8699ba981b4739af51498df58adf4c5', 'cycling_sport.block.service.teams', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET.html", "/en/ajax-block/cycling_sport.block.service.teams/%7B%22menu%22:%22teams%22%7D/2bc3d3d428168b47c2c7c01334a79d60", true);
+                    xhttp.send();
+                };
+                                    var eventName = 'teams';
+                    var newEvent;
+                    if (!customEvents[eventName]) {
+                        newEvent = document.createEvent('Event');
+                        newEvent.initEvent(eventName, true, true);
+                        customEvents[eventName] = newEvent;
+                    }
+                    document.body.addEventListener(eventName, function() {
+                        trigger();
+                    });
+                
+            })()
+
+        </script>
+</div>
+
+    
+<div id="1a4d704617117d19d968db07e8a959580">
+        
+        <script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('1a4d704617117d19d968db07e8a959580', 'cycling_sport.block.service.stages_menu');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('1a4d704617117d19d968db07e8a959580', 'cycling_sport.block.service.stages_menu', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET.html", "/en/ajax-block/cycling_sport.block.service.stages_menu/%7B%22menu%22:%22tourism%22%7D/6939f8c8b0d298a119b4a6926d69dc2a", true);
+                    xhttp.send();
+                };
+                                    var eventName = 'tourism';
+                    var newEvent;
+                    if (!customEvents[eventName]) {
+                        newEvent = document.createEvent('Event');
+                        newEvent.initEvent(eventName, true, true);
+                        customEvents[eventName] = newEvent;
+                    }
+                    document.body.addEventListener(eventName, function() {
+                        trigger();
+                    });
+                
+            })()
+
+        </script>
+</div>
+
+            </div>
+    <script>
+        if (window.innerWidth < 768) {
+            var $headerMenu = document.getElementById('header-menu');
+            if (typeof($headerMenu) != 'undefined' && $headerMenu != null) {
+                var $emptyElt = $headerMenu.getElementsByClassName('js-empty')[0];
+                if(typeof($emptyElt) != 'undefined' && $emptyElt != null) {
+                    $emptyElt.remove();
+                }
+            }
+            var $burgerDesktop = document.getElementById('hamburger-desktop');
+            if (typeof($burgerDesktop) != 'undefined' && $navSearch != null) {
+                $burgerDesktop.remove();
+            }
+        }
+    </script>
+</div>
+
+        </div>
+
+<div class="grid-container">
+<main>
+        
+                                
+                                        
+                    
+        
+        
+        <div class=" one-col">
+            <div >
+                <div >
+                    
+
+                            <div class="pageHeader content-header has-image">
+            <img class="pageHeader__img" src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/tjv/20262/0:0,2000:465-2000-0-60/52ccc" alt="">
+                <div class="filter"></div>
+            
+            <div class="pageHeader__headingZone">
+                        <h1 class="pageHeader__heading">TEAM JUMBO - VISMA</h1>            <h2 class="pageHeader__subheading">Netherlands</h2>        </div>
+    
+    
+            <div class="pageNav">
+    
+
+    <div class="pageNav--prev">
+        <a class="pageNav__link"
+           href="../IGD/ineos-grenadiers.html"
+           data-xtclick="pageIntroTeam::pageNav::Prev"
+           data-clicktype="N">
+            <span class="icon icon--arrowleft-line"></span>
+            <span class="pageNav__label hidden--xs">INEOS GRENADIERS</span>
+        </a>
+    </div>
+
+
+    
+
+    <div class="pageNav--next">
+        <a class="pageNav__link"
+           href="../BOH/bora-hansgrohe.html"
+           data-xtclick="pageIntroTeam::pageNav::Next"
+           data-clicktype="N">
+            <span class="icon icon--arrowright-line"></span>
+            <span class="pageNav__label hidden--xs">BORA - HANSGROHE</span>
+        </a>
+    </div>
+
+</div>
+
+    </div>
+
+                
+
+
+
+<section class="pageIntro pageIntro--team">
+    <div class="container">
+        <div class="row is-relative">
+            <figure class="pageIntroJerseys">
+                <div class="pageIntroJerseys__wrapper">
+                                            <img class="pageIntroJerseys__img "
+                             src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/tjv/18282/0:0,400:400-300-0-70/e2429"
+                             alt=""/>
+                                        </div>
+                <div class="pageIntroJerseys__wrapper">
+                    <img class="pageIntroJerseys__img"
+                         src="https://img.aso.fr/core_app/img-cycling-tdf-png/tjv/19182/0:0,829:828-300-0-70/26b87"
+                         alt=""/>
+                </div>
+            </figure>
+
+                                                                <div class="statsInfos clearfix">
+                <h3 class="heading heading--3">2020 Edition</h3>
+
+                <div class="statsInfos__item col--lg--2 col--lg--offset--3 col--xs--3">
+                    <span class="statsInfos__label">Stages won</span>
+                    <span class="statsInfos__number">3</span>
+                </div>
+                <div class="statsInfos__item col--lg--2 col--xs--3">
+                    <span class="statsInfos__label">General Ranking</span>
+                    <span class="statsInfos__number">2</span>
+                </div>
+                <div class="statsInfos__item col--lg--2 col--xs--3">
+                    <span class="statsInfos__label">Competitors in race</span>
+                    <span class="statsInfos__number">8</span>
+                </div>
+            </div>
+
+            <div class="social">
+                                                            </div>
+        </div>
+    </div>
+
+    <div class="teamDirector">
+                    <span class="teamDirector__title">
+                            Sporting managers :</span>
+                        <span class="teamDirector__name">NIERMANN Grischa / VAN DONGEN Arthur</span>
+                    </div>
+</section>
+
+                
+
+    <section class="riderTeamFocus">
+        <div class="container">
+            <div class="row">
+
+                <h2 class="heading heading--2">Riders TEAM JUMBO - VISMA</h2>
+                <div class="riderTeamFocus__wrapper">
+                    <div class="riderTeamFocus__grid">
+
+                                                                                <div class="thumbnail riderFocus">
+                                                                <a href="../../rider/11/team-jumbo-visma/primoz-roglic.html"
+                                    class="thumbnail__link"
+                                    data-xtclick="riderTeam::riderTeam-list::riderTeam-focus::primoz-roglic"
+                                    data-clicktype="N">
+
+                                                                                                                                                        
+                                    <img
+                                        alt="Rider Primož ROGLIC"
+                                        class="lazyItem js-lazy"
+                                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                        data-src="https://img.aso.fr/core_app/img-cycling-tdf-png/11/21969/0:0,660:1000-282-0-80/09772|https://img.aso.fr/core_app/img-cycling-tdf-png/11/21969/0:0,660:1000-400-0-80/ece11"/>
+
+                                    <div class="riderFocus__infos ">
+                                                                                <h3 class="heading heading--3">
+                                            <span class="flag js-display-lazy" data-class="flag--slo"></span>
+                                            P. ROGLIC
+                                        </h3>
+                                        <p class="riderFocus__feature">
+                                            born on 29/10/1989
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                                                                                <div class="thumbnail riderFocus">
+                                                                <a href="../../rider/12/team-jumbo-visma/george-bennett.html"
+                                    class="thumbnail__link"
+                                    data-xtclick="riderTeam::riderTeam-list::riderTeam-focus::george-bennett"
+                                    data-clicktype="N">
+
+                                                                                                                                                        
+                                    <img
+                                        alt="Rider George BENNETT"
+                                        class="lazyItem js-lazy"
+                                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                        data-src="https://img.aso.fr/core_app/img-cycling-tdf-png/12/21973/0:0,660:1000-282-0-80/10625|https://img.aso.fr/core_app/img-cycling-tdf-png/12/21973/0:0,660:1000-400-0-80/e1cfe"/>
+
+                                    <div class="riderFocus__infos ">
+                                                                                <h3 class="heading heading--3">
+                                            <span class="flag js-display-lazy" data-class="flag--nzl"></span>
+                                            G. BENNETT
+                                        </h3>
+                                        <p class="riderFocus__feature">
+                                            born on 07/04/1990
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                                                                                <div class="thumbnail riderFocus">
+                                                                <a href="../../rider/13/team-jumbo-visma/amund-groendahl-jansen.html"
+                                    class="thumbnail__link"
+                                    data-xtclick="riderTeam::riderTeam-list::riderTeam-focus::amund-groendahl-jansen"
+                                    data-clicktype="N">
+
+                                                                                                                                                        
+                                    <img
+                                        alt="Rider Amund Grøndahl JANSEN"
+                                        class="lazyItem js-lazy"
+                                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                        data-src="https://img.aso.fr/core_app/img-cycling-tdf-png/13/21978/0:0,660:1000-282-0-80/c9ee9|https://img.aso.fr/core_app/img-cycling-tdf-png/13/21978/0:0,660:1000-400-0-80/01689"/>
+
+                                    <div class="riderFocus__infos ">
+                                                                                <h3 class="heading heading--3">
+                                            <span class="flag js-display-lazy" data-class="flag--nor"></span>
+                                            A. JANSEN
+                                        </h3>
+                                        <p class="riderFocus__feature">
+                                            born on 11/02/1994
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                                                                                <div class="thumbnail riderFocus">
+                                                                <a href="../../rider/14/team-jumbo-visma/tom-dumoulin.html"
+                                    class="thumbnail__link"
+                                    data-xtclick="riderTeam::riderTeam-list::riderTeam-focus::tom-dumoulin"
+                                    data-clicktype="N">
+
+                                                                                                                                                        
+                                    <img
+                                        alt="Rider Tom DUMOULIN"
+                                        class="lazyItem js-lazy"
+                                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                        data-src="https://img.aso.fr/core_app/img-cycling-tdf-png/14/21974/0:0,660:1000-282-0-80/370ea|https://img.aso.fr/core_app/img-cycling-tdf-png/14/21974/0:0,660:1000-400-0-80/3caf2"/>
+
+                                    <div class="riderFocus__infos ">
+                                                                                <h3 class="heading heading--3">
+                                            <span class="flag js-display-lazy" data-class="flag--ned"></span>
+                                            T. DUMOULIN
+                                        </h3>
+                                        <p class="riderFocus__feature">
+                                            born on 11/11/1990
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                                                                                <div class="thumbnail riderFocus">
+                                                                <a href="../../rider/15/team-jumbo-visma/robert-gesink.html"
+                                    class="thumbnail__link"
+                                    data-xtclick="riderTeam::riderTeam-list::riderTeam-focus::robert-gesink"
+                                    data-clicktype="N">
+
+                                                                                                                                                        
+                                    <img
+                                        alt="Rider Robert GESINK"
+                                        class="lazyItem js-lazy"
+                                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                        data-src="https://img.aso.fr/core_app/img-cycling-tdf-png/15/21985/0:0,660:1000-282-0-80/f4c28|https://img.aso.fr/core_app/img-cycling-tdf-png/15/21985/0:0,660:1000-400-0-80/08a51"/>
+
+                                    <div class="riderFocus__infos ">
+                                                                                <h3 class="heading heading--3">
+                                            <span class="flag js-display-lazy" data-class="flag--ned"></span>
+                                            R. GESINK
+                                        </h3>
+                                        <p class="riderFocus__feature">
+                                            born on 31/05/1986
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                                                                                <div class="thumbnail riderFocus">
+                                                                <a href="../../rider/16/team-jumbo-visma/sepp-kuss.html"
+                                    class="thumbnail__link"
+                                    data-xtclick="riderTeam::riderTeam-list::riderTeam-focus::sepp-kuss"
+                                    data-clicktype="N">
+
+                                                                                                                                                        
+                                    <img
+                                        alt="Rider Sepp KUSS"
+                                        class="lazyItem js-lazy"
+                                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                        data-src="https://img.aso.fr/core_app/img-cycling-tdf-png/16/21971/0:0,660:1000-282-0-80/89651|https://img.aso.fr/core_app/img-cycling-tdf-png/16/21971/0:0,660:1000-400-0-80/d38cd"/>
+
+                                    <div class="riderFocus__infos ">
+                                                                                <h3 class="heading heading--3">
+                                            <span class="flag js-display-lazy" data-class="flag--usa"></span>
+                                            S. KUSS
+                                        </h3>
+                                        <p class="riderFocus__feature">
+                                            born on 13/09/1994
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                                                                                <div class="thumbnail riderFocus">
+                                                                <a href="../../rider/17/team-jumbo-visma/tony-martin.html"
+                                    class="thumbnail__link"
+                                    data-xtclick="riderTeam::riderTeam-list::riderTeam-focus::tony-martin"
+                                    data-clicktype="N">
+
+                                                                                                                                                        
+                                    <img
+                                        alt="Rider Tony MARTIN"
+                                        class="lazyItem js-lazy"
+                                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                        data-src="https://img.aso.fr/core_app/img-cycling-tdf-png/17/21972/0:0,660:1000-282-0-80/81b07|https://img.aso.fr/core_app/img-cycling-tdf-png/17/21972/0:0,660:1000-400-0-80/52604"/>
+
+                                    <div class="riderFocus__infos ">
+                                                                                <h3 class="heading heading--3">
+                                            <span class="flag js-display-lazy" data-class="flag--ger"></span>
+                                            T. MARTIN
+                                        </h3>
+                                        <p class="riderFocus__feature">
+                                            born on 23/04/1985
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                                                                                <div class="thumbnail riderFocus">
+                                                                <a href="../../rider/18/team-jumbo-visma/wout-van-aert.html"
+                                    class="thumbnail__link"
+                                    data-xtclick="riderTeam::riderTeam-list::riderTeam-focus::wout-van-aert"
+                                    data-clicktype="N">
+
+                                                                                                                                                        
+                                    <img
+                                        alt="Rider Wout VAN AERT"
+                                        class="lazyItem js-lazy"
+                                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                        data-src="https://img.aso.fr/core_app/img-cycling-tdf-png/18/21979/0:0,660:1000-282-0-80/9c181|https://img.aso.fr/core_app/img-cycling-tdf-png/18/21979/0:0,660:1000-400-0-80/3e1c1"/>
+
+                                    <div class="riderFocus__infos ">
+                                                                                <h3 class="heading heading--3">
+                                            <span class="flag js-display-lazy" data-class="flag--bel"></span>
+                                            W. VAN AERT
+                                        </h3>
+                                        <p class="riderFocus__feature">
+                                            born on 15/09/1994
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+                
+<section class="is-alignCenter is-dfp-banner">
+    <div class="is-ibl" id="dfp_banniere-basse">
+        <script>
+            googletag.cmd.push(function() {
+                googletag.display('dfp_banniere-basse');
+            });
+        </script>
+    </div>
+</section>
+
+                
+
+
+    
+    <section class="teamBiography">
+        <div class="container">
+            <div class="row">
+                <h2 class="heading heading--2">TEAM JUMBO - VISMA</h2>
+                <div class="teamBiography__content">
+                                        <p>The squad sponsored by Rabobank for many years and the Dutch national lottery for a couple more was once seen as the Netherlands' national team and honed its young talents. Now racing as Jumbo&ndash;Visma, it has become a multinational operation. In 1996, taking the reins from the previous sponsors of the teams formed by Jan Raas, such as Kwantum-Hallen (from 1984, the penultimate season as a rider for the five-time winner of the Amstel Gold Race), Superconfex (from 1987), Buckler (1990), WordPerfect (1993) and Novell (1995), the bank and its orange jerseys hinting towards its Dutch origins signed up for a long journey with the Tour de France before the financiers threw in the towel at the end of 2012. Belkin, an American manufacturer specialising in Internet connection devices and networks, stepped up to the plate and enabled the team to survive in a country crazy about cycling and fiercely loyal to the Tour de France.</p>
+<p>For a long time, the team focused on stage wins with classics specialists, mainly from the Netherlands, before boosting its ambitions with the addition of foreign sprinters, climbers and power riders such as Robbie McEwen, &Oacute;scar Freire, Michael Rasmussen, Denis Menchov, Juan Manuel G&aacute;rate and Luis Le&oacute;n S&aacute;nchez with mixed success, before rediscovering its knack for nurturing the rising stars of Dutch cycling. The team failed to tap the full potential of Bauke Mollema, Moreno Hofland and Wilco Kelderman, who left for other teams, as did Lars Boom, who nevertheless had an apotheotic day on the cobblestone stage to Arenberg in 2014. Despite finishing sixth in 2015, right behind the "Big Four" (Froome, Quintana, Nibali and Contador) and Alejandro Valverde, Robert Gesink failed to realise the Tour de France potential he once seemed to have.</p>
+<p>Meanwhile, Steven Kruijswijk, who came tantalisingly close to victory in the 2016&nbsp;Giro, and Primož Roglič have developed into serious contenders and finished fifth and fourth in 2018, one year before Kruijswijk finally took the bottom step of the podium. Two years ago, the Dutchman put Team Sky under pressure on the road to the Alpe d'Huez with a daring move on the Col de la Croix de Fer, while Roglič, who in 2017 become the first ever Slovenian rider to win a stage after crowning the Galibier in first place, claimed another one in 2018 with an attack on the Aubisque. He then went on to prove in the 2019&nbsp;Giro (third) and Vuelta (first) that he has what it takes to conquer the yellow jersey that his teammate Mike Teunissen held for two days last year. Jumbo&ndash;Visma is betting the farm on the general classification after signing Tom Dumoulin, who finished second in the Tour in his last participation in 2018, as the third component of its three-pronged attack plan. As a result, Dylan Groenewegen, one of the fastest sprinters in the world, who took the Champs-&Eacute;lys&eacute;es stage in 2017, tasted victory in the cathedral cities of Chartres and Amiens in 2018 and raised his arms in Chalon-sur-Sa&ocirc;ne in 2019, will have to watch the race on TV.</p>
+
+    
+                </div>
+            </div>
+        </div>
+    </section>
+
+                
+
+    
+    <section class="victory"><div class="container"><div class="row"><ul class="victory__list clearfix"><li class="victory__item col--md--2 col--sm--3 col--xs--6"><span class="icon icon--victory"></span><span class="victory__label">Final victory</span><span class="circle">0</span></li><li class="victory__item col--md--2 col--sm--3 col--xs--6"><span class="icon icon--trophy"></span><span class="victory__label">Stages victories</span><span class="circle">57</span></li><li class="victory__item col--md--2 col--sm--3 col--xs--6"><span class="icon icon--sprint"></span><span class="victory__label">Yellows Jerseys</span><span class="circle">19</span></li><li class="victory__item col--md--2 col--sm--3 col--xs--6"><span class="icon icon--podium"></span><span class="victory__label">Other races Won</span><span class="circle">6</span></li></ul></div></div></section>
+                
+
+
+    
+    <section class="teamPalmares clearfix">
+        <div class="teamPalmares--block1">
+            <div class="container">
+                <div class="row">
+                                        <h2><strong>Stage wins:</strong> 57</h2>
+<ul>
+<li>1984: Jan Raas in Bordeaux</li>
+<li>1985: Gerrit Solleveld in Pont-Audemer, Henri Manders in Roubaix and Maarten Ducrot in &Eacute;pinal</li>
+<li>1986: Ludo Peeters in Saint-Hilaire-du-Harcou&euml;t</li>
+<li>1987: Jelle Nijdam in Berlin (prologue), Nico Verhoeven in Berlin, Jean-Paul van Poppel in &Eacute;pinay-sous-S&eacute;nart and Avignon and Rolf G&ouml;lz in Blagnac</li>
+<li>1988: Jean-Paul van Poppel in Le Mans, Besan&ccedil;on, Bordeaux and Paris, Jelle Nijdam in Li&eacute;vin and Rolf G&ouml;lz in Nancy</li>
+<li>1989: Jelle Nijdam in Wasquehal and Gap</li>
+<li>1990: Frans Maassen in Futuroscope, Gerrit Solleveld in Rouen and Jelle Nijdam in &Eacute;pinal</li>
+<li>1991: Jelle Nijdam in Valenciennes</li>
+<li>1995: Djamolidine Abdoujaparov in Paris</li>
+<li>1996: Michael Boogerd in Aix-les-Bains&nbsp;and Rolf S&oslash;rensen in Super-Besse</li>
+<li>1998: L&eacute;on van Bon in Pau</li>
+<li>1999: Robbie McEwen in Paris</li>
+<li>2000: L&eacute;on van Bon in Tours&nbsp;and Erik Dekker in Villeneuve-sur-Lot, Revel and Lausanne</li>
+<li>2001: Marc Wauters in Antwerp and Erik Dekker in Pontarlier</li>
+<li>2002: Karsten Kroon in Plouay&nbsp;and Michael Boogerd in La Plagne</li>
+<li>2005: Peter Weening in G&eacute;rardmer and Michael Rasmussen in Mulhouse</li>
+<li>2006: &Oacute;scar Freire in Caen and Dax, Denis Menchov on Pla de Beret&nbsp;and Michael Rasmussen at La Toussuire</li>
+<li>2007: Michael Rasmussen in Tignes and on the Aubisque</li>
+<li>2008: &Oacute;scar Freire in Digne-les-Bains</li>
+<li>2009: Juan Manuel G&aacute;rate on Mont Ventoux</li>
+<li>2011: Luis Le&oacute;n S&aacute;nchez in Saint-Flour</li>
+<li>2012: Luis Le&oacute;n S&aacute;nchez in Foix</li>
+<li>2014: Lars Boom in Arenberg</li>
+<li>2017: Primož Roglič in Serre-Chevalier and Dylan Groenewegen in Paris</li>
+<li>2018: Dylan Groenewegen in Chartres and Amiens M&eacute;tropole&nbsp;and Primož Roglič in Laruns</li>
+<li>2019: Mike Teunissen in Brussels, team time trial in Brussels, Dylan Groenewegen in Chalon-sur-Sa&ocirc;ne&nbsp;and Wout van Aert in Albi</li>
+</ul>
+<h2><strong>Secondary classification wins:</strong> 6</h2>
+<ul>
+<li>1985: Maarten Ducrot (most combative rider)</li>
+<li>1987: Jean-Paul van Poppel (points classification)</li>
+<li>2000: Erik Dekker (most combative rider)</li>
+<li>2005: Michael Rasmussen (mountains classification)</li>
+<li>2006: Michael Rasmussen (mountains classification)</li>
+<li>2008: &Oacute;scar Freire (points classification)</li>
+</ul>
+<h2><strong>Yellow jerseys:</strong> 19</h2>
+<ul>
+<li>1984: Ludo&nbsp;Peeters, one day, Jacques Hanegraaf, two days and Adri van der Poel, one day</li>
+<li>1987: Jelle Nijdam, one day</li>
+<li>1988: Jelle Nijdam, two days</li>
+<li>2001: Marc Wauters, one day</li>
+<li>2007: Michael Rasmussen, nine days</li>
+<li>2019: Mike Teunissen, two days</li>
+</ul>
+
+    
+                </div>
+            </div>
+        </div>
+        <div class="teamPalmares--block2">
+            <div class="container">
+                <div class="row">
+                                        <h2><strong>A FIGURE</strong> 57:</h2>
+<p>the number of stage wins in 36&nbsp;consecutive starts since the creation of Jan Raas's first team.&nbsp; &nbsp;</p>
+<h2><strong>MILESTONES</strong></h2>
+<p>5&nbsp;July 1996: Michael Boogerd, the darling of Dutch cycling, braves the torrential rain to take Rabobank's first Tour de France stage win in Aix-les-Bains.</p>
+<p>19&nbsp;July 2000: Erik Dekker grabs an epic hat-trick with his win in Lausanne.</p>
+<p>27&nbsp;July 2008: &Oacute;scar Freire takes the green jersey after winning three stages for Rabobank during his career.</p>
+
+    
+                </div>
+            </div>
+        </div>
+    </section>
+
+                
+
+            <section class="subscription">
+            <div class="container">
+                <div class="row">
+                    <h2 class="heading heading--2">Follow us</h2>
+                    <p class="is-alignCenter legend">Receive exclusive news about the Tour</p>
+                    <div class="social social--lg is-alignCenter">
+                                                                                                                    <a href="../../mobiles-apps.html"
+                                   aria-label="Phone: Open in a new window"
+                                   target="_blank"
+                                   class="icon icon--bg icon--phone"
+                                   data-xtclick="social::subscription::phone" data-clicktype="N">
+                                </a>
+                                                                                            <a href="http://www.facebook.com/letour"
+                                   aria-label="Facebook: Open in a new window"
+                                   target="_blank"
+                                   class="icon icon--bg icon--facebook"
+                                   data-xtclick="social::subscription::facebook" data-clicktype="N">
+                                </a>
+                                                                                            <a href="https://twitter.com/letour"
+                                   aria-label="Twitter: Open in a new window"
+                                   target="_blank"
+                                   class="icon icon--bg icon--twitter"
+                                   data-xtclick="social::subscription::twitter" data-clicktype="N">
+                                </a>
+                                                                                            <a href="https://www.dailymotion.com/tourdefrance"
+                                   aria-label="Dailymotion: Open in a new window"
+                                   target="_blank"
+                                   class="icon icon--bg icon--dailymotion"
+                                   data-xtclick="social::subscription::dailymotion" data-clicktype="N">
+                                </a>
+                                                                                            <a href="https://www.instagram.com/letourdefrance"
+                                   aria-label="Instagram: Open in a new window"
+                                   target="_blank"
+                                   class="icon icon--bg icon--instagram"
+                                   data-xtclick="social::subscription::instagram" data-clicktype="N">
+                                </a>
+                                                                                            <a href="https://bit.ly/31z9SYy"
+                                   aria-label="Newsletter: Open in a new window"
+                                   target="_blank"
+                                   class="icon icon--bg icon--newsletter"
+                                   data-xtclick="social::subscription::newsletter" data-clicktype="N">
+                                </a>
+                                                                        </div>
+                </div>
+            </div>
+        </section>
+    
+        
+
+                </div>
+
+                            </div>
+        </div>
+    
+        
+        
+        
+                    
+<div id="1349f0f647f78b38e19f064d2920be42a">
+        
+        <script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('1349f0f647f78b38e19f064d2920be42a', 'core_partners.block.service.bandeau_partners');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('1349f0f647f78b38e19f064d2920be42a', 'core_partners.block.service.bandeau_partners', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET.html", "/en/ajax-block/core_partners.block.service.bandeau_partners/%5B%5D/83f529db531fbbc4313859efdc525935", true);
+                    xhttp.send();
+                };
+                                    var myAnchor = document.getElementById('1349f0f647f78b38e19f064d2920be42a');
+                    myAnchor.classList.add('asyncBlockOnScreen');
+                    myAnchor.dataset.trigger = trigger;
+                
+            })()
+
+        </script>
+</div>
+        
+<div id="17da43b1a0c7cfe836b054526b5462103">
+        
+        <script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('17da43b1a0c7cfe836b054526b5462103', 'core_partners.block.service.bandeau_partners_bis');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('17da43b1a0c7cfe836b054526b5462103', 'core_partners.block.service.bandeau_partners_bis', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET.html", "/en/ajax-block/core_partners.block.service.bandeau_partners_bis/%7B%22displayTitle%22:false%7D/149260e8741e8722a4ed4e96cb8dd31a", true);
+                    xhttp.send();
+                };
+                                    var myAnchor = document.getElementById('17da43b1a0c7cfe836b054526b5462103');
+                    myAnchor.classList.add('asyncBlockOnScreen');
+                    myAnchor.dataset.trigger = trigger;
+                
+            })()
+
+        </script>
+</div>
+        
+<div id="14ae2a158997a46e58435c5230874dd0a">
+        
+        <script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('14ae2a158997a46e58435c5230874dd0a', 'core_partners.block.service.bandeau_partners_ter');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('14ae2a158997a46e58435c5230874dd0a', 'core_partners.block.service.bandeau_partners_ter', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET.html", "/en/ajax-block/core_partners.block.service.bandeau_partners_ter/%7B%22displayTitle%22:false%7D/9eea853b8a8459ade81803ac65afb000", true);
+                    xhttp.send();
+                };
+                                    var myAnchor = document.getElementById('14ae2a158997a46e58435c5230874dd0a');
+                    myAnchor.classList.add('asyncBlockOnScreen');
+                    myAnchor.dataset.trigger = trigger;
+                
+            })()
+
+        </script>
+</div>
+    
+    </main>
+
+            
+    <div class="footer">
+        <div class="footer-container container">
+                            <div class="footer-container__logo">
+                    <img alt="Logo" class="lazyItem js-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/img/global/logo_aso.png|/img/global/logo_aso@2x.png" width="150" height="40">
+                </div>
+            
+            <div class="footer-container__links  footer-container__links--no-sub">
+                                    <div class="footer-container__links__item">
+                        <a href="../../pro-zone.html"><h2 class="footer-container__title">Pro zone</h2></a>
+                                            </div>
+                                    <div class="footer-container__links__item">
+                        <a href="https://registering.aso.fr/Authentification"><h2 class="footer-container__title">Accreditations</h2></a>
+                                            </div>
+                                    <div class="footer-container__links__item">
+                        <a href="http://www.aso.fr/us/tour-de-france.html"><h2 class="footer-container__title">Contacts</h2></a>
+                                            </div>
+                                    <div class="footer-container__links__item">
+                        <a href="../../request-management.html"><h2 class="footer-container__title">Your GDPR rights</h2></a>
+                                            </div>
+                            </div>
+
+                                        
+                                            
+                                                                                                        
+
+        </div>
+
+        
+
+<div class="footer__bottom">
+    <div class="container">
+        <div class="row footer__bottom__wrapper">
+            <div class="col--xs--10 col--sm--10 footer__bottom__links">
+                <a href="../../copyrights.html" class="footer__bottom__link"  data-xtclick="footer::bottom::link::copyrights">Copyrights</a>
+                                    <a class="footer__bottom__link ot-sdk-show-settings" data-xtclick="footer::bottom::link::cookie-settings" data-clicktype="A">Cookie settings</a>
+                            </div>
+            <div class="col--xs--2 col--sm--2 footer__bottom__social">
+                
+<div class="footer-container__social">
+                        <a href="http://www.facebook.com/letour"
+               target="_blank"
+               class="icon icon--facebook"
+               data-xtclick="footer::subscription::facebook" data-clicktype="N">
+            </a>
+                    <a href="https://twitter.com/letour"
+               target="_blank"
+               class="icon icon--twitter"
+               data-xtclick="footer::subscription::twitter" data-clicktype="N">
+            </a>
+                    <a href="https://www.instagram.com/letourdefrance"
+               target="_blank"
+               class="icon icon--instagram"
+               data-xtclick="footer::subscription::instagram" data-clicktype="N">
+            </a>
+                    <a href="https://www.dailymotion.com/tourdefrance"
+               target="_blank"
+               class="icon icon--dailymotion"
+               data-xtclick="footer::subscription::dailymotion" data-clicktype="N">
+            </a>
+            </div>
+
+            </div>
+        </div>
+    </div>
+</div>    </div>
+
+
+    
+    <script>
+        var url = location.protocol == 'https:' ? 'https://logs4' : 'http://logc17';
+        xtnv = document;
+        xtsd = url;
+        xtsite = '259106';
+                    xtpage = 'equipe::team-jumbo-visma';      //page name (with the use of :: to create chapters)
+            xtn2 = '2';
+                xtdi = '1';                 //implication degree
+    </script><noscript><img alt="" width="1" height="1" src="https://logs4.xiti.com/hit.xiti?s=259106&amp;s2=2&amp;p=equipe::[Team]&amp;di=1"></noscript>
+
+    <script>
+    var wamid = '5464'; /* Wam Account ID */
+    var typ = '1'; /* Event Type default 1 */
+    var Wvar = {
+                "xtpage" : "equipe::[Team]",
+            };
+    (function(){
+        var w = document.createElement("script");
+        w.type = "text/javascript";
+        w.src = document.location.protocol + "//cstatic.weborama.fr/js/wam/customers/wamfactory_dpm.wildcard.min.js?rnd="+ new Date().getTime();
+        w.async = true;
+        var body = document.getElementsByTagName('script')[0];
+        body.parentNode.insertBefore(w,body);
+    })();
+</script>
+<script src="../../../dist/js/scripts.jquery.db424ca.js"></script>
+    <script src="../../../dist/js/scripts.runtime.e4ce55e.js"></script>
+    <script src="../../../dist/js/scripts.vendors.5205df1.js"></script>
+<script src="../../../dist/js/scripts.vendor.c010164.js"></script>
+
+
+<script src="../../../dist/js/scripts.main.72f6c6e.js"></script>
+
+
+
+                        
+
+
+
+            
+                            <script type="text/javascript" src="../../../../cdn.cookielaw.org/consent/e3e840cd-98d6-46ac-b5a0-a7072d19591d/OtAutoBlock.js" ></script>
+        <script src="../../../../cdn.cookielaw.org/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="e3e840cd-98d6-46ac-b5a0-a7072d19591d" ></script>
+                <script>
+            function OptanonWrapper() {
+                var targetingActiveGroup = RegExp(',4,').test(OnetrustActiveGroups);
+                if (typeof googletag.pubads !== 'undefined') {
+                    if (!targetingActiveGroup) {
+                        googletag.pubads().setRequestNonPersonalizedAds(1);
+                    } else {
+                        googletag.pubads().setRequestNonPersonalizedAds(0);
+                    }
+                    googletag.pubads().refresh();
+                }
+            }
+        </script>
+    
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"cf66f13e0d","applicationID":"216096607,216096608","transactionName":"Y11bbUNWCkEHVxdaVloXeFpFXgtcSVcaUFVdVl5mQkcLQBJHPFFMWlxVXG5DAVMLGgZd","queueTime":0,"applicationTime":285,"atts":"TxpYGwtMGU8=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from www.letour.fr/en/team/TJV/team-jumbo-visma by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 09:59:28 GMT -->
+</html>

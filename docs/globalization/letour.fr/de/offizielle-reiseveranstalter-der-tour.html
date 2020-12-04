@@ -1,0 +1,1987 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<!-- Mirrored from www.letour.fr/de/offizielle-reiseveranstalter-der-tour by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 09:57:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"cf66f13e0d",applicationID:"216096607"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+    <title>Die Tour hautnah miterleben: Wählen Sie aus unseren offiziellen Reiseveranstaltern</title>
+    <meta name="description" content="Besuchen Sie das Fahrerdorf der Tour de France und den geschlossenen Zielbereich wie ein VIP, treffen Sie die gro&szlig;en Namen der Rundfahrt, fahren Sie die Strecke einer mythenumwobenen Etappe bereits Stunden vor den Fahrern ab, &uuml;berqueren Sie die Ziellinie" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="image" content="https://www.letour.fr/img/global/logo.png" />
+<meta name="lang" content="de" />
+<meta name="race" content="tdf" />
+<meta name="year" content="2021" />
+<meta name="pageKey" content="offizielle-reiseveranstalter-der-tour" />
+<meta property="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+<meta property="og:url" content="https://www.letour.fr/de/offizielle-reiseveranstalter-der-tour" />
+<meta property="og:image" content="https://www.letour.fr/img/global/logo-og.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site-name" content="Tour de France 2021 2021" />
+<meta property="og:description" content="Besuchen Sie das Fahrerdorf der Tour de France und den geschlossenen Zielbereich wie ein VIP, treffen Sie die gro&szlig;en Namen der Rundfahrt, fahren Sie die Strecke einer mythenumwobenen Etappe bereits Stunden vor den Fahrern ab, &uuml;berqueren Sie die Ziellinie" />
+<meta property="og:title" content="Die Tour hautnah miterleben: W&auml;hlen Sie aus unseren offiziellen Reiseveranstaltern" />
+
+
+            <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="manifest" href="https://www.letour.fr/manifest.json" crossorigin="use-credentials">
+<link rel="mask-icon" href="https://www.letour.fr/safari-pinned-tab.svg" color="#555555">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+    
+    <!--[if lte IE 8]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+                <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            '../../www.googletagmanager.com/gtm5445.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-WN5XRZT');</script>
+    <!-- End Google Tag Manager -->
+
+    
+    <script>
+        var customEvents = {};
+        window.fbAsyncInit = function () {
+            // init the FB JS SDK
+
+            FB.init({
+                appId: 454906931320498,
+                status: true,
+                xfbml: true
+            });
+        };
+
+        // Load the SDK asynchronously
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "../../connect.facebook.net/en_US/all.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        function getCookie(c_name) {
+            if (document.cookie.length > 0) {
+                c_start = document.cookie.indexOf(c_name + "=");
+                if (c_start != -1) {
+                    c_start = c_start + c_name.length + 1;
+                    c_end = document.cookie.indexOf(";", c_start);
+                    if (c_end == -1) {
+                        c_end = document.cookie.length;
+                    }
+                    return unescape(document.cookie.substring(c_start, c_end));
+                }
+            }
+            return "";
+        }
+        function checkCookieForRedirect() {
+            document.body.style.display = 'none';
+            var lang = getCookie('_lang');
+            if (/^\/[a-zA-Z]{2}(?:.+|$)/.test(window.location.pathname) && /^[a-zA-Z]{2}$/.test(lang)) {
+                if (!(new RegExp('^\/' + lang + '(?:.+|$)')).test(window.location.pathname)) {
+                    var link = document.querySelector('.header__lang__menu .nav__link[data-lang='+lang+']');
+                    if (link) {
+                        link = link.href;
+                        document.location.href = link;
+                        return;
+                    }
+                }
+            }
+            document.body.style.display = 'block';
+        }
+
+        window.translations = {
+            slidePrev: 'Vorherige folie',
+            slideNext: 'Nächste folie'
+        };
+    </script>
+
+    <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i" rel="stylesheet">-->
+            <link rel="preload" href="../dist/js/scripts.jquery.db424ca.js" as="script">
+        <link rel="preload" href="../dist/css/4.style.8e01910.css" as="style">
+        <link rel="preload" href="../dist/css/9.style.c010164.css" as="style">
+        <link rel="preload" href="../dist/css/7.style.72f6c6e.css" as="style">
+        <link rel="preload" href="../dist/js/scripts.vendor.c010164.js" as="script">
+                    <link rel="preload" href="../dist/js/scripts.runtime.e4ce55e.js" as="script">
+            <link rel="preload" href="../dist/js/scripts.vendors.5205df1.js" as="script">
+                <link rel="preload" href="../dist/js/scripts.main.72f6c6e.js" as="script">
+        <link href="../dist/css/4.style.8e01910.css" rel="stylesheet">
+        <link href="../dist/css/9.style.c010164.css" rel="stylesheet">
+        <link href="../dist/css/7.style.72f6c6e.css" rel="stylesheet">
+            
+            
+<script>
+    // Appel asynchrone au tag DFP
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function() {
+        var gads = document.createElement("script");
+        gads.async = true;
+        gads.type = "text/javascript";
+        var useSSL = "https:" == document.location.protocol;
+        gads.src = (useSSL ? "https:" : "http:") + "//www.googletagservices.com/tag/js/gpt.js";
+        var node =document.getElementsByTagName("script")[0];
+        node.parentNode.insertBefore(gads, node);
+    })();
+    googletag.cmd.push(function() {
+
+        var mp_bannierehaute = googletag.sizeMapping().
+        addSize([0, 0], [[1, 1],[320, 50],[320, 100]]).
+        addSize([728, 500], [[1, 1],[728, 90]]). // Tablet
+        addSize([1000, 500], [[1, 1],[728, 90],[1000, 90],[1000, 250]]). // Desktop
+        build();
+
+        var AdUnit = '/366560878/ASO/TOUR-DE-FRANCE';
+        googletag.defineSlot(AdUnit, [1, 1], 'dfp_banniere-haute').setTargeting('position', 'BANNIERE-HAUTE').defineSizeMapping(mp_bannierehaute).addService(googletag.pubads());
+        googletag.defineSlot(AdUnit, [1, 1], 'dfp_banniere-basse').setTargeting('position', 'BANNIERE-BASSE').defineSizeMapping(mp_bannierehaute).addService(googletag.pubads());
+        googletag.defineSlot(AdUnit, [1, 1], 'dfp_banniere-2').setTargeting('position', 'BANNIERE-2').defineSizeMapping(mp_bannierehaute).addService(googletag.pubads());
+        googletag.defineSlot(AdUnit, [1, 1], 'dfp_banniere-3').setTargeting('position', 'BANNIERE-3').defineSizeMapping(mp_bannierehaute).addService(googletag.pubads());
+        googletag.defineSlot(AdUnit, [[300,250]], 'dfp_pave-1').setTargeting('position', 'PAVE-1').addService(googletag.pubads());
+        googletag.defineSlot(AdUnit, [[300,250]], 'dfp_pave-2').setTargeting('position', 'PAVE-2').addService(googletag.pubads());
+        googletag.defineSlot(AdUnit, [[300,250]], 'dfp_pave-3').setTargeting('position', 'PAVE-3').addService(googletag.pubads());
+        googletag.defineSlot(AdUnit, [[300,250]], 'dfp_pave-4').setTargeting('position', 'PAVE-4').addService(googletag.pubads());
+        googletag.defineSlot(AdUnit, [[300,250]], 'dfp_pave-5').setTargeting('position', 'PAVE-5').addService(googletag.pubads());
+        googletag.defineSlot(AdUnit, [[300,250]], 'dfp_pave-6').setTargeting('position', 'PAVE-6').addService(googletag.pubads());
+        googletag.defineSlot(AdUnit, [[300,250]], 'dfp_chronometreur').setTargeting('position', 'CHRONOMETREUR').addService(googletag.pubads());
+        googletag.defineSlot(AdUnit, [[1,1]], 'dfp_background').setTargeting('position', 'BACKGROUND').addService(googletag.pubads());
+        googletag.defineOutOfPageSlot(AdUnit, 'dfp_interstitiel').setTargeting('position', 'INTERSTITIEL').addService(googletag.pubads());
+
+        // Targeting key/value
+        googletag.pubads().setTargeting('lang', 'DE');
+        googletag.pubads().setTargeting('pagetype', 'DEFAULT');
+                googletag.pubads().setTargeting('xtpage', ['offizielle_reiseveranstalter_der_tour']);
+
+        if (window.location.hash !== '') {googletag.pubads().setTargeting('preview', window.location.hash.replace('#',''));}
+        // General
+        googletag.pubads().collapseEmptyDivs(true);
+        googletag.pubads().enableSingleRequest();
+        googletag.pubads().disableInitialLoad();
+        googletag.enableServices();
+    });
+</script>
+
+
+            
+            
+                
+    <link rel="alternate" hreflang="fr" href="../fr/voyagistes-officiels.html"/>
+                
+    <link rel="alternate" hreflang="en" href="../en/official-tour-operators.html"/>
+                
+    <link rel="alternate" hreflang="es" href="../es/agencias-de-viajes-oficiales.html"/>
+
+    
+</head>
+
+<body class="  has-timepeeker has-countdown  news v2" data-countdown="2021/06/26 12:15:00"
+      data-cookie-referer="_page_alias_voyagistes-officiels"
+            data-privacy="true"
+        >
+
+
+
+        <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WN5XRZT"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+                 
+
+    
+
+<div class="menu" id="menu">
+    <div class="menu-container">
+        <div class="menu-container__content" id="menu-container">
+                    </div>
+        <div class="menu-container__right-panel">
+            <div class="close-menu">
+                <span class="icon icon--close" id="close-menu"></span>
+            </div>
+
+                        <div class="js-empty hiding--sm">
+                <div class="navigation">
+                                    
+<form role="search" action="https://www.letour.fr/de/suche/*query*" method="GET" class="nav__search__form search">
+    <a role="button" aria-label="Suche" class="nav__search__icon js-btn-search icon icon--search" href="#" data-xtclick="header-top::nav-search::search" data-clicktype="A"></a>
+    <input class="nav__search__input" role="searchbox" aria-label="Geben sie ihre suche ein" type="text" name="q" placeholder="Suche">
+</form>
+                                </div>
+                <div class="burgerMenu__section">
+                    <div class="header__navigation" role="navigation">
+                                                        <nav class="navigation">
+        <ul class="accordion">
+                                                                                        
+                
+                                                    
+                                                                <li class="dropdown item js-dropdown-subnav">
+    <a class="nav js-dropdown" data-toggle="dropdown" id="menu-nav-route-mobile" aria-haspopup="true" role="button" data-target="dropdown-route-mobile" href="#" data-xtclick="header::navigation::strecke-2021" data-clicktype="A">
+        Strecke 2021
+        <span class="icon icon--cancel"></span>
+    </a>
+    </li>
+                            
+                
+                                                    
+                                                                                                <li class="item">
+    <a class="nav js-nav-item" href="2020ausgabe.html" target="_self" data-xtclick="header::navigation::ausgabe-2020" data-clicktype="N">
+        Ausgabe 2020
+        
+    </a>
+    </li>
+                            
+                
+                                                    
+                                                                                                <li class="item">
+    <a class="nav js-nav-item" href="rennen/riding-info-the-future.html" target="_self" data-xtclick="header::navigation::riding-into-the-future" data-clicktype="N">
+        Riding Into The Future
+        
+    </a>
+    </li>
+                            
+                
+                                                    
+                                                                        <li class="item" id="kultour">
+    <a class="nav" href="#kultour" data-xtclick="header::navigation::kultour" data-clicktype="A">
+        KulTour
+        <span class="icon icon--cancel"></span>
+    </a>
+            <div class="subMenu">
+                            <a href="aktuelles.html" class="sub-nav">AKTUELLES</a>
+                            <a href="rennen/grands-departs.html" class="sub-nav">GRANDS DÉPARTS</a>
+                            <a href="rennen/kennzahlen.html" class="sub-nav">KENNZAHLEN</a>
+                            <a href="rennen/vertungen-und-reglement.html" class="sub-nav">WERTUNGEN</a>
+                            <a href="die-trikots-der-tour.html" class="sub-nav">DIE TRIKOTS</a>
+                            <a href="rennen/continental.html" class="sub-nav">SICHERHEIT</a>
+                            <a href="geschichte.html" class="sub-nav">GESCHICHTE</a>
+                            <a href="startseite-galerie.html" class="sub-nav">VIDEOS &amp; FOTOS</a>
+                            <a href="sponsoren.html" class="sub-nav">SPONSOREN</a>
+                    </div>
+    </li>
+                    </ul>
+    </nav>
+            
+                                                                            
+    
+<div id="19e53b82a3dc0e3c7cbea1f8cd6a6b5e7">
+        
+        <script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('19e53b82a3dc0e3c7cbea1f8cd6a6b5e7', 'cycling_sport.block.service.stages_menu');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('19e53b82a3dc0e3c7cbea1f8cd6a6b5e7', 'cycling_sport.block.service.stages_menu', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET-2.html", "/de/ajax-block/cycling_sport.block.service.stages_menu/%7B%22menu%22:%22route%22,%22isMobile%22:true%7D/72e4b3e3006185202cb08804067f9695", true);
+                    xhttp.send();
+                };
+                                    var eventName = 'route-mobile';
+                    var newEvent;
+                    if (!customEvents[eventName]) {
+                        newEvent = document.createEvent('Event');
+                        newEvent.initEvent(eventName, true, true);
+                        customEvents[eventName] = newEvent;
+                    }
+                    document.body.addEventListener(eventName, function() {
+                        trigger();
+                    });
+                
+            })()
+
+        </script>
+</div>
+
+    
+<div id="18e3016f6a29b382c9bc921a34b83d37a">
+        
+        <script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('18e3016f6a29b382c9bc921a34b83d37a', 'cycling_sport.block.service.teams');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('18e3016f6a29b382c9bc921a34b83d37a', 'cycling_sport.block.service.teams', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET-2.html", "/de/ajax-block/cycling_sport.block.service.teams/%7B%22menu%22:%22teams%22,%22isMobile%22:true%7D/5e4ca06ae929d23ae335528a4cf81007", true);
+                    xhttp.send();
+                };
+                                    var eventName = 'teams-mobile';
+                    var newEvent;
+                    if (!customEvents[eventName]) {
+                        newEvent = document.createEvent('Event');
+                        newEvent.initEvent(eventName, true, true);
+                        customEvents[eventName] = newEvent;
+                    }
+                    document.body.addEventListener(eventName, function() {
+                        trigger();
+                    });
+                
+            })()
+
+        </script>
+</div>
+
+    
+<div id="1c89db1c4f76750022f6de9ba7d8687ce">
+        
+        <script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('1c89db1c4f76750022f6de9ba7d8687ce', 'cycling_sport.block.service.stages_menu');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('1c89db1c4f76750022f6de9ba7d8687ce', 'cycling_sport.block.service.stages_menu', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET-2.html", "/de/ajax-block/cycling_sport.block.service.stages_menu/%7B%22menu%22:%22tourism%22,%22isMobile%22:true%7D/a471ae73548f3811b3d7fad0a0c4500b", true);
+                    xhttp.send();
+                };
+                                    var eventName = 'tourism-mobile';
+                    var newEvent;
+                    if (!customEvents[eventName]) {
+                        newEvent = document.createEvent('Event');
+                        newEvent.initEvent(eventName, true, true);
+                        customEvents[eventName] = newEvent;
+                    }
+                    document.body.addEventListener(eventName, function() {
+                        trigger();
+                    });
+                
+            })()
+
+        </script>
+</div>
+
+                                            </div>
+                </div>
+            </div>
+
+            
+
+    <nav class="navigation">
+        <ul class="accordion">
+                                                                                <li class="item" id="aktuelles">
+                    <a href="aktuelles.html" class="nav">
+                        Aktuelles
+                                            </a>
+                                    </li>
+                                                                                <li class="item" id="ausgabe-2020">
+                    <a href="2020ausgabe.html" class="nav">
+                        Ausgabe 2020
+                                            </a>
+                                    </li>
+                                                                                <li class="item" id="grands-departs">
+                    <a href="rennen/grands-departs.html" class="nav">
+                        Grands Départs
+                                            </a>
+                                    </li>
+                                                                                <li class="item" id="riding-into-the-future">
+                    <a href="rennen/riding-info-the-future.html" class="nav">
+                        Riding Into the Future
+                                            </a>
+                                    </li>
+                                                                                <li class="item" id="kultour">
+                    <a href="#kultour" class="nav">
+                        KulTour
+                                                    <span class="icon icon--cancel"></span>
+                                            </a>
+                                            <div class="subMenu">
+                                                            <a href="rennen/vertungen-und-reglement.html" class="sub-nav">vertungen und reglement</a>
+                                                            <a href="die-trikots-der-tour.html" class="sub-nav">Die Trikots</a>
+                                                            <a href="rennen/kennzahlen.html" class="sub-nav">Kennzahlen</a>
+                                                            <a href="rennen/continental.html" class="sub-nav">Sicherheit</a>
+                                                    </div>
+                                    </li>
+                                                                                <li class="item" id="geschichte">
+                    <a href="geschichte.html" class="nav">
+                        Geschichte
+                                            </a>
+                                    </li>
+                                                                                <li class="item" id="offizielle-app">
+                    <a href="mobiles-applikation.html" class="nav">
+                        Offizielle App
+                                            </a>
+                                    </li>
+                                                                                <li class="item" id="fotos-videos">
+                    <a href="startseite-galerie.html" class="nav">
+                        Fotos &amp; Videos
+                                            </a>
+                                    </li>
+                                                                                <li class="item" id="sponsoren">
+                    <a href="sponsoren.html" class="nav">
+                        Sponsoren
+                                            </a>
+                                    </li>
+                    </ul>
+    </nav>
+
+
+
+            <div class="burgerMenu__section js-empty hiding--sm">
+                                    <nav class="navigation">
+    <div class="header-top-container__menu-1">
+                <a href="http://www.tissotwatches.com/?utm_source=tourdefrance.com&amp;utm_medium=logo&amp;utm_content=logo&amp;utm_campaign=int_sponsoring" class="btn-menu nav__link logo-tissot btn-hover-primary">
+            <img alt="" class="header__sponsor__img lazyItem js-lazy"
+             src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+             data-src="/img/global/logo-timekeeper.png|/img/global/logo-timekeeper@2x.png">
+        </a>
+    
+                    <ul class="accordion">
+                                                                                                                                                
+<li class="dropdown item js-dropdown-subnav"><a class="nav js-dropdown link-1" id="top-item-otherRaces-mobile" data-toggle="dropdown" aria-haspopup="true" role="button" data-target="dropdown-top-otherRaces-mobile" href="#" data-xtclick="header::navigation::andere-rennen" data-clicktype="A" >
+            Andere Rennen
+                        <span class="icon icon--cancel"></span></a></li>                                                                                                                                                    
+<li class="dropdown item js-dropdown-subnav"><a class="nav js-dropdown link-2" id="top-item-broadcasters-mobile" data-toggle="dropdown" aria-haspopup="true" role="button" data-target="dropdown-top-broadcasters-mobile" href="#" data-xtclick="header::navigation::off-sender" data-clicktype="A" >
+            Off. Sender
+                        <span class="icon icon--cancel"></span></a></li>                                                                                                                                                    
+<li class="item"><a class="js-connect nav link-3" href="medias-bereich.html" target="_self" data-xtclick="header::navigation::medien" data-clicktype="N" >
+            Medien
+                        
+        </a></li>                                                </ul>
+            </div>
+    <div class="header-top-container__menu-2">
+                                    <ul class="accordion">
+                                                                                                                                
+<li class="dropdown item js-dropdown-subnav"><a class="nav js-dropdown link-1" id="top-item-games-mobile" data-toggle="dropdown" aria-haspopup="true" role="button" data-target="dropdown-top-games-mobile" href="#" data-xtclick="header::navigation::offizielle-spiele" data-clicktype="A" >
+            Offizielle Spiele
+                        <span class="icon icon--cancel"></span></a></li>                                                                                                                                                    
+<li class="item"><a class="js-connect nav link-2" href="http://boutique.letour.fr/stores/letour/de?portal=X146K48D&amp;CMP=PSC-X146K48D" target="1" data-xtclick="header::navigation::shop" data-clicktype="N" >
+            Shop
+                        
+        </a></li>                                                </ul>
+            </div>
+</nav>
+
+                                                                        
+<div id="1459d1241014a91fee221cf6f684891d0">
+        
+        <script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('1459d1241014a91fee221cf6f684891d0', 'core_other_event.block.service.other_events');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('1459d1241014a91fee221cf6f684891d0', 'core_other_event.block.service.other_events', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET-2.html", "/de/ajax-block/core_other_event.block.service.other_events/%7B%22isMobile%22:true%7D/3592c44c60ff48433d98e369c1743fe1", true);
+                    xhttp.send();
+                };
+                                    var eventName = 'otherRaces-mobile';
+                    var newEvent;
+                    if (!customEvents[eventName]) {
+                        newEvent = document.createEvent('Event');
+                        newEvent.initEvent(eventName, true, true);
+                        customEvents[eventName] = newEvent;
+                    }
+                    document.body.addEventListener(eventName, function() {
+                        trigger();
+                    });
+                
+            })()
+
+        </script>
+</div>
+                                                                        
+<div id="1497a95be5eb8e0152112e3a1e467cd78">
+        
+        <script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('1497a95be5eb8e0152112e3a1e467cd78', 'core_broadcasters.block.service.broadcasters');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('1497a95be5eb8e0152112e3a1e467cd78', 'core_broadcasters.block.service.broadcasters', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET-2.html", "/de/ajax-block/core_broadcasters.block.service.broadcasters/%7B%22isMobile%22:true%7D/84aed65122cc53b17d0a4b002476e3de", true);
+                    xhttp.send();
+                };
+                                    var eventName = 'broadcasters-mobile';
+                    var newEvent;
+                    if (!customEvents[eventName]) {
+                        newEvent = document.createEvent('Event');
+                        newEvent.initEvent(eventName, true, true);
+                        customEvents[eventName] = newEvent;
+                    }
+                    document.body.addEventListener(eventName, function() {
+                        trigger();
+                    });
+                
+            })()
+
+        </script>
+</div>
+                                                                                                                    
+<div class="dropdown__menu dropdown__menu--otherRaces subnav flexbox js-dropdown-menu"
+     aria-labelledby="top-item-games-mobile"
+     data-target="dropdown-top-games-mobile">
+    <div class="subnav__header flexbox__header">
+        <a class="burgerButton burgerButton--prev is-ibl" role="button">
+            <i class="icon icon--arrowleft"></i>
+        </a>
+        <h2 class="subnav__title is-ibl">Offizielle spiele</h2>
+    </div>
+    <div class="games subnavTabs flexbox js-tabs-wrapper">
+        <div class="container flexbox__container js-scroll-watcher">
+            <div class="row">
+                                    <ul class="clearfix subnav__races">
+                        <li class="hidingBar hidingBar--left"></li>
+                        <li class="hidingBar hidingBar--bottom"></li>
+                                                                                                            <li class="subnav__races__item">
+                                <a href="video-games-pro-cycling-manager-2020.html"
+                                   class="subnav__races__link"
+                                   target="_blank"
+                                   data-xtclick="subnav-games::subnav-games-item::pro-cycling-manager-2020-pc"
+                                   data-clicktype="N">
+                                    <span class="subnav__races__logo">
+                                        <img alt="PRO CYCLING MANAGER 2020 (PC)" class="lazyItem subnav__races__img js-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/img/dyn/partners/page-logo/pro-cycling-manager-2020-pc_sm.png?update=1591174532|/img/dyn/partners/page-logo/pro-cycling-manager-2020-pc_sm@2x.png?update=1591174532">
+                                    </span>
+                                    <span class="subnav__races__name">
+                                        PRO CYCLING MANAGER 2020 (PC)
+                                    </span>
+                                </a>
+                            </li>
+                                                                                                            <li class="subnav__races__item">
+                                <a href="video-games-le-tour-de-france-2020.html"
+                                   class="subnav__races__link"
+                                   target="_blank"
+                                   data-xtclick="subnav-games::subnav-games-item::jeux-videos-tour-de-france-2020-ps4"
+                                   data-clicktype="N">
+                                    <span class="subnav__races__logo">
+                                        <img alt="TOUR DE FRANCE 2020 - SPIEL (PS4)" class="lazyItem subnav__races__img js-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/img/dyn/partners/page-logo/jeux-videos-tour-de-france-2020-ps4_sm.png?update=1595836180|/img/dyn/partners/page-logo/jeux-videos-tour-de-france-2020-ps4_sm@2x.png?update=1595836180">
+                                    </span>
+                                    <span class="subnav__races__name">
+                                        TOUR DE FRANCE 2020 - SPIEL (PS4)
+                                    </span>
+                                </a>
+                            </li>
+                                                                                                            <li class="subnav__races__item">
+                                <a href="video-games-le-tour-de-france-2020.html"
+                                   class="subnav__races__link"
+                                   target="_blank"
+                                   data-xtclick="subnav-games::subnav-games-item::jeux-videos-tour-de-france-2020-xbox-one"
+                                   data-clicktype="N">
+                                    <span class="subnav__races__logo">
+                                        <img alt="TOUR DE FRANCE 2020 - SPIEL (XBOX ONE)" class="lazyItem subnav__races__img js-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/img/dyn/partners/page-logo/jeux-videos-tour-de-france-2020-xbox-one_sm.png?update=1591174664|/img/dyn/partners/page-logo/jeux-videos-tour-de-france-2020-xbox-one_sm@2x.png?update=1591174664">
+                                    </span>
+                                    <span class="subnav__races__name">
+                                        TOUR DE FRANCE 2020 - SPIEL (XBOX ONE)
+                                    </span>
+                                </a>
+                            </li>
+                                                                                                            <li class="subnav__races__item">
+                                <a href="mobile-game.html"
+                                   class="subnav__races__link"
+                                   target="_blank"
+                                   data-xtclick="subnav-games::subnav-games-item::tour-de-france-2020-ios-android"
+                                   data-clicktype="N">
+                                    <span class="subnav__races__logo">
+                                        <img alt="TOUR DE FRANCE 2020 (IOS / ANDROID)" class="lazyItem subnav__races__img js-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/img/dyn/partners/page-logo/tour-de-france-2020-ios-android_sm.png?update=1597066058|/img/dyn/partners/page-logo/tour-de-france-2020-ios-android_sm@2x.png?update=1597066058">
+                                    </span>
+                                    <span class="subnav__races__name">
+                                        TOUR DE FRANCE 2020 (IOS / ANDROID)
+                                    </span>
+                                </a>
+                            </li>
+                                            </ul>
+                            </div>
+        </div>
+    </div>
+</div>
+                                                                    
+                            </div>
+
+            <div class="menu-footer">
+                                
+<div class="social">
+    </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        if (window.innerWidth > 767) {
+            var $headerTopMenu = document.getElementById('menu');
+            if (typeof($headerTopMenu) != 'undefined' && $headerTopMenu != null) {
+                for (var i = 0; i < 3; i++) {
+                    var $jsEmptyElt = $headerTopMenu.getElementsByClassName('js-empty')[i];
+                    if (typeof($jsEmptyElt) != 'undefined' && $jsEmptyElt != null) {
+                        $jsEmptyElt.innerHTML = '';
+                    }
+                }
+            }
+        }
+    </script>
+</div>
+
+    <div class="header js-header">
+    
+
+<div class="header-top header__secondary" id="header-top-menu"><div class="header-top-container js-empty"><div class="header-top-container__menu-1"><a href="http://www.tissotwatches.com/?utm_source=tourdefrance.com&amp;utm_medium=logo&amp;utm_content=logo&amp;utm_campaign=int_sponsoring" class="btn-menu nav__link logo-tissot btn-hover-primary"><img alt="" class="header__sponsor__img lazyItem js-lazy"
+             src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+             data-src="/img/global/logo-timekeeper.png|/img/global/logo-timekeeper@2x.png"></a><div class="dropdown nav__item js-dropdown-subnav"><a class="js-dropdown nav__link btn-hover-primary link-1" id="top-item-otherRaces" data-toggle="dropdown" aria-haspopup="true" role="button" data-target="dropdown-top-otherRaces" href="#" data-xtclick="header::navigation::andere-rennen" data-clicktype="A">
+                        Andere Rennen
+                                </a></div><div class="dropdown nav__item js-dropdown-subnav"><a class="js-dropdown nav__link btn-hover-primary link-2" id="top-item-broadcasters" data-toggle="dropdown" aria-haspopup="true" role="button" data-target="dropdown-top-broadcasters" href="#" data-xtclick="header::navigation::off-sender" data-clicktype="A">
+                        Off. Sender
+                                </a></div><div class="nav__item"><a class="js-connect nav__link btn-hover-primary link-3" href="medias-bereich.html" target="_self" data-xtclick="header::navigation::medien" data-clicktype="N">
+                        Medien
+                                </a></div></div><div class="header-top-container__menu-2"><div class="dropdown nav__item js-dropdown-subnav"><a class="js-dropdown nav__link btn-hover-primary link-1" id="top-item-games" data-toggle="dropdown" aria-haspopup="true" role="button" data-target="dropdown-top-games" href="#" data-xtclick="header::navigation::offizielle-spiele" data-clicktype="A">
+                        Offizielle Spiele
+                                </a></div><div class="nav__item"><a class="js-connect nav__link btn-hover-primary link-2" href="http://boutique.letour.fr/stores/letour/de?portal=X146K48D&amp;CMP=PSC-X146K48D" target="1" data-xtclick="header::navigation::shop" data-clicktype="N">
+                        Shop
+                                </a></div></div><div class="header-top-container__social"><a href="http://www.facebook.com/letour"
+               aria-label="Facebook: In neuem Tab öffnen"
+                                    target="_blank"
+                               class="icon icon--facebook" data-xtclick="header-top::header-social::facebook" data-clicktype="N"></a><a href="http://www.twitter.com/letour"
+               aria-label="Twitter: In neuem Tab öffnen"
+                                    target="_blank"
+                               class="icon icon--twitter" data-xtclick="header-top::header-social::twitter" data-clicktype="N"></a><a href="https://www.dailymotion.com/tourdefrance"
+               aria-label="Dailymotion: In neuem Tab öffnen"
+                                    target="_blank"
+                               class="icon icon--dailymotion" data-xtclick="header-top::header-social::dailymotion" data-clicktype="N"></a><a href="https://www.instagram.com/letourdefrance"
+               aria-label="Instagram: In neuem Tab öffnen"
+                                    target="_blank"
+                               class="icon icon--instagram" data-xtclick="header-top::header-social::instagram" data-clicktype="N"></a><a href="mobiles-applikation.html"
+               aria-label="Phone: In neuem Tab öffnen"
+                                    target="_blank"
+                               class="icon icon--phone" data-xtclick="header-top::header-social::phone" data-clicktype="N"></a><a href="https://bit.ly/31z9SYy"
+               aria-label="Newsletter: In neuem Tab öffnen"
+                                    target="_blank"
+                               class="icon icon--newsletter" data-xtclick="header-top::header-social::newsletter" data-clicktype="N"></a></div></div><div class="js-empty"><div id="17caf18dcefa35e66d53da4005beb40f6"><script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('17caf18dcefa35e66d53da4005beb40f6', 'core_other_event.block.service.other_events');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('17caf18dcefa35e66d53da4005beb40f6', 'core_other_event.block.service.other_events', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET-2.html", "/de/ajax-block/core_other_event.block.service.other_events/%5B%5D/f858ac6f79f9db5808b30df7c43acb51", true);
+                    xhttp.send();
+                };
+                                    var eventName = 'otherRaces';
+                    var newEvent;
+                    if (!customEvents[eventName]) {
+                        newEvent = document.createEvent('Event');
+                        newEvent.initEvent(eventName, true, true);
+                        customEvents[eventName] = newEvent;
+                    }
+                    document.body.addEventListener(eventName, function() {
+                        trigger();
+                    });
+                
+            })()
+
+        </script></div><div id="12cef721df34a1184e80c0a92915a7634"><script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('12cef721df34a1184e80c0a92915a7634', 'core_broadcasters.block.service.broadcasters');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('12cef721df34a1184e80c0a92915a7634', 'core_broadcasters.block.service.broadcasters', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET-2.html", "/de/ajax-block/core_broadcasters.block.service.broadcasters/%5B%5D/5b62aad7da3d86146941642578b76ce9", true);
+                    xhttp.send();
+                };
+                                    var eventName = 'broadcasters';
+                    var newEvent;
+                    if (!customEvents[eventName]) {
+                        newEvent = document.createEvent('Event');
+                        newEvent.initEvent(eventName, true, true);
+                        customEvents[eventName] = newEvent;
+                    }
+                    document.body.addEventListener(eventName, function() {
+                        trigger();
+                    });
+                
+            })()
+
+        </script></div><div class="dropdown__menu dropdown__menu--otherRaces subnav flexbox js-dropdown-menu"
+     aria-labelledby="top-item-games"
+     data-target="dropdown-top-games"><div class="subnav__header flexbox__header"><a class="burgerButton burgerButton--prev is-ibl" role="button"><i class="icon icon--arrowleft"></i></a><h2 class="subnav__title is-ibl">Offizielle spiele</h2></div><div class="games subnavTabs flexbox js-tabs-wrapper"><div class="container flexbox__container js-scroll-watcher"><div class="row"><ul class="clearfix subnav__races"><li class="hidingBar hidingBar--left"></li><li class="hidingBar hidingBar--bottom"></li><li class="subnav__races__item"><a href="video-games-pro-cycling-manager-2020.html"
+                                   class="subnav__races__link"
+                                   target="_blank"
+                                   data-xtclick="subnav-games::subnav-games-item::pro-cycling-manager-2020-pc"
+                                   data-clicktype="N"><span class="subnav__races__logo"><img alt="PRO CYCLING MANAGER 2020 (PC)" class="lazyItem subnav__races__img js-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/img/dyn/partners/page-logo/pro-cycling-manager-2020-pc_sm.png?update=1591174532|/img/dyn/partners/page-logo/pro-cycling-manager-2020-pc_sm@2x.png?update=1591174532"></span><span class="subnav__races__name">
+                                        PRO CYCLING MANAGER 2020 (PC)
+                                    </span></a></li><li class="subnav__races__item"><a href="video-games-le-tour-de-france-2020.html"
+                                   class="subnav__races__link"
+                                   target="_blank"
+                                   data-xtclick="subnav-games::subnav-games-item::jeux-videos-tour-de-france-2020-ps4"
+                                   data-clicktype="N"><span class="subnav__races__logo"><img alt="TOUR DE FRANCE 2020 - SPIEL (PS4)" class="lazyItem subnav__races__img js-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/img/dyn/partners/page-logo/jeux-videos-tour-de-france-2020-ps4_sm.png?update=1595836180|/img/dyn/partners/page-logo/jeux-videos-tour-de-france-2020-ps4_sm@2x.png?update=1595836180"></span><span class="subnav__races__name">
+                                        TOUR DE FRANCE 2020 - SPIEL (PS4)
+                                    </span></a></li><li class="subnav__races__item"><a href="video-games-le-tour-de-france-2020.html"
+                                   class="subnav__races__link"
+                                   target="_blank"
+                                   data-xtclick="subnav-games::subnav-games-item::jeux-videos-tour-de-france-2020-xbox-one"
+                                   data-clicktype="N"><span class="subnav__races__logo"><img alt="TOUR DE FRANCE 2020 - SPIEL (XBOX ONE)" class="lazyItem subnav__races__img js-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/img/dyn/partners/page-logo/jeux-videos-tour-de-france-2020-xbox-one_sm.png?update=1591174664|/img/dyn/partners/page-logo/jeux-videos-tour-de-france-2020-xbox-one_sm@2x.png?update=1591174664"></span><span class="subnav__races__name">
+                                        TOUR DE FRANCE 2020 - SPIEL (XBOX ONE)
+                                    </span></a></li><li class="subnav__races__item"><a href="mobile-game.html"
+                                   class="subnav__races__link"
+                                   target="_blank"
+                                   data-xtclick="subnav-games::subnav-games-item::tour-de-france-2020-ios-android"
+                                   data-clicktype="N"><span class="subnav__races__logo"><img alt="TOUR DE FRANCE 2020 (IOS / ANDROID)" class="lazyItem subnav__races__img js-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/img/dyn/partners/page-logo/tour-de-france-2020-ios-android_sm.png?update=1597066058|/img/dyn/partners/page-logo/tour-de-france-2020-ios-android_sm@2x.png?update=1597066058"></span><span class="subnav__races__name">
+                                        TOUR DE FRANCE 2020 (IOS / ANDROID)
+                                    </span></a></li></ul></div></div></div></div></div><script>
+        if (window.innerWidth < 768) {
+            var $headerTopMenu = document.getElementById('header-top-menu');
+            if (typeof($headerTopMenu) != 'undefined' && $headerTopMenu != null) {
+                for (var i = 0; i < 3; i++) {
+                    var $jsEmptyElt = $headerTopMenu.getElementsByClassName('js-empty')[i];
+                    if (typeof($jsEmptyElt) != 'undefined' && $jsEmptyElt != null) {
+                        $jsEmptyElt.innerHTML = '';
+                    }
+                }
+            }
+        }
+    </script></div>
+    <div class="header__navigation" id="header-menu">
+    <div class="header-container">
+        <div class="header-container__menu header-container__menu-1">
+            <div class="btn btn-lg btn-menu btn-hamburger hamburger hamburger--elastic" id="hamburger-mobile">
+                                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+                </button>
+            </div>
+            <div class="js-empty">
+                            <div class="nav__item js-dropdown-subnav"><a class="nav__link btn-menu btn-hover-primary js-dropdown" data-toggle="dropdown" id="menu-nav-route" aria-haspopup="true" role="button" data-target="dropdown-route" href="#" data-xtclick="header::navigation::strecke-2021" data-clicktype="A">Strecke 2021</a></div><div class="nav__item"><a class="nav__link btn-menu btn-hover-primary js-nav-item" href="2020ausgabe.html" target="_self" data-xtclick="header::navigation::ausgabe-2020" data-clicktype="N">Ausgabe 2020</a></div><div class="nav__item"><a class="nav__link btn-menu btn-hover-primary js-nav-item" href="rennen/riding-info-the-future.html" target="_self" data-xtclick="header::navigation::riding-into-the-future" data-clicktype="N">Riding Into The Future</a></div><div class="nav__item js-dropdown-subnav"><a class="nav__link btn-menu btn-hover-primary js-dropdown" data-toggle="dropdown" id="menu-nav-3" aria-haspopup="true" role="button" data-target="dropdown-3" href="#" data-xtclick="header::navigation::kultour" data-clicktype="A">KulTour</a></div>
+                                                            <div class="dropdown__menu subnav subnav--simple js-dropdown-menu flexbox" role="menu" aria-labelledby="menu-nav-3" data-target="dropdown-3">
+                <div class="subnav__header flexbox__header">
+                    <a class="burgerButton burgerButton--prev is-ibl" role="button">
+                        <span class="burgerButton__bar burgerButton__bar--1"></span>
+                        <span class="burgerButton__bar burgerButton__bar--3"></span>
+                    </a>
+                    <h2 class="subnav__title is-ibl">KulTour</h2>
+                </div>
+                <div class="container flexbox__container js-scroll-watcher">
+                    <div class="row">
+                        <ul class="list">
+                                                            <li class="subnav__item">
+                                    <a class="subnav__link" href="aktuelles.html" data-xtclick="dropdown-menu::subnav-link::aktuelles" data-clicktype="N">AKTUELLES</a>
+                                </li>
+                                                            <li class="subnav__item">
+                                    <a class="subnav__link" href="rennen/grands-departs.html" data-xtclick="dropdown-menu::subnav-link::grands-departs" data-clicktype="N">GRANDS DÉPARTS</a>
+                                </li>
+                                                            <li class="subnav__item">
+                                    <a class="subnav__link" href="rennen/kennzahlen.html" data-xtclick="dropdown-menu::subnav-link::kennzahlen" data-clicktype="N">KENNZAHLEN</a>
+                                </li>
+                                                            <li class="subnav__item">
+                                    <a class="subnav__link" href="rennen/vertungen-und-reglement.html" data-xtclick="dropdown-menu::subnav-link::wertungen" data-clicktype="N">WERTUNGEN</a>
+                                </li>
+                                                            <li class="subnav__item">
+                                    <a class="subnav__link" href="die-trikots-der-tour.html" data-xtclick="dropdown-menu::subnav-link::die-trikots" data-clicktype="N">DIE TRIKOTS</a>
+                                </li>
+                                                            <li class="subnav__item">
+                                    <a class="subnav__link" href="rennen/continental.html" data-xtclick="dropdown-menu::subnav-link::sicherheit" data-clicktype="N">SICHERHEIT</a>
+                                </li>
+                                                            <li class="subnav__item">
+                                    <a class="subnav__link" href="geschichte.html" data-xtclick="dropdown-menu::subnav-link::geschichte" data-clicktype="N">GESCHICHTE</a>
+                                </li>
+                                                            <li class="subnav__item">
+                                    <a class="subnav__link" href="startseite-galerie.html" data-xtclick="dropdown-menu::subnav-link::videos-fotos" data-clicktype="N">VIDEOS &amp; FOTOS</a>
+                                </li>
+                                                            <li class="subnav__item">
+                                    <a class="subnav__link" href="sponsoren.html" data-xtclick="dropdown-menu::subnav-link::sponsoren" data-clicktype="N">SPONSOREN</a>
+                                </li>
+                                                    </ul>
+                    </div>
+                </div>
+            </div>
+            
+                        </div>
+        </div>
+
+        
+
+        
+        
+
+    <div class="header-container__logo"><span class="header-container__uci"><a class="header-container__uci__link" href="https://www.uci.org/" target="_blank"><img class="lazyItem js-lazy"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="/img/global/logo-uci.png|/img/global/logo-uci@2x.png"
+                    alt="UCI Logo"></a></span><a class="header-container__logo__link" href="https://www.letour.fr/de"><img
+            class="main-logo js-logo"
+            src="../img/global/logo%402x.png"
+            data-reversed="/img/global/logo-reversed@2x.png"
+            alt="Tour de France Offizielle Website"></a></div><div class="header-container__dates">
+    <div class="dates">
+        <div class="dates-value">
+                                                26/06
+                    >
+                                18/07/2021
+                    </div>
+    </div>
+</div>
+
+
+
+        <div class="header-container__menu header-container__menu-2">
+            <div class="dropdown nav__item header__lang">
+                                    
+    <a class="nav__link nav__link--arrow js-dropdown dropdown__toggle js-display-click" id="nav-lang-de" data-toggle="dropdown" data-target="dropdown-navlang" aria-haspopup="true" role="button" data-xtclick="header::langue">
+        <span class="flag-wrapper">
+            <span class="flag js-display-lazy flag--de is-loaded" data-class="flag--de"></span>
+            de
+            <span class="arrow-bottom"></span>
+        </span>
+    </a>
+
+        <div class="dropdown__menu header__lang__menu js-dropdown-menu" role="menu" aria-labelledby="nav-lang-de" data-target="dropdown-navlang">
+
+        <ul class="list">
+                                                                                
+                                                                    
+                <li class="dropdown__menu__item">
+                    <a class="dropdown__menu__link nav__link" href="../fr/voyagistes-officiels.html" data-lang="fr">
+                        <span class="flag js-display-lazy" data-class="flag--fr"></span> <span class="is-ibl header__lang__label">fr</span>
+                    </a>
+                </li>
+                                                                                
+                                                                    
+                <li class="dropdown__menu__item">
+                    <a class="dropdown__menu__link nav__link" href="../en/official-tour-operators.html" data-lang="en">
+                        <span class="flag js-display-lazy" data-class="flag--en"></span> <span class="is-ibl header__lang__label">en</span>
+                    </a>
+                </li>
+                                                                                
+                                                                    
+                <li class="dropdown__menu__item">
+                    <a class="dropdown__menu__link nav__link" href="../es/agencias-de-viajes-oficiales.html" data-lang="es">
+                        <span class="flag js-display-lazy" data-class="flag--es"></span> <span class="is-ibl header__lang__label">es</span>
+                    </a>
+                </li>
+                        <script>
+                checkCookieForRedirect();
+                var hostname = location.hostname;
+                if (hostname === 'www.dakar.com') {
+                    getJSON(geolocApiUrl, function(data) {
+                        if (data.countryCode === 'PL') {
+                            var idToGet = window.innerWidth < 1280 ? 'js-rewrite-link-mobile' : 'js-rewrite-link',
+                                $linkToRewrite = document.getElementById(idToGet);
+                            $linkToRewrite.setAttribute('href', '/en/visit-the-official-licensee-of-dakar');
+                        }
+                    });
+                }
+            </script>
+        </ul>
+    </div>
+
+            </div>
+                            
+
+<div class="btn btn-lg btn-menu nav__search js-nav-search" id="nav-search">
+    <form role="search" action="https://www.letour.fr/de/suche/*query*" method="GET" class="nav__search__form search">
+        <a role="button" aria-label="Suche" class="icon icon--search nav__search__icon js-btn-search"  href="#" data-xtclick="header-top::nav-search::search" data-clicktype="A"></a>
+        <div class="nav__search__block">
+            <input class="nav__search__input" role="searchbox" aria-label="Geben sie ihre suche ein" type="text" name="q" placeholder="Suche">
+            <span class="nav__search__close js-nav-search-close icon icon--close"></span>
+        </div>
+    </form>
+</div>
+    <script>
+        if (window.innerWidth < 768) {
+            var $navSearch = document.getElementById('nav-search');
+            if (typeof($navSearch) != 'undefined' && $navSearch != null) {
+                $navSearch.remove();
+            }
+        }
+    </script>
+                        <div class="btn btn-lg btn-menu btn-hamburger hamburger hamburger--elastic" id="hamburger-desktop">
+                                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+                </button>
+            </div>
+        </div>
+
+                    
+    
+<div id="14d19e97ef734246bc9b3fbceb124856d">
+        
+        <script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('14d19e97ef734246bc9b3fbceb124856d', 'cycling_sport.block.service.stages_menu');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('14d19e97ef734246bc9b3fbceb124856d', 'cycling_sport.block.service.stages_menu', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET-2.html", "/de/ajax-block/cycling_sport.block.service.stages_menu/%7B%22menu%22:%22route%22%7D/7f9c402e3372c06c6ff9cec6b7c9b806", true);
+                    xhttp.send();
+                };
+                                    var eventName = 'route';
+                    var newEvent;
+                    if (!customEvents[eventName]) {
+                        newEvent = document.createEvent('Event');
+                        newEvent.initEvent(eventName, true, true);
+                        customEvents[eventName] = newEvent;
+                    }
+                    document.body.addEventListener(eventName, function() {
+                        trigger();
+                    });
+                
+            })()
+
+        </script>
+</div>
+
+    
+<div id="1a8699ba981b4739af51498df58adf4c5">
+        
+        <script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('1a8699ba981b4739af51498df58adf4c5', 'cycling_sport.block.service.teams');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('1a8699ba981b4739af51498df58adf4c5', 'cycling_sport.block.service.teams', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET-2.html", "/de/ajax-block/cycling_sport.block.service.teams/%7B%22menu%22:%22teams%22%7D/2bc3d3d428168b47c2c7c01334a79d60", true);
+                    xhttp.send();
+                };
+                                    var eventName = 'teams';
+                    var newEvent;
+                    if (!customEvents[eventName]) {
+                        newEvent = document.createEvent('Event');
+                        newEvent.initEvent(eventName, true, true);
+                        customEvents[eventName] = newEvent;
+                    }
+                    document.body.addEventListener(eventName, function() {
+                        trigger();
+                    });
+                
+            })()
+
+        </script>
+</div>
+
+    
+<div id="1a4d704617117d19d968db07e8a959580">
+        
+        <script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('1a4d704617117d19d968db07e8a959580', 'cycling_sport.block.service.stages_menu');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('1a4d704617117d19d968db07e8a959580', 'cycling_sport.block.service.stages_menu', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET-2.html", "/de/ajax-block/cycling_sport.block.service.stages_menu/%7B%22menu%22:%22tourism%22%7D/6939f8c8b0d298a119b4a6926d69dc2a", true);
+                    xhttp.send();
+                };
+                                    var eventName = 'tourism';
+                    var newEvent;
+                    if (!customEvents[eventName]) {
+                        newEvent = document.createEvent('Event');
+                        newEvent.initEvent(eventName, true, true);
+                        customEvents[eventName] = newEvent;
+                    }
+                    document.body.addEventListener(eventName, function() {
+                        trigger();
+                    });
+                
+            })()
+
+        </script>
+</div>
+
+            </div>
+    <script>
+        if (window.innerWidth < 768) {
+            var $headerMenu = document.getElementById('header-menu');
+            if (typeof($headerMenu) != 'undefined' && $headerMenu != null) {
+                var $emptyElt = $headerMenu.getElementsByClassName('js-empty')[0];
+                if(typeof($emptyElt) != 'undefined' && $emptyElt != null) {
+                    $emptyElt.remove();
+                }
+            }
+            var $burgerDesktop = document.getElementById('hamburger-desktop');
+            if (typeof($burgerDesktop) != 'undefined' && $navSearch != null) {
+                $burgerDesktop.remove();
+            }
+        }
+    </script>
+</div>
+
+        </div>
+
+<div class="grid-container">
+<main>
+        
+        
+                            
+        <div class="content content-elements two-cols">
+                                            
+                                                    
+                                        <div class="content-container">
+                <div class="content-container__main">
+                    
+
+                    <div class="pageHeader content-header no-image">
+    
+            <div class="pageHeader__headingZone">
+                        <h1 class="pageHeader__heading">Official tour operators</h1>                    </div>
+    
+    
+    </div>
+
+                
+
+<section class="article">
+    <article>
+        <main class="main article__content">
+                                <h2><strong>Die Tour hautnah miterleben: W&auml;hlen Sie aus unseren offiziellen Reiseveranstaltern</strong></h2>
+<p>Besuchen Sie das Fahrerdorf der Tour de France und den geschlossenen Zielbereich wie ein VIP, treffen Sie die gro&szlig;en Namen der Rundfahrt, fahren Sie die Strecke einer mythenumwobenen Etappe bereits Stunden vor den Fahrern ab, &uuml;berqueren Sie die Ziellinie und steigen Sie aufs Siegerpodest wie ein Profifahrer ... Dies alles k&ouml;nnen Ihnen nur die Tour de France und ihre offiziellen Tour Operators bieten. Buchen Sie rasch und akzeptieren Sie vor allem nur das Original.</p>
+
+                        
+    
+                
+            <div class="media__item media__item--video">
+        <figure class="figure media__responsive media__responsive--16by9 js-medias-container">
+                        <a href="#" class="btn btn--stop js-stop" role="button" aria-label="Schließen" data-xtclick="content::embed::close" data-clicktype="A"><i class="icon icon--close"></i></a>
+            <a href="https://www.dailymotion.com/embed/video/x36avdi?autoplay=1"
+               class="media__item__link js-play-embed"
+               target="_blank" role="button"
+               aria-label="Video abspielen Tour Operators - Tour de France"
+               data-xtclick="article::video::play" data-clicktype="A"><i class="icon icon--play media__icon js-fade"></i>
+                <img alt="" class="media__responsive__item lazyItem js-lazy js-fade" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/tour-operators-tour-de-france/1869/0:0,1920:1080-1200-0-70/2a2d7">
+                <div class="js-frame-container"></div>
+            </a>
+            <figcaption class="figure__caption js-fade">Tour Operators - Tour de France</figcaption>
+            <div class="medias__social figure__social social js-share video js-fade"
+                 data-share-url="/de/media/video/2819/2402b9b1d09f7b32b627df28858dc6eb"
+                 data-share-title="Tour Operators - Tour de France"
+                 data-twitter-name="letour">
+                <div class="medias__social__inner">
+                    <a href="#"
+                       class="icon icon--bg icon--facebook"
+                       data-share="facebook"
+                       data-xtclick="video::social::facebook"
+                       data-clicktype="A"></a>
+                    <a href="#"
+                       class="icon icon--bg icon--twitter"
+                       data-share="twitter"
+                       data-xtclick="video::social::twitter"
+                       data-clicktype="A"></a>
+                </div>
+            </div>
+        </figure>
+    </div>
+
+                    <div class="panel panel__section panel__default">
+    <a data-toggle="collapse" role="button"
+       href="#collapse12cef9c8-862d-4c46-8903-901c11f5ee24"
+       class="panel__heading collapsed js-collapse" data-xtclick="article::accordeon" data-clicktype="A">OFFICIAL PREMIUM TOUR OPERATOR</a>
+    <div id="collapse12cef9c8-862d-4c46-8903-901c11f5ee24" class="panel__collapse collapse  js-collapse-container">
+        <div class="panel__body">
+                                
+<figure class="figure is-left js-zoomable">
+                <a href="https://img.aso.fr/core_app/img-cycling-tdf-jpg/thomson-bike-tours-thumb/4901/0:0,128:74-128-0-70/51eb0"
+           class="js-jzoom"
+           role="button"
+           data-modal-type="image"
+           data-modal-class="modal__box--gutter is-modal-white"
+           data-modal-width="128"
+           data-modal-height="auto"
+            data-xtclick="article::image::zoom" data-clicktype="A">
+                    <img class="figure__image img--responsive lazyItem js-lazy"
+                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                 width="128"
+                 data-src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/thomson-bike-tours-thumb/4901/0:0,128:74-128-0-70/51eb0|https://img.aso.fr/core_app/img-cycling-tdf-jpg/thomson-bike-tours-thumb/4901/0:0,128:74-256-0-70/5a7b5"
+                 alt=""
+                  />
+
+                    </a>
+                            </figure>
+
+                    <h2 class="underline">&nbsp;</h2>
+<h2 class="underline"><a href="https://www.thomsonbiketours.com/">Thomson Bike Tours</a></h2>
+
+                    <p>&nbsp;</p>
+<p>Thomson Bike Tours betreut seit 2003 Radfahrer und Zuschauer auf der Tour de France. Unser Status als Premium Tour Operator garantiert Ihnen privilegierten Zugang zu den Schl&uuml;sseletappen des gr&ouml;&szlig;ten Radrennens der Welt.</p>
+<p>F&uuml;r Radfahrer: 3 Radtouren pro Tag, von 30 bis 150 km, angepasst an Ihr Niveau. Nur bei Thomson Bike Tours!</p>
+<p>F&uuml;r Zuschauer: Unsere VIP-Touren f&uuml;r Zuschauer bieten ein unglaubliches Erlebnis hinter den Kulissen und erstklassigen VIP-Zugang zu den Schl&uuml;sseletappen.</p>
+<p>Ob auf dem Rad oder als Zuschauer, &bdquo;The Thomson Effect&ldquo; bedeutet, dass Sie begeistert nach Hause zur&uuml;ckkehren und &uuml;ber Ihr n&auml;chstes Abenteuer mit uns nachdenken werden.</p>
+<p><a href="http://www.thomsonbiketours.com/" target="_blank">www.thomsonbiketours.com</a></p>
+
+                    
+<div class="js-slider-wrapper clearfix">
+    <div class="is-relative col--lg--10 col--lg--offset--1 arrows-visible">
+        <div class="slider slider--medias js-slider" data-id="642660219" data-slider-type="galeryPhotos">
+                                                            <div class="slider__item" data-legend="Thomson Bike" data-copyright="Thomson Bike" data-filtres="" index="4">
+                    <figure class="figure">
+                        <span class="slider__link" data-href="https://img.aso.fr/core_app/img-cycling-tdf-jpg/thomson-bike-tours-tour-de-france-alps/4976/0:0,1600:1067-1000-0-70/92c81">
+                            <img alt="" class="slider__img" src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/thomson-bike-tours-tour-de-france-alps/4976/0:0,1600:1067-1000-0-70/92c81">
+                        </span>
+                                                    <figcaption class="figure__caption">Thomson Bike © Thomson Bike</figcaption>
+                                            </figure>
+                </div>
+                                                            <div class="slider__item" data-legend="Thomson Bike" data-copyright="Thomson Bike" data-filtres="" index="4">
+                    <figure class="figure">
+                        <span class="slider__link" data-href="https://img.aso.fr/core_app/img-cycling-tdf-jpg/thomson-bike-tours-tour-de-france-alps-lake/4977/0:0,1600:1062-1000-0-70/8b319">
+                            <img alt="" class="slider__img" data-lazy="https://img.aso.fr/core_app/img-cycling-tdf-jpg/thomson-bike-tours-tour-de-france-alps-lake/4977/0:0,1600:1062-1000-0-70/8b319">
+                        </span>
+                                                    <figcaption class="figure__caption">Thomson Bike © Thomson Bike</figcaption>
+                                            </figure>
+                </div>
+                                                            <div class="slider__item" data-legend="Thomson Bike" data-copyright="Thomson Bike" data-filtres="" index="4">
+                    <figure class="figure">
+                        <span class="slider__link" data-href="https://img.aso.fr/core_app/img-cycling-tdf-jpg/thomson-bike-tours-tour-de-france-bike-fleet/4978/0:0,1600:1067-1000-0-70/1151d">
+                            <img alt="" class="slider__img" data-lazy="https://img.aso.fr/core_app/img-cycling-tdf-jpg/thomson-bike-tours-tour-de-france-bike-fleet/4978/0:0,1600:1067-1000-0-70/1151d">
+                        </span>
+                                                    <figcaption class="figure__caption">Thomson Bike © Thomson Bike</figcaption>
+                                            </figure>
+                </div>
+                                                            <div class="slider__item" data-legend="Thomson Bike" data-copyright="Thomson Bike" data-filtres="" index="4">
+                    <figure class="figure">
+                        <span class="slider__link" data-href="https://img.aso.fr/core_app/img-cycling-tdf-jpg/thomson-bike-tours-tour-de-france-briancon/4979/0:0,1600:1067-1000-0-70/2f361">
+                            <img alt="" class="slider__img" data-lazy="https://img.aso.fr/core_app/img-cycling-tdf-jpg/thomson-bike-tours-tour-de-france-briancon/4979/0:0,1600:1067-1000-0-70/2f361">
+                        </span>
+                                                    <figcaption class="figure__caption">Thomson Bike © Thomson Bike</figcaption>
+                                            </figure>
+                </div>
+                                                            <div class="slider__item" data-legend="Thomson Bike" data-copyright="Thomson Bike" data-filtres="" index="4">
+                    <figure class="figure">
+                        <span class="slider__link" data-href="https://img.aso.fr/core_app/img-cycling-tdf-jpg/thomson-bike-tours-tour-de-france-climbing/4980/0:0,1600:1067-1000-0-70/42e51">
+                            <img alt="" class="slider__img" data-lazy="https://img.aso.fr/core_app/img-cycling-tdf-jpg/thomson-bike-tours-tour-de-france-climbing/4980/0:0,1600:1067-1000-0-70/42e51">
+                        </span>
+                                                    <figcaption class="figure__caption">Thomson Bike © Thomson Bike</figcaption>
+                                            </figure>
+                </div>
+                                                            <div class="slider__item" data-legend="Thomson Bike" data-copyright="Thomson Bike" data-filtres="" index="4">
+                    <figure class="figure">
+                        <span class="slider__link" data-href="https://img.aso.fr/core_app/img-cycling-tdf-jpg/thomson-bike-tours-tour-de-france-departure-village/4981/0:0,1600:1067-1000-0-70/94e2e">
+                            <img alt="" class="slider__img" data-lazy="https://img.aso.fr/core_app/img-cycling-tdf-jpg/thomson-bike-tours-tour-de-france-departure-village/4981/0:0,1600:1067-1000-0-70/94e2e">
+                        </span>
+                                                    <figcaption class="figure__caption">Thomson Bike © Thomson Bike</figcaption>
+                                            </figure>
+                </div>
+                                                            <div class="slider__item" data-legend="Thomson Bike" data-copyright="Thomson Bike" data-filtres="" index="4">
+                    <figure class="figure">
+                        <span class="slider__link" data-href="https://img.aso.fr/core_app/img-cycling-tdf-jpg/thomson-bike-tours-tour-de-france-descending/4982/0:0,1600:692-1000-0-70/a37bd">
+                            <img alt="" class="slider__img" data-lazy="https://img.aso.fr/core_app/img-cycling-tdf-jpg/thomson-bike-tours-tour-de-france-descending/4982/0:0,1600:692-1000-0-70/a37bd">
+                        </span>
+                                                    <figcaption class="figure__caption">Thomson Bike © Thomson Bike</figcaption>
+                                            </figure>
+                </div>
+                                                            <div class="slider__item" data-legend="Thomson Bike" data-copyright="Thomson Bike" data-filtres="" index="4">
+                    <figure class="figure">
+                        <span class="slider__link" data-href="https://img.aso.fr/core_app/img-cycling-tdf-jpg/thomson-bike-tours-tour-de-france-orica/4983/0:0,1600:1067-1000-0-70/745f0">
+                            <img alt="" class="slider__img" data-lazy="https://img.aso.fr/core_app/img-cycling-tdf-jpg/thomson-bike-tours-tour-de-france-orica/4983/0:0,1600:1067-1000-0-70/745f0">
+                        </span>
+                                                    <figcaption class="figure__caption">Thomson Bike © Thomson Bike</figcaption>
+                                            </figure>
+                </div>
+                                                            <div class="slider__item" data-legend="Thomson Bike" data-copyright="Thomson Bike" data-filtres="" index="4">
+                    <figure class="figure">
+                        <span class="slider__link" data-href="https://img.aso.fr/core_app/img-cycling-tdf-jpg/thomson-bike-tours-tour-de-france-paris-finish-line/4984/0:0,1600:1067-1000-0-70/db4ad">
+                            <img alt="" class="slider__img" data-lazy="https://img.aso.fr/core_app/img-cycling-tdf-jpg/thomson-bike-tours-tour-de-france-paris-finish-line/4984/0:0,1600:1067-1000-0-70/db4ad">
+                        </span>
+                                                    <figcaption class="figure__caption">Thomson Bike © Thomson Bike</figcaption>
+                                            </figure>
+                </div>
+                                                            <div class="slider__item" data-legend="Thomson Bike" data-copyright="Thomson Bike" data-filtres="" index="4">
+                    <figure class="figure">
+                        <span class="slider__link" data-href="https://img.aso.fr/core_app/img-cycling-tdf-jpg/thomson-bike-tours-tour-de-france-peyragudes/4985/0:0,1600:1067-1000-0-70/f2c21">
+                            <img alt="" class="slider__img" data-lazy="https://img.aso.fr/core_app/img-cycling-tdf-jpg/thomson-bike-tours-tour-de-france-peyragudes/4985/0:0,1600:1067-1000-0-70/f2c21">
+                        </span>
+                                                    <figcaption class="figure__caption">Thomson Bike © Thomson Bike</figcaption>
+                                            </figure>
+                </div>
+                                                            <div class="slider__item" data-legend="Thomson Bike" data-copyright="Thomson Bike" data-filtres="" index="4">
+                    <figure class="figure">
+                        <span class="slider__link" data-href="https://img.aso.fr/core_app/img-cycling-tdf-jpg/thomson-bike-tours-tour-de-france-podium/4986/0:0,1600:1067-1000-0-70/6b46b">
+                            <img alt="" class="slider__img" data-lazy="https://img.aso.fr/core_app/img-cycling-tdf-jpg/thomson-bike-tours-tour-de-france-podium/4986/0:0,1600:1067-1000-0-70/6b46b">
+                        </span>
+                                                    <figcaption class="figure__caption">Thomson Bike © Thomson Bike</figcaption>
+                                            </figure>
+                </div>
+                                                            <div class="slider__item" data-legend="Thomson Bike" data-copyright="Thomson Bike" data-filtres="" index="4">
+                    <figure class="figure">
+                        <span class="slider__link" data-href="https://img.aso.fr/core_app/img-cycling-tdf-jpg/thomson-bike-tours-tour-de-france-pyrenees/4987/0:0,1600:1067-1000-0-70/d46f1">
+                            <img alt="" class="slider__img" data-lazy="https://img.aso.fr/core_app/img-cycling-tdf-jpg/thomson-bike-tours-tour-de-france-pyrenees/4987/0:0,1600:1067-1000-0-70/d46f1">
+                        </span>
+                                                    <figcaption class="figure__caption">Thomson Bike © Thomson Bike</figcaption>
+                                            </figure>
+                </div>
+                    </div>
+        <div class="slider__nav slider__nav--medias js-slider-nav"></div>
+    </div>
+
+   
+</div><!-- end .media__section -->
+
+                    <hr class="solid" />
+
+                    
+<figure class="figure is-left js-zoomable">
+                <a href="https://img.aso.fr/core_app/img-cycling-tdf-jpg/custom-getaways-thumb/4900/0:0,128:74-128-0-70/a90a6"
+           class="js-jzoom"
+           role="button"
+           data-modal-type="image"
+           data-modal-class="modal__box--gutter is-modal-white"
+           data-modal-width="128"
+           data-modal-height="auto"
+            data-xtclick="article::image::zoom" data-clicktype="A">
+                    <img class="figure__image img--responsive lazyItem js-lazy"
+                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                 width="128"
+                 data-src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/custom-getaways-thumb/4900/0:0,128:74-128-0-70/a90a6|https://img.aso.fr/core_app/img-cycling-tdf-jpg/custom-getaways-thumb/4900/0:0,128:74-256-0-70/86f04"
+                 alt=""
+                  />
+
+                    </a>
+                            </figure>
+
+                    <h2>&nbsp;</h2>
+<h2><a href="http://www.customgetaways.com/">Custom Getaways</a></h2>
+
+                    <p>&nbsp;</p>
+<p>Custom Getaways, seit 13 Jahren offizieller Reiseveranstalter der Tour de France, bietet unvergessliche Erlebnisse f&uuml;r Radfahrer und Zuschauer. Dank unseres Status als Premium Tour Operator haben Sie exklusiven VIP-Zugang wie mit sonst niemanden zu den begehrtesten Etappen des Rennens! Wir bieten die flexibelsten Programme mit dem h&ouml;chsten Ma&szlig; an Unterst&uuml;tzung. Sie werden unsere europ&auml;ischen Guides f&uuml;r ihre fantastische Betreuung und ihr kulturelles Know-how lieben.</p>
+<p><a href="http://www.customgetaways.com/" target="_blank">www.customgetaways.com</a></p>
+
+                    
+<div class="js-slider-wrapper clearfix">
+    <div class="is-relative col--lg--10 col--lg--offset--1 arrows-visible">
+        <div class="slider slider--medias js-slider" data-id="1405241161" data-slider-type="galeryPhotos">
+                                                            <div class="slider__item" data-legend="Custom Gateways" data-copyright="Custom Gateways" data-filtres="" index="4">
+                    <figure class="figure">
+                        <span class="slider__link" data-href="https://img.aso.fr/core_app/img-cycling-tdf-jpg/custom-gateways-1-galerie/11051/0:0,2000:1328-1000-0-70/67821">
+                            <img alt="" class="slider__img" src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/custom-gateways-1-galerie/11051/0:0,2000:1328-1000-0-70/67821">
+                        </span>
+                                                    <figcaption class="figure__caption">Custom Gateways © Custom Gateways</figcaption>
+                                            </figure>
+                </div>
+                                                            <div class="slider__item" data-legend="Custom Gateways" data-copyright="Custom Gateways" data-filtres="" index="4">
+                    <figure class="figure">
+                        <span class="slider__link" data-href="https://img.aso.fr/core_app/img-cycling-tdf-jpg/custom-gateways-2-galerie/11053/0:0,2000:1335-1000-0-70/cd2fe">
+                            <img alt="" class="slider__img" data-lazy="https://img.aso.fr/core_app/img-cycling-tdf-jpg/custom-gateways-2-galerie/11053/0:0,2000:1335-1000-0-70/cd2fe">
+                        </span>
+                                                    <figcaption class="figure__caption">Custom Gateways © Custom Gateways</figcaption>
+                                            </figure>
+                </div>
+                                                            <div class="slider__item" data-legend="Custom Gateways" data-copyright="Custom Gateways" data-filtres="" index="4">
+                    <figure class="figure">
+                        <span class="slider__link" data-href="https://img.aso.fr/core_app/img-cycling-tdf-jpg/custom-gateways-3-galerie/11052/0:255,1000:922-1000-0-70/8c3f1">
+                            <img alt="" class="slider__img" data-lazy="https://img.aso.fr/core_app/img-cycling-tdf-jpg/custom-gateways-3-galerie/11052/0:255,1000:922-1000-0-70/8c3f1">
+                        </span>
+                                                    <figcaption class="figure__caption">Custom Gateways © Custom Gateways</figcaption>
+                                            </figure>
+                </div>
+                    </div>
+        <div class="slider__nav slider__nav--medias js-slider-nav"></div>
+    </div>
+
+   
+</div><!-- end .media__section -->
+
+                    <hr class="solid" />
+
+                    
+<figure class="figure is-left js-zoomable">
+                <a href="https://img.aso.fr/core_app/img-cycling-tdf-jpg/sports-tours-thumb/4898/0:0,128:74-128-0-70/ed1bf"
+           class="js-jzoom"
+           role="button"
+           data-modal-type="image"
+           data-modal-class="modal__box--gutter is-modal-white"
+           data-modal-width="128"
+           data-modal-height="auto"
+            data-xtclick="article::image::zoom" data-clicktype="A">
+                    <img class="figure__image img--responsive lazyItem js-lazy"
+                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                 width="128"
+                 data-src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/sports-tours-thumb/4898/0:0,128:74-128-0-70/ed1bf|https://img.aso.fr/core_app/img-cycling-tdf-jpg/sports-tours-thumb/4898/0:0,128:74-256-0-70/96d40"
+                 alt=""
+                  />
+
+                    </a>
+                            </figure>
+
+                    <h2>&nbsp;</h2>
+<h2><a href="https://www.sportstoursinternational.co.uk/">Sports Tours International</a></h2>
+<p>&nbsp;</p>
+<p>Sports Tours International, gegr&uuml;ndet vor &uuml;ber 40 Jahren, hat sich als einer der gr&ouml;&szlig;ten Sportreiseveranstalter Europas etabliert und bietet Reisen f&uuml;r Tausende Teilnehmer und Zuschauer zu Sportgro&szlig;events wie dem TCS New York City Marathon und insbesondere Radreisepakete wie &bdquo;L&lsquo;Etape du Tour&ldquo; und &bdquo;Tour de France&ldquo; an. Wir sind seit &uuml;ber zwanzig Jahren auf der Frankreichrundfahrt aktiv und kennen wie kein anderer die Ins und Outs der Gro&szlig;en Schleife, um Sie an die strategischen Punkte des Rennens zu bringen und Ihnen ein hautnahes Erlebnis zu erm&ouml;glichen. Bei den meisten unserer &bdquo;Tour de France&ldquo;-Reisepakete bieten wir Ihnen die M&ouml;glichkeit, die Originalstrecken abzufahren, wo noch am selben Tag das Peloton entlangbraust, und wir versuchen, wenn m&ouml;glich, die legend&auml;ren P&auml;sse der Tour zu &uuml;berqueren. Treten Sie auf den Stra&szlig;en der ber&uuml;hmtesten Radfahrer der Geschichte selbst in die Pedale und treffen Sie im VIP-Bereich der Start- und Zielorte einige der Legenden des Radsports und die aktuellen Spitzenfahrer. Erleben Sie die Tour de France von innen, von der Seite der Profifahrer, ihre von der Ersch&ouml;pfung gezeichneten Gesichter bei einigen der schwierigsten Anstiege und sp&uuml;ren Sie die elektrisierende Atmosph&auml;re im Peloton, machen Sie fantastische Fotos im Herzen des Geschehens.</p>
+<p><a href="http://www.sportstoursinternational.co.uk/" target="_blank">www.sportstoursinternational.co.uk</a></p>
+
+                    
+<div class="js-slider-wrapper clearfix">
+    <div class="is-relative col--lg--10 col--lg--offset--1 arrows-visible">
+        <div class="slider slider--medias js-slider" data-id="2112042312" data-slider-type="galeryPhotos">
+                                                            <div class="slider__item" data-legend="Sports Tours International" data-copyright="Sports Tours International" data-filtres="" index="4">
+                    <figure class="figure">
+                        <span class="slider__link" data-href="https://img.aso.fr/core_app/img-cycling-tdf-jpg/tdf-sports-tours-international-3/11071/0:0,1000:666-1000-0-70/28a55">
+                            <img alt="" class="slider__img" src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/tdf-sports-tours-international-3/11071/0:0,1000:666-1000-0-70/28a55">
+                        </span>
+                                                    <figcaption class="figure__caption">Sports Tours International © Sports Tours International</figcaption>
+                                            </figure>
+                </div>
+                                                            <div class="slider__item" data-legend="Sports Tours International" data-copyright="Sports Tours International" data-filtres="" index="4">
+                    <figure class="figure">
+                        <span class="slider__link" data-href="https://img.aso.fr/core_app/img-cycling-tdf-jpg/tdf-sports-tours-international-4/11073/0:0,1000:666-1000-0-70/f7ae6">
+                            <img alt="" class="slider__img" data-lazy="https://img.aso.fr/core_app/img-cycling-tdf-jpg/tdf-sports-tours-international-4/11073/0:0,1000:666-1000-0-70/f7ae6">
+                        </span>
+                                                    <figcaption class="figure__caption">Sports Tours International © Sports Tours International</figcaption>
+                                            </figure>
+                </div>
+                                                            <div class="slider__item" data-legend="Sports Tours International" data-copyright="Sports Tours International" data-filtres="" index="4">
+                    <figure class="figure">
+                        <span class="slider__link" data-href="https://img.aso.fr/core_app/img-cycling-tdf-jpg/tdf-sports-tours-international-5/11072/0:0,1000:666-1000-0-70/74875">
+                            <img alt="" class="slider__img" data-lazy="https://img.aso.fr/core_app/img-cycling-tdf-jpg/tdf-sports-tours-international-5/11072/0:0,1000:666-1000-0-70/74875">
+                        </span>
+                                                    <figcaption class="figure__caption">Sports Tours International © Sports Tours International</figcaption>
+                                            </figure>
+                </div>
+                                                            <div class="slider__item" data-legend="Sports Tours International" data-copyright="Sports Tours International" data-filtres="" index="4">
+                    <figure class="figure">
+                        <span class="slider__link" data-href="https://img.aso.fr/core_app/img-cycling-tdf-jpg/tdf-sports-tours-international-6/11074/0:0,1000:666-1000-0-70/5ec2f">
+                            <img alt="" class="slider__img" data-lazy="https://img.aso.fr/core_app/img-cycling-tdf-jpg/tdf-sports-tours-international-6/11074/0:0,1000:666-1000-0-70/5ec2f">
+                        </span>
+                                                    <figcaption class="figure__caption">Sports Tours International © Sports Tours International</figcaption>
+                                            </figure>
+                </div>
+                                                            <div class="slider__item" data-legend="Sports Tours International" data-copyright="Sports Tours International" data-filtres="" index="4">
+                    <figure class="figure">
+                        <span class="slider__link" data-href="https://img.aso.fr/core_app/img-cycling-tdf-jpg/tdf-sports-tours-international-2/11070/0:0,1000:666-1000-0-70/a2290">
+                            <img alt="" class="slider__img" data-lazy="https://img.aso.fr/core_app/img-cycling-tdf-jpg/tdf-sports-tours-international-2/11070/0:0,1000:666-1000-0-70/a2290">
+                        </span>
+                                                    <figcaption class="figure__caption">Sports Tours International © Sports Tours International</figcaption>
+                                            </figure>
+                </div>
+                                                            <div class="slider__item" data-legend="Sports Tours International" data-copyright="Sports Tours International" data-filtres="" index="4">
+                    <figure class="figure">
+                        <span class="slider__link" data-href="https://img.aso.fr/core_app/img-cycling-tdf-jpg/tdf-sports-tours-international-1/11069/0:0,1000:666-1000-0-70/467cb">
+                            <img alt="" class="slider__img" data-lazy="https://img.aso.fr/core_app/img-cycling-tdf-jpg/tdf-sports-tours-international-1/11069/0:0,1000:666-1000-0-70/467cb">
+                        </span>
+                                                    <figcaption class="figure__caption">Sports Tours International © Sports Tours International</figcaption>
+                                            </figure>
+                </div>
+                    </div>
+        <div class="slider__nav slider__nav--medias js-slider-nav"></div>
+    </div>
+
+   
+</div><!-- end .media__section -->
+
+    
+        </div>
+    </div>
+</div>
+
+                    <div class="panel panel__section panel__default">
+    <a data-toggle="collapse" role="button"
+       href="#collapsef186bac8-403c-40c7-8258-e083b60b3a8d"
+       class="panel__heading collapsed js-collapse" data-xtclick="article::accordeon" data-clicktype="A">OFFICIAL TOUR OPERATOR</a>
+    <div id="collapsef186bac8-403c-40c7-8258-e083b60b3a8d" class="panel__collapse collapse  js-collapse-container">
+        <div class="panel__body">
+                                
+<figure class="figure is-left js-zoomable">
+                <a href="https://img.aso.fr/core_app/img-cycling-tdf-jpg/discover-france-thumb/4899/0:0,128:74-128-0-70/e0a68"
+           class="js-jzoom"
+           role="button"
+           data-modal-type="image"
+           data-modal-class="modal__box--gutter is-modal-white"
+           data-modal-width="128"
+           data-modal-height="auto"
+            data-xtclick="article::image::zoom" data-clicktype="A">
+                    <img class="figure__image img--responsive lazyItem js-lazy"
+                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                 width="128"
+                 data-src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/discover-france-thumb/4899/0:0,128:74-128-0-70/e0a68|https://img.aso.fr/core_app/img-cycling-tdf-jpg/discover-france-thumb/4899/0:0,128:74-256-0-70/2d455"
+                 alt=""
+                  />
+
+                    </a>
+                            </figure>
+
+                    <h2>&nbsp;</h2>
+<h2><a href="https://www.discoverfrance.com/">Discover France</a></h2>
+
+                    <p>&nbsp;</p>
+<p>Als offizieller Reiseveranstalter der Tour de France haben Sie mit uns die M&ouml;glichkeit, auf den mythenumwobenen Strecken selbst in die Pedale zu treten. Wir machen Ihre Tour zu einem unvergesslichen Erlebnis.</p>
+<p>Mit Ihrem VIP-Zugang k&ouml;nnen Sie auf das Siegerpodest steigen, wenige Minuten vor der Ankunft des Pelotons die Ziellinie &uuml;berqueren und sich vom Spa&szlig; der Fahrer an diesem au&szlig;ergew&ouml;hnlichen Rennen anstecken lassen.</p>
+<p><a href="http://www.discoverfrance.com/" target="_blank">www.discoverfrance.com</a></p>
+
+                    <hr class="solid" />
+
+                    
+<figure class="figure is-left js-zoomable">
+                <a href="https://img.aso.fr/core_app/img-cycling-tdf-jpg/mummu-cycling-thumb/4897/0:0,128:74-128-0-70/8e7a7"
+           class="js-jzoom"
+           role="button"
+           data-modal-type="image"
+           data-modal-class="modal__box--gutter is-modal-white"
+           data-modal-width="128"
+           data-modal-height="auto"
+            data-xtclick="article::image::zoom" data-clicktype="A">
+                    <img class="figure__image img--responsive lazyItem js-lazy"
+                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                 width="128"
+                 data-src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/mummu-cycling-thumb/4897/0:0,128:74-128-0-70/8e7a7|https://img.aso.fr/core_app/img-cycling-tdf-jpg/mummu-cycling-thumb/4897/0:0,128:74-256-0-70/8debf"
+                 alt=""
+                  />
+
+                    </a>
+                            </figure>
+
+                    <h2>&nbsp;</h2>
+<h2><a href="http://www.mummucycling.com/">Mummu Cycling</a></h2>
+
+                    <p>&nbsp;</p>
+<p>Mummu Cycling kann auf eine lange Geschichte als Reiseveranstalter f&uuml;r Spitzenfahrer und Enthusiasten des Radsports zur&uuml;ckblicken. In diesem Jahr haben wir den 17-maligen Tour-Teilnehmer Stuart O&lsquo;Grady bei uns im Team, um Ihnen ein wirklich einzigartiges Erlebnis zu bieten. Stuart, mit seinem Insiderwissen, &ouml;ffnet Ihnen sonst verschlossene T&uuml;ren, damit Sie Ihre Tour de France 2018 fahren und mit allen Sinnen, wie die echten Profis, erleben k&ouml;nnen.</p>
+<p>Mit Mummu Cycling sind Sie mitten im Geschehen: Bergk&ouml;nig auf den P&auml;ssen, am Stra&szlig;enrand bei gro&szlig;en Angriffen, im Fahrerdorf vor dem Start und im Siegesjubel im Zielbereich. Lassen Sie sich von unseren erfahrenen Guides durch das ultimative Abenteuer der Tour de France begleiten.</p>
+<p><a href="http://www.mummucycling.com/" target="_blank">www.mummucycling.com</a></p>
+
+                        
+    
+                
+            <div class="media__item media__item--video">
+        <figure class="figure media__responsive media__responsive--16by9 js-medias-container">
+                        <a href="#" class="btn btn--stop js-stop" role="button" aria-label="Schließen" data-xtclick="content::embed::close" data-clicktype="A"><i class="icon icon--close"></i></a>
+            <a href="https://www.youtube.com/embed/rqvc0YU-3dM?autoplay=1"
+               class="media__item__link js-play-embed"
+               target="_blank" role="button"
+               aria-label="Video abspielen Mummu Cycling"
+               data-xtclick="article::video::play" data-clicktype="A"><i class="icon icon--play media__icon js-fade"></i>
+                <img alt="" class="media__responsive__item lazyItem js-lazy js-fade" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/mummu-cycling/12649/0:0,1280:720-1200-0-70/35888">
+                <div class="js-frame-container"></div>
+            </a>
+            <figcaption class="figure__caption js-fade">Mummu Cycling</figcaption>
+            <div class="medias__social figure__social social js-share video js-fade"
+                 data-share-url="/de/media/video/3742/9a721f1fdfcef91589df1ad1f59716a8"
+                 data-share-title="Mummu Cycling"
+                 data-twitter-name="letour">
+                <div class="medias__social__inner">
+                    <a href="#"
+                       class="icon icon--bg icon--facebook"
+                       data-share="facebook"
+                       data-xtclick="video::social::facebook"
+                       data-clicktype="A"></a>
+                    <a href="#"
+                       class="icon icon--bg icon--twitter"
+                       data-share="twitter"
+                       data-xtclick="video::social::twitter"
+                       data-clicktype="A"></a>
+                </div>
+            </div>
+        </figure>
+    </div>
+
+                    
+<div class="js-slider-wrapper clearfix">
+    <div class="is-relative col--lg--10 col--lg--offset--1 arrows-visible">
+        <div class="slider slider--medias js-slider" data-id="2042703104" data-slider-type="galeryPhotos">
+                                                            <div class="slider__item" data-legend="Mummu Cycling" data-copyright="Mummu Cycling" data-filtres="" index="4">
+                    <figure class="figure">
+                        <span class="slider__link" data-href="https://img.aso.fr/core_app/img-cycling-tdf-jpg/meet-the-pros-gilbert/11061/0:0,2500:1656-1000-0-70/a8656">
+                            <img alt="" class="slider__img" src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/meet-the-pros-gilbert/11061/0:0,2500:1656-1000-0-70/a8656">
+                        </span>
+                                                    <figcaption class="figure__caption">Mummu Cycling © Mummu Cycling</figcaption>
+                                            </figure>
+                </div>
+                                                            <div class="slider__item" data-legend="Mummu Cycling" data-copyright="Mummu Cycling" data-filtres="" index="4">
+                    <figure class="figure">
+                        <span class="slider__link" data-href="https://img.aso.fr/core_app/img-cycling-tdf-jpg/ride-hero-2/11060/0:0,1021:680-1000-0-70/1f50b">
+                            <img alt="" class="slider__img" data-lazy="https://img.aso.fr/core_app/img-cycling-tdf-jpg/ride-hero-2/11060/0:0,1021:680-1000-0-70/1f50b">
+                        </span>
+                                                    <figcaption class="figure__caption">Mummu Cycling © Mummu Cycling</figcaption>
+                                            </figure>
+                </div>
+                                                            <div class="slider__item" data-legend="Mummu Cycling" data-copyright="Mummu Cycling" data-filtres="" index="4">
+                    <figure class="figure">
+                        <span class="slider__link" data-href="https://img.aso.fr/core_app/img-cycling-tdf-jpg/bts-access/11059/0:0,2500:1656-1000-0-70/a86e0">
+                            <img alt="" class="slider__img" data-lazy="https://img.aso.fr/core_app/img-cycling-tdf-jpg/bts-access/11059/0:0,2500:1656-1000-0-70/a86e0">
+                        </span>
+                                                    <figcaption class="figure__caption">Mummu Cycling © Mummu Cycling</figcaption>
+                                            </figure>
+                </div>
+                                                            <div class="slider__item" data-legend="Mummu Cycling" data-copyright="Mummu Cycling" data-filtres="" index="4">
+                    <figure class="figure">
+                        <span class="slider__link" data-href="https://img.aso.fr/core_app/img-cycling-tdf-jpg/ride-the-course-best-image/11058/0:0,2500:1656-1000-0-70/43615">
+                            <img alt="" class="slider__img" data-lazy="https://img.aso.fr/core_app/img-cycling-tdf-jpg/ride-the-course-best-image/11058/0:0,2500:1656-1000-0-70/43615">
+                        </span>
+                                                    <figcaption class="figure__caption">Mummu Cycling © Mummu Cycling</figcaption>
+                                            </figure>
+                </div>
+                                                            <div class="slider__item" data-legend="Mummu Cycling" data-copyright="Mummu Cycling" data-filtres="" index="4">
+                    <figure class="figure">
+                        <span class="slider__link" data-href="https://img.aso.fr/core_app/img-cycling-tdf-jpg/vip-hospitalitly/11057/0:0,2500:1656-1000-0-70/af8af">
+                            <img alt="" class="slider__img" data-lazy="https://img.aso.fr/core_app/img-cycling-tdf-jpg/vip-hospitalitly/11057/0:0,2500:1656-1000-0-70/af8af">
+                        </span>
+                                                    <figcaption class="figure__caption">Mummu Cycling © Mummu Cycling</figcaption>
+                                            </figure>
+                </div>
+                                                            <div class="slider__item" data-legend="Mummu Cycling" data-copyright="Mummu Cycling" data-filtres="" index="4">
+                    <figure class="figure">
+                        <span class="slider__link" data-href="https://img.aso.fr/core_app/img-cycling-tdf-jpg/sog-ride-meeting-hero/11056/0:0,1021:680-1000-0-70/71e4d">
+                            <img alt="" class="slider__img" data-lazy="https://img.aso.fr/core_app/img-cycling-tdf-jpg/sog-ride-meeting-hero/11056/0:0,1021:680-1000-0-70/71e4d">
+                        </span>
+                                                    <figcaption class="figure__caption">Mummu Cycling © Mummu Cycling</figcaption>
+                                            </figure>
+                </div>
+                    </div>
+        <div class="slider__nav slider__nav--medias js-slider-nav"></div>
+    </div>
+
+   
+</div><!-- end .media__section -->
+
+                    <hr class="solid" />
+
+                    
+<figure class="figure is-left js-zoomable">
+                <a href="https://img.aso.fr/core_app/img-cycling-tdf-jpg/trek-travel-thumb/4896/0:0,128:73-128-0-70/86360"
+           class="js-jzoom"
+           role="button"
+           data-modal-type="image"
+           data-modal-class="modal__box--gutter is-modal-white"
+           data-modal-width="128"
+           data-modal-height="auto"
+            data-xtclick="article::image::zoom" data-clicktype="A">
+                    <img class="figure__image img--responsive lazyItem js-lazy"
+                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                 width="128"
+                 data-src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/trek-travel-thumb/4896/0:0,128:73-128-0-70/86360|https://img.aso.fr/core_app/img-cycling-tdf-jpg/trek-travel-thumb/4896/0:0,128:73-256-0-70/92acf"
+                 alt=""
+                  />
+
+                    </a>
+                            </figure>
+
+                    <h2>&nbsp;</h2>
+<h2><a href="http://trektravel.com/">Trek Travel</a></h2>
+
+                    <p>&nbsp;</p>
+<p>Trek Travel bringt Sie mit seinen &bdquo;Tour de France&ldquo;-Radreisen ins Herz des Geschehens. Wir bieten Ihnen erstklassigen, professionellen Support gepaart mit den reichen Ortskenntnissen unserer Guides und im Preis inbegriffenen Trek-Bikes, um vom Sattel aus die Etappen der Tour oder hautnah einzelne Ausrei&szlig;versuche zu erleben. Sie sind bei den Siegerehrungen live dabei, trinken Champagner im Zielraum und treffen das Trek Segafredo Racing Team. Als Reiseveranstalter des ber&uuml;hmten Fahrradherstellers Trek sind wir Fahrrad-Enthusiasten, Wegbegleiter und Reiseprofis, aber vor allem sind wir Meister darin, Ihren Radurlaub zu einem unvergesslichen Erlebnis zu machen.</p>
+<p><a href="https://trektravel.com/trip/tour-de-france-bike-tours/" target="_blank">https://trektravel.com/trip/tour-de-france-bike-tours/</a></p>
+
+                        
+    
+                
+            <div class="media__item media__item--video">
+        <figure class="figure media__responsive media__responsive--16by9 js-medias-container">
+                        <a href="#" class="btn btn--stop js-stop" role="button" aria-label="Schließen" data-xtclick="content::embed::close" data-clicktype="A"><i class="icon icon--close"></i></a>
+            <a href="https://www.youtube.com/embed/1Mz5VXF_tyU?autoplay=1"
+               class="media__item__link js-play-embed"
+               target="_blank" role="button"
+               aria-label="Video abspielen Tour de France Bike Tours &amp; Cycling Trips - Trek Travel"
+               data-xtclick="article::video::play" data-clicktype="A"><i class="icon icon--play media__icon js-fade"></i>
+                <img alt="" class="media__responsive__item lazyItem js-lazy js-fade" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/tour-de-france-bike-tours-cycling-trips-trek-travel/22982/0:0,480:360-1200-0-70/09962">
+                <div class="js-frame-container"></div>
+            </a>
+            <figcaption class="figure__caption js-fade">Tour de France Bike Tours &amp; Cycling Trips - Trek Travel</figcaption>
+            <div class="medias__social figure__social social js-share video js-fade"
+                 data-share-url="/de/media/video/4732/15000285c94cb8abbc2a29916d3a7d64"
+                 data-share-title="Tour de France Bike Tours &amp; Cycling Trips - Trek Travel"
+                 data-twitter-name="letour">
+                <div class="medias__social__inner">
+                    <a href="#"
+                       class="icon icon--bg icon--facebook"
+                       data-share="facebook"
+                       data-xtclick="video::social::facebook"
+                       data-clicktype="A"></a>
+                    <a href="#"
+                       class="icon icon--bg icon--twitter"
+                       data-share="twitter"
+                       data-xtclick="video::social::twitter"
+                       data-clicktype="A"></a>
+                </div>
+            </div>
+        </figure>
+    </div>
+
+                    
+<div class="js-slider-wrapper clearfix">
+    <div class="is-relative col--lg--10 col--lg--offset--1 arrows-visible">
+        <div class="slider slider--medias js-slider" data-id="325573500" data-slider-type="galeryPhotos">
+                                                            <div class="slider__item" data-legend="Trek Travel" data-copyright="Trek Travel" data-filtres="" index="4">
+                    <figure class="figure">
+                        <span class="slider__link" data-href="https://img.aso.fr/core_app/img-cycling-tdf-jpg/trek-travel-1-galerie/11047/0:0,2000:1333-1000-0-70/ea11e">
+                            <img alt="" class="slider__img" src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/trek-travel-1-galerie/11047/0:0,2000:1333-1000-0-70/ea11e">
+                        </span>
+                                                    <figcaption class="figure__caption">Trek Travel © Trek Travel</figcaption>
+                                            </figure>
+                </div>
+                                                            <div class="slider__item" data-legend="Trek Travel" data-copyright="Trek Travel" data-filtres="" index="4">
+                    <figure class="figure">
+                        <span class="slider__link" data-href="https://img.aso.fr/core_app/img-cycling-tdf-jpg/trek-travel-2-galerie/11048/0:0,2000:1333-1000-0-70/a617f">
+                            <img alt="" class="slider__img" data-lazy="https://img.aso.fr/core_app/img-cycling-tdf-jpg/trek-travel-2-galerie/11048/0:0,2000:1333-1000-0-70/a617f">
+                        </span>
+                                                    <figcaption class="figure__caption">Trek Travel © Trek Travel</figcaption>
+                                            </figure>
+                </div>
+                    </div>
+        <div class="slider__nav slider__nav--medias js-slider-nav"></div>
+    </div>
+
+   
+</div><!-- end .media__section -->
+
+    
+        </div>
+    </div>
+</div>
+
+    
+        </main>
+    </article>
+</section>
+
+
+                
+
+            <section class="subscription">
+            <div class="container">
+                <div class="row">
+                    <h2 class="heading heading--2">Folge uns</h2>
+                    <p class="is-alignCenter legend">Erhalten sie exklusive informationen zur Tour de France</p>
+                    <div class="social social--lg is-alignCenter">
+                                                                                                                    <a href="../fr/applications-mobiles.html"
+                                   aria-label="Phone: In neuem Tab öffnen"
+                                   target="_blank"
+                                   class="icon icon--bg icon--phone"
+                                   data-xtclick="social::subscription::phone" data-clicktype="N">
+                                </a>
+                                                                                            <a href="http://www.facebook.com/letour"
+                                   aria-label="Facebook: In neuem Tab öffnen"
+                                   target="_blank"
+                                   class="icon icon--bg icon--facebook"
+                                   data-xtclick="social::subscription::facebook" data-clicktype="N">
+                                </a>
+                                                                                            <a href="https://www.twitter.com/letour"
+                                   aria-label="Twitter: In neuem Tab öffnen"
+                                   target="_blank"
+                                   class="icon icon--bg icon--twitter"
+                                   data-xtclick="social::subscription::twitter" data-clicktype="N">
+                                </a>
+                                                                                            <a href="https://www.dailymotion.com/tourdefrance"
+                                   aria-label="Dailymotion: In neuem Tab öffnen"
+                                   target="_blank"
+                                   class="icon icon--bg icon--dailymotion"
+                                   data-xtclick="social::subscription::dailymotion" data-clicktype="N">
+                                </a>
+                                                                                            <a href="https://www.instagram.com/letourdefrance"
+                                   aria-label="Instagram: In neuem Tab öffnen"
+                                   target="_blank"
+                                   class="icon icon--bg icon--instagram"
+                                   data-xtclick="social::subscription::instagram" data-clicktype="N">
+                                </a>
+                                                                                            <a href="https://bit.ly/31z9SYy"
+                                   aria-label="Newsletter: In neuem Tab öffnen"
+                                   target="_blank"
+                                   class="icon icon--bg icon--newsletter"
+                                   data-xtclick="social::subscription::newsletter" data-clicktype="N">
+                                </a>
+                                                                        </div>
+                </div>
+            </div>
+        </section>
+    
+        
+
+                </div>
+
+                                <div class="content-container__column hide-mobile">
+                    
+
+                                    
+    <div class="dfp-block " id="dfp_chronometreur"><script>
+            googletag.cmd.push(function() {
+                googletag.display('dfp_chronometreur');
+            });
+        </script></div><div class="content-container__side-block-2 hide-mobile"><a href="https://bit.ly/31z9SYy" target="_blank"           data-xtclick="bloc-n1::newsletter-tdf-de"><img class="lazyItem js-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="330" height="auto"
+                 data-src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/newsletter-de/20513/0:0,660:660-330-0-100/6d45e|https://img.aso.fr/core_app/img-cycling-tdf-jpg/newsletter-de/20513/0:0,660:660-660-0-100/e5f1c" alt="Newsletter TDF DE"></a></div><div class="dfp-block " id="dfp_pave-1"><script>
+            googletag.cmd.push(function() {
+                googletag.display('dfp_pave-1');
+            });
+        </script></div><div class="dfp-block " id="dfp_pave-2"><script>
+            googletag.cmd.push(function() {
+                googletag.display('dfp_pave-2');
+            });
+        </script></div>
+        
+
+                </div>
+                
+                            </div>
+        </div>
+    
+        
+        
+        
+                    
+<div id="1349f0f647f78b38e19f064d2920be42a">
+        
+        <script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('1349f0f647f78b38e19f064d2920be42a', 'core_partners.block.service.bandeau_partners');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('1349f0f647f78b38e19f064d2920be42a', 'core_partners.block.service.bandeau_partners', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET-2.html", "/de/ajax-block/core_partners.block.service.bandeau_partners/%5B%5D/83f529db531fbbc4313859efdc525935", true);
+                    xhttp.send();
+                };
+                                    var myAnchor = document.getElementById('1349f0f647f78b38e19f064d2920be42a');
+                    myAnchor.classList.add('asyncBlockOnScreen');
+                    myAnchor.dataset.trigger = trigger;
+                
+            })()
+
+        </script>
+</div>
+        
+<div id="17da43b1a0c7cfe836b054526b5462103">
+        
+        <script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('17da43b1a0c7cfe836b054526b5462103', 'core_partners.block.service.bandeau_partners_bis');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('17da43b1a0c7cfe836b054526b5462103', 'core_partners.block.service.bandeau_partners_bis', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET-2.html", "/de/ajax-block/core_partners.block.service.bandeau_partners_bis/%7B%22displayTitle%22:false%7D/149260e8741e8722a4ed4e96cb8dd31a", true);
+                    xhttp.send();
+                };
+                                    var myAnchor = document.getElementById('17da43b1a0c7cfe836b054526b5462103');
+                    myAnchor.classList.add('asyncBlockOnScreen');
+                    myAnchor.dataset.trigger = trigger;
+                
+            })()
+
+        </script>
+</div>
+        
+<div id="14ae2a158997a46e58435c5230874dd0a">
+        
+        <script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('14ae2a158997a46e58435c5230874dd0a', 'core_partners.block.service.bandeau_partners_ter');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('14ae2a158997a46e58435c5230874dd0a', 'core_partners.block.service.bandeau_partners_ter', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET-2.html", "/de/ajax-block/core_partners.block.service.bandeau_partners_ter/%7B%22displayTitle%22:false%7D/9eea853b8a8459ade81803ac65afb000", true);
+                    xhttp.send();
+                };
+                                    var myAnchor = document.getElementById('14ae2a158997a46e58435c5230874dd0a');
+                    myAnchor.classList.add('asyncBlockOnScreen');
+                    myAnchor.dataset.trigger = trigger;
+                
+            })()
+
+        </script>
+</div>
+    
+    </main>
+
+            
+    <div class="footer">
+        <div class="footer-container container">
+                            <div class="footer-container__logo">
+                    <img alt="Logo" class="lazyItem js-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/img/global/logo_aso.png|/img/global/logo_aso@2x.png" width="150" height="40">
+                </div>
+            
+            <div class="footer-container__links  footer-container__links--no-sub">
+                                    <div class="footer-container__links__item">
+                        <a href="profi-bereich.html"><h2 class="footer-container__title">Profi-Bereich</h2></a>
+                                            </div>
+                                    <div class="footer-container__links__item">
+                        <a href="https://registering.aso.fr/Authentification"><h2 class="footer-container__title">Akkreditierungen</h2></a>
+                                            </div>
+                                    <div class="footer-container__links__item">
+                        <a href="http://www.aso.fr/us/tour-de-france.html"><h2 class="footer-container__title">Kontakte</h2></a>
+                                            </div>
+                                    <div class="footer-container__links__item">
+                        <a href="rennen/die-mobilitaet-der-zukunft.html"><h2 class="footer-container__title">Die mobilität der zukunft</h2></a>
+                                            </div>
+                                    <div class="footer-container__links__item">
+                        <a href="anforderungsmanagement.html"><h2 class="footer-container__title">Ihre GDPR-Rechte</h2></a>
+                                            </div>
+                            </div>
+
+                                        
+                                            
+                                                                                                        
+
+        </div>
+
+        
+
+<div class="footer__bottom">
+    <div class="container">
+        <div class="row footer__bottom__wrapper">
+            <div class="col--xs--10 col--sm--10 footer__bottom__links">
+                <a href="impressum.html" class="footer__bottom__link"  data-xtclick="footer::bottom::link::impressum">impressum</a>
+                                    <a class="footer__bottom__link ot-sdk-show-settings" data-xtclick="footer::bottom::link::cookie-einstellungen" data-clicktype="A">Cookie-Einstellungen</a>
+                            </div>
+            <div class="col--xs--2 col--sm--2 footer__bottom__social">
+                
+<div class="footer-container__social">
+                        <a href="http://www.facebook.com/letour"
+               target="_blank"
+               class="icon icon--facebook"
+               data-xtclick="footer::subscription::facebook" data-clicktype="N">
+            </a>
+                    <a href="http://www.twitter.com/letour"
+               target="_blank"
+               class="icon icon--twitter"
+               data-xtclick="footer::subscription::twitter" data-clicktype="N">
+            </a>
+                    <a href="https://www.instagram.com/letourdefrance"
+               target="_blank"
+               class="icon icon--instagram"
+               data-xtclick="footer::subscription::instagram" data-clicktype="N">
+            </a>
+                    <a href="https://www.dailymotion.com/tourdefrance"
+               target="_blank"
+               class="icon icon--dailymotion"
+               data-xtclick="footer::subscription::dailymotion" data-clicktype="N">
+            </a>
+                    <a href="https://bit.ly/31z9SYy"
+               target="_blank"
+               class="icon icon--newsletter"
+               data-xtclick="footer::subscription::newsletter" data-clicktype="N">
+            </a>
+            </div>
+
+            </div>
+        </div>
+    </div>
+</div>    </div>
+
+
+    
+    <script>
+        var url = location.protocol == 'https:' ? 'https://logs4' : 'http://logc17';
+        xtnv = document;
+        xtsd = url;
+        xtsite = '259106';
+                    xtpage = 'offizielle-reiseveranstalter-der-tour';      //page name (with the use of :: to create chapters)
+            xtn2 = '3';
+                xtdi = '1';                 //implication degree
+    </script><noscript><img alt="" width="1" height="1" src="https://logs4.xiti.com/hit.xiti?s=259106&amp;s2=3&amp;p=offizielle_reiseveranstalter_der_tour&amp;di=1"></noscript>
+
+    <script>
+    var wamid = '5464'; /* Wam Account ID */
+    var typ = '1'; /* Event Type default 1 */
+    var Wvar = {
+                "xtpage" : "offizielle_reiseveranstalter_der_tour",
+            };
+    (function(){
+        var w = document.createElement("script");
+        w.type = "text/javascript";
+        w.src = document.location.protocol + "//cstatic.weborama.fr/js/wam/customers/wamfactory_dpm.wildcard.min.js?rnd="+ new Date().getTime();
+        w.async = true;
+        var body = document.getElementsByTagName('script')[0];
+        body.parentNode.insertBefore(w,body);
+    })();
+</script>
+<script src="../dist/js/scripts.jquery.db424ca.js"></script>
+    <script src="../dist/js/scripts.runtime.e4ce55e.js"></script>
+    <script src="../dist/js/scripts.vendors.5205df1.js"></script>
+<script src="../dist/js/scripts.vendor.c010164.js"></script>
+
+
+<script src="../dist/js/scripts.main.72f6c6e.js"></script>
+
+
+
+                                                    <script src="../dist/js/scripts.audio.246edd3.js"></script>
+                                
+
+
+
+            
+                            <script type="text/javascript" src="../../cdn.cookielaw.org/consent/e3e840cd-98d6-46ac-b5a0-a7072d19591d/OtAutoBlock.js" ></script>
+        <script src="../../cdn.cookielaw.org/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="e3e840cd-98d6-46ac-b5a0-a7072d19591d" ></script>
+                <script>
+            function OptanonWrapper() {
+                var targetingActiveGroup = RegExp(',4,').test(OnetrustActiveGroups);
+                if (typeof googletag.pubads !== 'undefined') {
+                    if (!targetingActiveGroup) {
+                        googletag.pubads().setRequestNonPersonalizedAds(1);
+                    } else {
+                        googletag.pubads().setRequestNonPersonalizedAds(0);
+                    }
+                    googletag.pubads().refresh();
+                }
+            }
+        </script>
+    
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"cf66f13e0d","applicationID":"216096607,216096608","transactionName":"Y11bbUNWCkEHVxdaVloXeFpFXgtcSUQCVFxrS1VMVg==","queueTime":0,"applicationTime":295,"atts":"TxpYGwtMGU8=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from www.letour.fr/de/offizielle-reiseveranstalter-der-tour by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 09:57:06 GMT -->
+</html>

@@ -1,0 +1,2158 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<!-- Mirrored from www.letour.fr/de/rennfahrer/62/bahrain-mclaren/pello-bilbao-lopez-de-armentia by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 10:03:33 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"cf66f13e0d",applicationID:"216096607"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+    <title>Profil von Pello BILBAO LOPEZ DE ARMENTIA - BAHRAIN - MCLAREN - Tour de France 2021</title>
+    <meta name="description" content="Siege, Podestpl&auml;tze, alle Informationen &uuml;ber den Radfahrer Pello BILBAO LOPEZ DE ARMENTIA - BAHRAIN - MCLAREN - Tour de France 2021" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="image" content="https://img.aso.fr/core_app/img-cycling-tdf-png/62/21257/0:0,400:400-300-0-70/27648" />
+<meta name="lang" content="de" />
+<meta name="rider" content="bilbao-lopez-de-armentia-pello" />
+<meta name="team" content="bahrain-mclaren" />
+<meta name="race" content="tdf" />
+<meta name="year" content="2021" />
+<meta name="pageKey" content="coureur::pello-bilbao-lopez-de-armentia" />
+<meta property="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+<meta property="og:url" content="https://www.letour.fr/de/rennfahrer/62/bahrain-mclaren/pello-bilbao-lopez-de-armentia" />
+<meta property="og:image" content="https://img.aso.fr/core_app/img-cycling-tdf-png/62/21257/0:0,400:400-300-0-70/27648" />
+<meta property="og:type" content="website" />
+<meta property="og:site-name" content="Tour de France 2021 2021" />
+<meta property="og:description" content="Siege, Podestpl&auml;tze, alle Informationen &uuml;ber den Radfahrer Pello BILBAO LOPEZ DE ARMENTIA - BAHRAIN - MCLAREN - Tour de France 2021" />
+<meta property="og:title" content="Profil von Pello BILBAO LOPEZ DE ARMENTIA - BAHRAIN - MCLAREN - Tour de France 2021" />
+
+
+            <link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../../../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../../../favicon-16x16.png">
+<link rel="manifest" href="https://www.letour.fr/manifest.json" crossorigin="use-credentials">
+<link rel="mask-icon" href="https://www.letour.fr/safari-pinned-tab.svg" color="#555555">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+    
+    <!--[if lte IE 8]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+                <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            '../../../../../www.googletagmanager.com/gtm5445.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-WN5XRZT');</script>
+    <!-- End Google Tag Manager -->
+
+    
+    <script>
+        var customEvents = {};
+        window.fbAsyncInit = function () {
+            // init the FB JS SDK
+
+            FB.init({
+                appId: 454906931320498,
+                status: true,
+                xfbml: true
+            });
+        };
+
+        // Load the SDK asynchronously
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "../../../../../connect.facebook.net/en_US/all.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        function getCookie(c_name) {
+            if (document.cookie.length > 0) {
+                c_start = document.cookie.indexOf(c_name + "=");
+                if (c_start != -1) {
+                    c_start = c_start + c_name.length + 1;
+                    c_end = document.cookie.indexOf(";", c_start);
+                    if (c_end == -1) {
+                        c_end = document.cookie.length;
+                    }
+                    return unescape(document.cookie.substring(c_start, c_end));
+                }
+            }
+            return "";
+        }
+        function checkCookieForRedirect() {
+            document.body.style.display = 'none';
+            var lang = getCookie('_lang');
+            if (/^\/[a-zA-Z]{2}(?:.+|$)/.test(window.location.pathname) && /^[a-zA-Z]{2}$/.test(lang)) {
+                if (!(new RegExp('^\/' + lang + '(?:.+|$)')).test(window.location.pathname)) {
+                    var link = document.querySelector('.header__lang__menu .nav__link[data-lang='+lang+']');
+                    if (link) {
+                        link = link.href;
+                        document.location.href = link;
+                        return;
+                    }
+                }
+            }
+            document.body.style.display = 'block';
+        }
+
+        window.translations = {
+            slidePrev: 'Vorherige folie',
+            slideNext: 'Nächste folie'
+        };
+    </script>
+
+    <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i" rel="stylesheet">-->
+            <link rel="preload" href="../../../../dist/js/scripts.jquery.db424ca.js" as="script">
+        <link rel="preload" href="../../../../dist/css/4.style.8e01910.css" as="style">
+        <link rel="preload" href="../../../../dist/css/9.style.c010164.css" as="style">
+        <link rel="preload" href="../../../../dist/css/7.style.72f6c6e.css" as="style">
+        <link rel="preload" href="../../../../dist/js/scripts.vendor.c010164.js" as="script">
+                    <link rel="preload" href="../../../../dist/js/scripts.runtime.e4ce55e.js" as="script">
+            <link rel="preload" href="../../../../dist/js/scripts.vendors.5205df1.js" as="script">
+                <link rel="preload" href="../../../../dist/js/scripts.main.72f6c6e.js" as="script">
+        <link href="../../../../dist/css/4.style.8e01910.css" rel="stylesheet">
+        <link href="../../../../dist/css/9.style.c010164.css" rel="stylesheet">
+        <link href="../../../../dist/css/7.style.72f6c6e.css" rel="stylesheet">
+            
+            
+<script>
+    // Appel asynchrone au tag DFP
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function() {
+        var gads = document.createElement("script");
+        gads.async = true;
+        gads.type = "text/javascript";
+        var useSSL = "https:" == document.location.protocol;
+        gads.src = (useSSL ? "https:" : "http:") + "//www.googletagservices.com/tag/js/gpt.js";
+        var node =document.getElementsByTagName("script")[0];
+        node.parentNode.insertBefore(gads, node);
+    })();
+    googletag.cmd.push(function() {
+
+        var mp_bannierehaute = googletag.sizeMapping().
+        addSize([0, 0], [[1, 1],[320, 50],[320, 100]]).
+        addSize([728, 500], [[1, 1],[728, 90]]). // Tablet
+        addSize([1000, 500], [[1, 1],[728, 90],[1000, 90],[1000, 250]]). // Desktop
+        build();
+
+        var AdUnit = '/366560878/ASO/TOUR-DE-FRANCE';
+        googletag.defineSlot(AdUnit, [1, 1], 'dfp_banniere-haute').setTargeting('position', 'BANNIERE-HAUTE').defineSizeMapping(mp_bannierehaute).addService(googletag.pubads());
+        googletag.defineSlot(AdUnit, [1, 1], 'dfp_banniere-basse').setTargeting('position', 'BANNIERE-BASSE').defineSizeMapping(mp_bannierehaute).addService(googletag.pubads());
+        googletag.defineSlot(AdUnit, [1, 1], 'dfp_banniere-2').setTargeting('position', 'BANNIERE-2').defineSizeMapping(mp_bannierehaute).addService(googletag.pubads());
+        googletag.defineSlot(AdUnit, [1, 1], 'dfp_banniere-3').setTargeting('position', 'BANNIERE-3').defineSizeMapping(mp_bannierehaute).addService(googletag.pubads());
+        googletag.defineSlot(AdUnit, [[300,250]], 'dfp_pave-1').setTargeting('position', 'PAVE-1').addService(googletag.pubads());
+        googletag.defineSlot(AdUnit, [[300,250]], 'dfp_pave-2').setTargeting('position', 'PAVE-2').addService(googletag.pubads());
+        googletag.defineSlot(AdUnit, [[300,250]], 'dfp_pave-3').setTargeting('position', 'PAVE-3').addService(googletag.pubads());
+        googletag.defineSlot(AdUnit, [[300,250]], 'dfp_pave-4').setTargeting('position', 'PAVE-4').addService(googletag.pubads());
+        googletag.defineSlot(AdUnit, [[300,250]], 'dfp_pave-5').setTargeting('position', 'PAVE-5').addService(googletag.pubads());
+        googletag.defineSlot(AdUnit, [[300,250]], 'dfp_pave-6').setTargeting('position', 'PAVE-6').addService(googletag.pubads());
+        googletag.defineSlot(AdUnit, [[300,250]], 'dfp_chronometreur').setTargeting('position', 'CHRONOMETREUR').addService(googletag.pubads());
+        googletag.defineSlot(AdUnit, [[1,1]], 'dfp_background').setTargeting('position', 'BACKGROUND').addService(googletag.pubads());
+        googletag.defineOutOfPageSlot(AdUnit, 'dfp_interstitiel').setTargeting('position', 'INTERSTITIEL').addService(googletag.pubads());
+
+        // Targeting key/value
+        googletag.pubads().setTargeting('lang', 'DE');
+        googletag.pubads().setTargeting('pagetype', 'DEFAULT');
+                googletag.pubads().setTargeting('xtpage', ['coureur', '[Firstname]_[Lastname]']);
+
+        if (window.location.hash !== '') {googletag.pubads().setTargeting('preview', window.location.hash.replace('#',''));}
+        // General
+        googletag.pubads().collapseEmptyDivs(true);
+        googletag.pubads().enableSingleRequest();
+        googletag.pubads().disableInitialLoad();
+        googletag.enableServices();
+    });
+</script>
+
+
+            
+            
+                        
+    <link rel="alternate" hreflang="fr" href="../../../../fr/coureur/62/bahrain-mclaren/pello-bilbao-lopez-de-armentia.html"/>
+                        
+    <link rel="alternate" hreflang="en" href="../../../../en/rider/62/bahrain-mclaren/pello-bilbao-lopez-de-armentia.html"/>
+                        
+    <link rel="alternate" hreflang="es" href="../../../../es/corredor/62/bahrain-mclaren/pello-bilbao-lopez-de-armentia.html"/>
+
+    
+</head>
+
+<body class="  has-timepeeker has-countdown  riders" data-countdown="2021/06/26 12:15:00"
+      data-cookie-referer="_page_alias_cycling_sports_bundle_competitor"
+            data-privacy="true"
+        >
+
+
+
+        <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WN5XRZT"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+                 
+
+    
+
+<div class="menu" id="menu">
+    <div class="menu-container">
+        <div class="menu-container__content" id="menu-container">
+                    </div>
+        <div class="menu-container__right-panel">
+            <div class="close-menu">
+                <span class="icon icon--close" id="close-menu"></span>
+            </div>
+
+                        <div class="js-empty hiding--sm">
+                <div class="navigation">
+                                    
+<form role="search" action="https://www.letour.fr/de/suche/*query*" method="GET" class="nav__search__form search">
+    <a role="button" aria-label="Suche" class="nav__search__icon js-btn-search icon icon--search" href="#" data-xtclick="header-top::nav-search::search" data-clicktype="A"></a>
+    <input class="nav__search__input" role="searchbox" aria-label="Geben sie ihre suche ein" type="text" name="q" placeholder="Suche">
+</form>
+                                </div>
+                <div class="burgerMenu__section">
+                    <div class="header__navigation" role="navigation">
+                                                        <nav class="navigation">
+        <ul class="accordion">
+                                                                                        
+                
+                                                    
+                                                                <li class="dropdown item js-dropdown-subnav">
+    <a class="nav js-dropdown" data-toggle="dropdown" id="menu-nav-route-mobile" aria-haspopup="true" role="button" data-target="dropdown-route-mobile" href="#" data-xtclick="header::navigation::strecke-2021" data-clicktype="A">
+        Strecke 2021
+        <span class="icon icon--cancel"></span>
+    </a>
+    </li>
+                            
+                
+                                                    
+                                                                                                <li class="item">
+    <a class="nav js-nav-item" href="../../../2020ausgabe.html" target="_self" data-xtclick="header::navigation::ausgabe-2020" data-clicktype="N">
+        Ausgabe 2020
+        
+    </a>
+    </li>
+                            
+                
+                                                    
+                                                                                                <li class="item">
+    <a class="nav js-nav-item" href="../../../rennen/riding-info-the-future.html" target="_self" data-xtclick="header::navigation::riding-into-the-future" data-clicktype="N">
+        Riding Into The Future
+        
+    </a>
+    </li>
+                            
+                
+                                                    
+                                                                        <li class="item" id="kultour">
+    <a class="nav" href="#kultour" data-xtclick="header::navigation::kultour" data-clicktype="A">
+        KulTour
+        <span class="icon icon--cancel"></span>
+    </a>
+            <div class="subMenu">
+                            <a href="../../../aktuelles.html" class="sub-nav">AKTUELLES</a>
+                            <a href="../../../rennen/grands-departs.html" class="sub-nav">GRANDS DÉPARTS</a>
+                            <a href="../../../rennen/kennzahlen.html" class="sub-nav">KENNZAHLEN</a>
+                            <a href="../../../rennen/vertungen-und-reglement.html" class="sub-nav">WERTUNGEN</a>
+                            <a href="../../../die-trikots-der-tour.html" class="sub-nav">DIE TRIKOTS</a>
+                            <a href="../../../rennen/continental.html" class="sub-nav">SICHERHEIT</a>
+                            <a href="../../../geschichte.html" class="sub-nav">GESCHICHTE</a>
+                            <a href="../../../startseite-galerie.html" class="sub-nav">VIDEOS &amp; FOTOS</a>
+                            <a href="../../../sponsoren.html" class="sub-nav">SPONSOREN</a>
+                    </div>
+    </li>
+                    </ul>
+    </nav>
+            
+                                                                            
+    
+<div id="19e53b82a3dc0e3c7cbea1f8cd6a6b5e7">
+        
+        <script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('19e53b82a3dc0e3c7cbea1f8cd6a6b5e7', 'cycling_sport.block.service.stages_menu');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('19e53b82a3dc0e3c7cbea1f8cd6a6b5e7', 'cycling_sport.block.service.stages_menu', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET.html", "/de/ajax-block/cycling_sport.block.service.stages_menu/%7B%22menu%22:%22route%22,%22isMobile%22:true%7D/72e4b3e3006185202cb08804067f9695", true);
+                    xhttp.send();
+                };
+                                    var eventName = 'route-mobile';
+                    var newEvent;
+                    if (!customEvents[eventName]) {
+                        newEvent = document.createEvent('Event');
+                        newEvent.initEvent(eventName, true, true);
+                        customEvents[eventName] = newEvent;
+                    }
+                    document.body.addEventListener(eventName, function() {
+                        trigger();
+                    });
+                
+            })()
+
+        </script>
+</div>
+
+    
+<div id="18e3016f6a29b382c9bc921a34b83d37a">
+        
+        <script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('18e3016f6a29b382c9bc921a34b83d37a', 'cycling_sport.block.service.teams');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('18e3016f6a29b382c9bc921a34b83d37a', 'cycling_sport.block.service.teams', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET.html", "/de/ajax-block/cycling_sport.block.service.teams/%7B%22menu%22:%22teams%22,%22isMobile%22:true%7D/5e4ca06ae929d23ae335528a4cf81007", true);
+                    xhttp.send();
+                };
+                                    var eventName = 'teams-mobile';
+                    var newEvent;
+                    if (!customEvents[eventName]) {
+                        newEvent = document.createEvent('Event');
+                        newEvent.initEvent(eventName, true, true);
+                        customEvents[eventName] = newEvent;
+                    }
+                    document.body.addEventListener(eventName, function() {
+                        trigger();
+                    });
+                
+            })()
+
+        </script>
+</div>
+
+    
+<div id="1c89db1c4f76750022f6de9ba7d8687ce">
+        
+        <script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('1c89db1c4f76750022f6de9ba7d8687ce', 'cycling_sport.block.service.stages_menu');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('1c89db1c4f76750022f6de9ba7d8687ce', 'cycling_sport.block.service.stages_menu', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET.html", "/de/ajax-block/cycling_sport.block.service.stages_menu/%7B%22menu%22:%22tourism%22,%22isMobile%22:true%7D/a471ae73548f3811b3d7fad0a0c4500b", true);
+                    xhttp.send();
+                };
+                                    var eventName = 'tourism-mobile';
+                    var newEvent;
+                    if (!customEvents[eventName]) {
+                        newEvent = document.createEvent('Event');
+                        newEvent.initEvent(eventName, true, true);
+                        customEvents[eventName] = newEvent;
+                    }
+                    document.body.addEventListener(eventName, function() {
+                        trigger();
+                    });
+                
+            })()
+
+        </script>
+</div>
+
+                                            </div>
+                </div>
+            </div>
+
+            
+
+    <nav class="navigation">
+        <ul class="accordion">
+                                                                                <li class="item" id="aktuelles">
+                    <a href="../../../aktuelles.html" class="nav">
+                        Aktuelles
+                                            </a>
+                                    </li>
+                                                                                <li class="item" id="ausgabe-2020">
+                    <a href="../../../2020ausgabe.html" class="nav">
+                        Ausgabe 2020
+                                            </a>
+                                    </li>
+                                                                                <li class="item" id="grands-departs">
+                    <a href="../../../rennen/grands-departs.html" class="nav">
+                        Grands Départs
+                                            </a>
+                                    </li>
+                                                                                <li class="item" id="riding-into-the-future">
+                    <a href="../../../rennen/riding-info-the-future.html" class="nav">
+                        Riding Into the Future
+                                            </a>
+                                    </li>
+                                                                                <li class="item" id="kultour">
+                    <a href="#kultour" class="nav">
+                        KulTour
+                                                    <span class="icon icon--cancel"></span>
+                                            </a>
+                                            <div class="subMenu">
+                                                            <a href="../../../rennen/vertungen-und-reglement.html" class="sub-nav">vertungen und reglement</a>
+                                                            <a href="../../../die-trikots-der-tour.html" class="sub-nav">Die Trikots</a>
+                                                            <a href="../../../rennen/kennzahlen.html" class="sub-nav">Kennzahlen</a>
+                                                            <a href="../../../rennen/continental.html" class="sub-nav">Sicherheit</a>
+                                                    </div>
+                                    </li>
+                                                                                <li class="item" id="geschichte">
+                    <a href="../../../geschichte.html" class="nav">
+                        Geschichte
+                                            </a>
+                                    </li>
+                                                                                <li class="item" id="offizielle-app">
+                    <a href="../../../mobiles-applikation.html" class="nav">
+                        Offizielle App
+                                            </a>
+                                    </li>
+                                                                                <li class="item" id="fotos-videos">
+                    <a href="../../../startseite-galerie.html" class="nav">
+                        Fotos &amp; Videos
+                                            </a>
+                                    </li>
+                                                                                <li class="item" id="sponsoren">
+                    <a href="../../../sponsoren.html" class="nav">
+                        Sponsoren
+                                            </a>
+                                    </li>
+                    </ul>
+    </nav>
+
+
+
+            <div class="burgerMenu__section js-empty hiding--sm">
+                                    <nav class="navigation">
+    <div class="header-top-container__menu-1">
+                <a href="http://www.tissotwatches.com/?utm_source=tourdefrance.com&amp;utm_medium=logo&amp;utm_content=logo&amp;utm_campaign=int_sponsoring" class="btn-menu nav__link logo-tissot btn-hover-primary">
+            <img alt="" class="header__sponsor__img lazyItem js-lazy"
+             src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+             data-src="/img/global/logo-timekeeper.png|/img/global/logo-timekeeper@2x.png">
+        </a>
+    
+                    <ul class="accordion">
+                                                                                                                                                
+<li class="dropdown item js-dropdown-subnav"><a class="nav js-dropdown link-1" id="top-item-otherRaces-mobile" data-toggle="dropdown" aria-haspopup="true" role="button" data-target="dropdown-top-otherRaces-mobile" href="#" data-xtclick="header::navigation::andere-rennen" data-clicktype="A" >
+            Andere Rennen
+                        <span class="icon icon--cancel"></span></a></li>                                                                                                                                                    
+<li class="dropdown item js-dropdown-subnav"><a class="nav js-dropdown link-2" id="top-item-broadcasters-mobile" data-toggle="dropdown" aria-haspopup="true" role="button" data-target="dropdown-top-broadcasters-mobile" href="#" data-xtclick="header::navigation::off-sender" data-clicktype="A" >
+            Off. Sender
+                        <span class="icon icon--cancel"></span></a></li>                                                                                                                                                    
+<li class="item"><a class="js-connect nav link-3" href="../../../medias-bereich.html" target="_self" data-xtclick="header::navigation::medien" data-clicktype="N" >
+            Medien
+                        
+        </a></li>                                                </ul>
+            </div>
+    <div class="header-top-container__menu-2">
+                                    <ul class="accordion">
+                                                                                                                                
+<li class="dropdown item js-dropdown-subnav"><a class="nav js-dropdown link-1" id="top-item-games-mobile" data-toggle="dropdown" aria-haspopup="true" role="button" data-target="dropdown-top-games-mobile" href="#" data-xtclick="header::navigation::offizielle-spiele" data-clicktype="A" >
+            Offizielle Spiele
+                        <span class="icon icon--cancel"></span></a></li>                                                                                                                                                    
+<li class="item"><a class="js-connect nav link-2" href="http://boutique.letour.fr/stores/letour/de?portal=X146K48D&amp;CMP=PSC-X146K48D" target="1" data-xtclick="header::navigation::shop" data-clicktype="N" >
+            Shop
+                        
+        </a></li>                                                </ul>
+            </div>
+</nav>
+
+                                                                        
+<div id="1459d1241014a91fee221cf6f684891d0">
+        
+        <script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('1459d1241014a91fee221cf6f684891d0', 'core_other_event.block.service.other_events');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('1459d1241014a91fee221cf6f684891d0', 'core_other_event.block.service.other_events', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET.html", "/de/ajax-block/core_other_event.block.service.other_events/%7B%22isMobile%22:true%7D/3592c44c60ff48433d98e369c1743fe1", true);
+                    xhttp.send();
+                };
+                                    var eventName = 'otherRaces-mobile';
+                    var newEvent;
+                    if (!customEvents[eventName]) {
+                        newEvent = document.createEvent('Event');
+                        newEvent.initEvent(eventName, true, true);
+                        customEvents[eventName] = newEvent;
+                    }
+                    document.body.addEventListener(eventName, function() {
+                        trigger();
+                    });
+                
+            })()
+
+        </script>
+</div>
+                                                                        
+<div id="1497a95be5eb8e0152112e3a1e467cd78">
+        
+        <script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('1497a95be5eb8e0152112e3a1e467cd78', 'core_broadcasters.block.service.broadcasters');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('1497a95be5eb8e0152112e3a1e467cd78', 'core_broadcasters.block.service.broadcasters', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET.html", "/de/ajax-block/core_broadcasters.block.service.broadcasters/%7B%22isMobile%22:true%7D/84aed65122cc53b17d0a4b002476e3de", true);
+                    xhttp.send();
+                };
+                                    var eventName = 'broadcasters-mobile';
+                    var newEvent;
+                    if (!customEvents[eventName]) {
+                        newEvent = document.createEvent('Event');
+                        newEvent.initEvent(eventName, true, true);
+                        customEvents[eventName] = newEvent;
+                    }
+                    document.body.addEventListener(eventName, function() {
+                        trigger();
+                    });
+                
+            })()
+
+        </script>
+</div>
+                                                                                                                    
+<div class="dropdown__menu dropdown__menu--otherRaces subnav flexbox js-dropdown-menu"
+     aria-labelledby="top-item-games-mobile"
+     data-target="dropdown-top-games-mobile">
+    <div class="subnav__header flexbox__header">
+        <a class="burgerButton burgerButton--prev is-ibl" role="button">
+            <i class="icon icon--arrowleft"></i>
+        </a>
+        <h2 class="subnav__title is-ibl">Offizielle spiele</h2>
+    </div>
+    <div class="games subnavTabs flexbox js-tabs-wrapper">
+        <div class="container flexbox__container js-scroll-watcher">
+            <div class="row">
+                                    <ul class="clearfix subnav__races">
+                        <li class="hidingBar hidingBar--left"></li>
+                        <li class="hidingBar hidingBar--bottom"></li>
+                                                                                                            <li class="subnav__races__item">
+                                <a href="../../../video-games-pro-cycling-manager-2020.html"
+                                   class="subnav__races__link"
+                                   target="_blank"
+                                   data-xtclick="subnav-games::subnav-games-item::pro-cycling-manager-2020-pc"
+                                   data-clicktype="N">
+                                    <span class="subnav__races__logo">
+                                        <img alt="PRO CYCLING MANAGER 2020 (PC)" class="lazyItem subnav__races__img js-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/img/dyn/partners/page-logo/pro-cycling-manager-2020-pc_sm.png?update=1591174532|/img/dyn/partners/page-logo/pro-cycling-manager-2020-pc_sm@2x.png?update=1591174532">
+                                    </span>
+                                    <span class="subnav__races__name">
+                                        PRO CYCLING MANAGER 2020 (PC)
+                                    </span>
+                                </a>
+                            </li>
+                                                                                                            <li class="subnav__races__item">
+                                <a href="../../../video-games-le-tour-de-france-2020.html"
+                                   class="subnav__races__link"
+                                   target="_blank"
+                                   data-xtclick="subnav-games::subnav-games-item::jeux-videos-tour-de-france-2020-ps4"
+                                   data-clicktype="N">
+                                    <span class="subnav__races__logo">
+                                        <img alt="TOUR DE FRANCE 2020 - SPIEL (PS4)" class="lazyItem subnav__races__img js-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/img/dyn/partners/page-logo/jeux-videos-tour-de-france-2020-ps4_sm.png?update=1595836180|/img/dyn/partners/page-logo/jeux-videos-tour-de-france-2020-ps4_sm@2x.png?update=1595836180">
+                                    </span>
+                                    <span class="subnav__races__name">
+                                        TOUR DE FRANCE 2020 - SPIEL (PS4)
+                                    </span>
+                                </a>
+                            </li>
+                                                                                                            <li class="subnav__races__item">
+                                <a href="../../../video-games-le-tour-de-france-2020.html"
+                                   class="subnav__races__link"
+                                   target="_blank"
+                                   data-xtclick="subnav-games::subnav-games-item::jeux-videos-tour-de-france-2020-xbox-one"
+                                   data-clicktype="N">
+                                    <span class="subnav__races__logo">
+                                        <img alt="TOUR DE FRANCE 2020 - SPIEL (XBOX ONE)" class="lazyItem subnav__races__img js-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/img/dyn/partners/page-logo/jeux-videos-tour-de-france-2020-xbox-one_sm.png?update=1591174664|/img/dyn/partners/page-logo/jeux-videos-tour-de-france-2020-xbox-one_sm@2x.png?update=1591174664">
+                                    </span>
+                                    <span class="subnav__races__name">
+                                        TOUR DE FRANCE 2020 - SPIEL (XBOX ONE)
+                                    </span>
+                                </a>
+                            </li>
+                                                                                                            <li class="subnav__races__item">
+                                <a href="../../../mobile-game.html"
+                                   class="subnav__races__link"
+                                   target="_blank"
+                                   data-xtclick="subnav-games::subnav-games-item::tour-de-france-2020-ios-android"
+                                   data-clicktype="N">
+                                    <span class="subnav__races__logo">
+                                        <img alt="TOUR DE FRANCE 2020 (IOS / ANDROID)" class="lazyItem subnav__races__img js-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/img/dyn/partners/page-logo/tour-de-france-2020-ios-android_sm.png?update=1597066058|/img/dyn/partners/page-logo/tour-de-france-2020-ios-android_sm@2x.png?update=1597066058">
+                                    </span>
+                                    <span class="subnav__races__name">
+                                        TOUR DE FRANCE 2020 (IOS / ANDROID)
+                                    </span>
+                                </a>
+                            </li>
+                                            </ul>
+                            </div>
+        </div>
+    </div>
+</div>
+                                                                    
+                            </div>
+
+            <div class="menu-footer">
+                                
+<div class="social">
+    </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        if (window.innerWidth > 767) {
+            var $headerTopMenu = document.getElementById('menu');
+            if (typeof($headerTopMenu) != 'undefined' && $headerTopMenu != null) {
+                for (var i = 0; i < 3; i++) {
+                    var $jsEmptyElt = $headerTopMenu.getElementsByClassName('js-empty')[i];
+                    if (typeof($jsEmptyElt) != 'undefined' && $jsEmptyElt != null) {
+                        $jsEmptyElt.innerHTML = '';
+                    }
+                }
+            }
+        }
+    </script>
+</div>
+
+    <div class="header js-header">
+    
+
+<div class="header-top header__secondary" id="header-top-menu"><div class="header-top-container js-empty"><div class="header-top-container__menu-1"><a href="http://www.tissotwatches.com/?utm_source=tourdefrance.com&amp;utm_medium=logo&amp;utm_content=logo&amp;utm_campaign=int_sponsoring" class="btn-menu nav__link logo-tissot btn-hover-primary"><img alt="" class="header__sponsor__img lazyItem js-lazy"
+             src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+             data-src="/img/global/logo-timekeeper.png|/img/global/logo-timekeeper@2x.png"></a><div class="dropdown nav__item js-dropdown-subnav"><a class="js-dropdown nav__link btn-hover-primary link-1" id="top-item-otherRaces" data-toggle="dropdown" aria-haspopup="true" role="button" data-target="dropdown-top-otherRaces" href="#" data-xtclick="header::navigation::andere-rennen" data-clicktype="A">
+                        Andere Rennen
+                                </a></div><div class="dropdown nav__item js-dropdown-subnav"><a class="js-dropdown nav__link btn-hover-primary link-2" id="top-item-broadcasters" data-toggle="dropdown" aria-haspopup="true" role="button" data-target="dropdown-top-broadcasters" href="#" data-xtclick="header::navigation::off-sender" data-clicktype="A">
+                        Off. Sender
+                                </a></div><div class="nav__item"><a class="js-connect nav__link btn-hover-primary link-3" href="../../../medias-bereich.html" target="_self" data-xtclick="header::navigation::medien" data-clicktype="N">
+                        Medien
+                                </a></div></div><div class="header-top-container__menu-2"><div class="dropdown nav__item js-dropdown-subnav"><a class="js-dropdown nav__link btn-hover-primary link-1" id="top-item-games" data-toggle="dropdown" aria-haspopup="true" role="button" data-target="dropdown-top-games" href="#" data-xtclick="header::navigation::offizielle-spiele" data-clicktype="A">
+                        Offizielle Spiele
+                                </a></div><div class="nav__item"><a class="js-connect nav__link btn-hover-primary link-2" href="http://boutique.letour.fr/stores/letour/de?portal=X146K48D&amp;CMP=PSC-X146K48D" target="1" data-xtclick="header::navigation::shop" data-clicktype="N">
+                        Shop
+                                </a></div></div><div class="header-top-container__social"><a href="http://www.facebook.com/letour"
+               aria-label="Facebook: In neuem Tab öffnen"
+                                    target="_blank"
+                               class="icon icon--facebook" data-xtclick="header-top::header-social::facebook" data-clicktype="N"></a><a href="http://www.twitter.com/letour"
+               aria-label="Twitter: In neuem Tab öffnen"
+                                    target="_blank"
+                               class="icon icon--twitter" data-xtclick="header-top::header-social::twitter" data-clicktype="N"></a><a href="https://www.dailymotion.com/tourdefrance"
+               aria-label="Dailymotion: In neuem Tab öffnen"
+                                    target="_blank"
+                               class="icon icon--dailymotion" data-xtclick="header-top::header-social::dailymotion" data-clicktype="N"></a><a href="https://www.instagram.com/letourdefrance"
+               aria-label="Instagram: In neuem Tab öffnen"
+                                    target="_blank"
+                               class="icon icon--instagram" data-xtclick="header-top::header-social::instagram" data-clicktype="N"></a><a href="../../../mobiles-applikation.html"
+               aria-label="Phone: In neuem Tab öffnen"
+                                    target="_blank"
+                               class="icon icon--phone" data-xtclick="header-top::header-social::phone" data-clicktype="N"></a><a href="https://bit.ly/31z9SYy"
+               aria-label="Newsletter: In neuem Tab öffnen"
+                                    target="_blank"
+                               class="icon icon--newsletter" data-xtclick="header-top::header-social::newsletter" data-clicktype="N"></a></div></div><div class="js-empty"><div id="17caf18dcefa35e66d53da4005beb40f6"><script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('17caf18dcefa35e66d53da4005beb40f6', 'core_other_event.block.service.other_events');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('17caf18dcefa35e66d53da4005beb40f6', 'core_other_event.block.service.other_events', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET.html", "/de/ajax-block/core_other_event.block.service.other_events/%5B%5D/f858ac6f79f9db5808b30df7c43acb51", true);
+                    xhttp.send();
+                };
+                                    var eventName = 'otherRaces';
+                    var newEvent;
+                    if (!customEvents[eventName]) {
+                        newEvent = document.createEvent('Event');
+                        newEvent.initEvent(eventName, true, true);
+                        customEvents[eventName] = newEvent;
+                    }
+                    document.body.addEventListener(eventName, function() {
+                        trigger();
+                    });
+                
+            })()
+
+        </script></div><div id="12cef721df34a1184e80c0a92915a7634"><script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('12cef721df34a1184e80c0a92915a7634', 'core_broadcasters.block.service.broadcasters');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('12cef721df34a1184e80c0a92915a7634', 'core_broadcasters.block.service.broadcasters', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET.html", "/de/ajax-block/core_broadcasters.block.service.broadcasters/%5B%5D/5b62aad7da3d86146941642578b76ce9", true);
+                    xhttp.send();
+                };
+                                    var eventName = 'broadcasters';
+                    var newEvent;
+                    if (!customEvents[eventName]) {
+                        newEvent = document.createEvent('Event');
+                        newEvent.initEvent(eventName, true, true);
+                        customEvents[eventName] = newEvent;
+                    }
+                    document.body.addEventListener(eventName, function() {
+                        trigger();
+                    });
+                
+            })()
+
+        </script></div><div class="dropdown__menu dropdown__menu--otherRaces subnav flexbox js-dropdown-menu"
+     aria-labelledby="top-item-games"
+     data-target="dropdown-top-games"><div class="subnav__header flexbox__header"><a class="burgerButton burgerButton--prev is-ibl" role="button"><i class="icon icon--arrowleft"></i></a><h2 class="subnav__title is-ibl">Offizielle spiele</h2></div><div class="games subnavTabs flexbox js-tabs-wrapper"><div class="container flexbox__container js-scroll-watcher"><div class="row"><ul class="clearfix subnav__races"><li class="hidingBar hidingBar--left"></li><li class="hidingBar hidingBar--bottom"></li><li class="subnav__races__item"><a href="../../../video-games-pro-cycling-manager-2020.html"
+                                   class="subnav__races__link"
+                                   target="_blank"
+                                   data-xtclick="subnav-games::subnav-games-item::pro-cycling-manager-2020-pc"
+                                   data-clicktype="N"><span class="subnav__races__logo"><img alt="PRO CYCLING MANAGER 2020 (PC)" class="lazyItem subnav__races__img js-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/img/dyn/partners/page-logo/pro-cycling-manager-2020-pc_sm.png?update=1591174532|/img/dyn/partners/page-logo/pro-cycling-manager-2020-pc_sm@2x.png?update=1591174532"></span><span class="subnav__races__name">
+                                        PRO CYCLING MANAGER 2020 (PC)
+                                    </span></a></li><li class="subnav__races__item"><a href="../../../video-games-le-tour-de-france-2020.html"
+                                   class="subnav__races__link"
+                                   target="_blank"
+                                   data-xtclick="subnav-games::subnav-games-item::jeux-videos-tour-de-france-2020-ps4"
+                                   data-clicktype="N"><span class="subnav__races__logo"><img alt="TOUR DE FRANCE 2020 - SPIEL (PS4)" class="lazyItem subnav__races__img js-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/img/dyn/partners/page-logo/jeux-videos-tour-de-france-2020-ps4_sm.png?update=1595836180|/img/dyn/partners/page-logo/jeux-videos-tour-de-france-2020-ps4_sm@2x.png?update=1595836180"></span><span class="subnav__races__name">
+                                        TOUR DE FRANCE 2020 - SPIEL (PS4)
+                                    </span></a></li><li class="subnav__races__item"><a href="../../../video-games-le-tour-de-france-2020.html"
+                                   class="subnav__races__link"
+                                   target="_blank"
+                                   data-xtclick="subnav-games::subnav-games-item::jeux-videos-tour-de-france-2020-xbox-one"
+                                   data-clicktype="N"><span class="subnav__races__logo"><img alt="TOUR DE FRANCE 2020 - SPIEL (XBOX ONE)" class="lazyItem subnav__races__img js-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/img/dyn/partners/page-logo/jeux-videos-tour-de-france-2020-xbox-one_sm.png?update=1591174664|/img/dyn/partners/page-logo/jeux-videos-tour-de-france-2020-xbox-one_sm@2x.png?update=1591174664"></span><span class="subnav__races__name">
+                                        TOUR DE FRANCE 2020 - SPIEL (XBOX ONE)
+                                    </span></a></li><li class="subnav__races__item"><a href="../../../mobile-game.html"
+                                   class="subnav__races__link"
+                                   target="_blank"
+                                   data-xtclick="subnav-games::subnav-games-item::tour-de-france-2020-ios-android"
+                                   data-clicktype="N"><span class="subnav__races__logo"><img alt="TOUR DE FRANCE 2020 (IOS / ANDROID)" class="lazyItem subnav__races__img js-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/img/dyn/partners/page-logo/tour-de-france-2020-ios-android_sm.png?update=1597066058|/img/dyn/partners/page-logo/tour-de-france-2020-ios-android_sm@2x.png?update=1597066058"></span><span class="subnav__races__name">
+                                        TOUR DE FRANCE 2020 (IOS / ANDROID)
+                                    </span></a></li></ul></div></div></div></div></div><script>
+        if (window.innerWidth < 768) {
+            var $headerTopMenu = document.getElementById('header-top-menu');
+            if (typeof($headerTopMenu) != 'undefined' && $headerTopMenu != null) {
+                for (var i = 0; i < 3; i++) {
+                    var $jsEmptyElt = $headerTopMenu.getElementsByClassName('js-empty')[i];
+                    if (typeof($jsEmptyElt) != 'undefined' && $jsEmptyElt != null) {
+                        $jsEmptyElt.innerHTML = '';
+                    }
+                }
+            }
+        }
+    </script></div>
+    <div class="header__navigation" id="header-menu">
+    <div class="header-container">
+        <div class="header-container__menu header-container__menu-1">
+            <div class="btn btn-lg btn-menu btn-hamburger hamburger hamburger--elastic" id="hamburger-mobile">
+                                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+                </button>
+            </div>
+            <div class="js-empty">
+                            <div class="nav__item js-dropdown-subnav"><a class="nav__link btn-menu btn-hover-primary js-dropdown" data-toggle="dropdown" id="menu-nav-route" aria-haspopup="true" role="button" data-target="dropdown-route" href="#" data-xtclick="header::navigation::strecke-2021" data-clicktype="A">Strecke 2021</a></div><div class="nav__item"><a class="nav__link btn-menu btn-hover-primary js-nav-item" href="../../../2020ausgabe.html" target="_self" data-xtclick="header::navigation::ausgabe-2020" data-clicktype="N">Ausgabe 2020</a></div><div class="nav__item"><a class="nav__link btn-menu btn-hover-primary js-nav-item" href="../../../rennen/riding-info-the-future.html" target="_self" data-xtclick="header::navigation::riding-into-the-future" data-clicktype="N">Riding Into The Future</a></div><div class="nav__item js-dropdown-subnav"><a class="nav__link btn-menu btn-hover-primary js-dropdown" data-toggle="dropdown" id="menu-nav-3" aria-haspopup="true" role="button" data-target="dropdown-3" href="#" data-xtclick="header::navigation::kultour" data-clicktype="A">KulTour</a></div>
+                                                            <div class="dropdown__menu subnav subnav--simple js-dropdown-menu flexbox" role="menu" aria-labelledby="menu-nav-3" data-target="dropdown-3">
+                <div class="subnav__header flexbox__header">
+                    <a class="burgerButton burgerButton--prev is-ibl" role="button">
+                        <span class="burgerButton__bar burgerButton__bar--1"></span>
+                        <span class="burgerButton__bar burgerButton__bar--3"></span>
+                    </a>
+                    <h2 class="subnav__title is-ibl">KulTour</h2>
+                </div>
+                <div class="container flexbox__container js-scroll-watcher">
+                    <div class="row">
+                        <ul class="list">
+                                                            <li class="subnav__item">
+                                    <a class="subnav__link" href="../../../aktuelles.html" data-xtclick="dropdown-menu::subnav-link::aktuelles" data-clicktype="N">AKTUELLES</a>
+                                </li>
+                                                            <li class="subnav__item">
+                                    <a class="subnav__link" href="../../../rennen/grands-departs.html" data-xtclick="dropdown-menu::subnav-link::grands-departs" data-clicktype="N">GRANDS DÉPARTS</a>
+                                </li>
+                                                            <li class="subnav__item">
+                                    <a class="subnav__link" href="../../../rennen/kennzahlen.html" data-xtclick="dropdown-menu::subnav-link::kennzahlen" data-clicktype="N">KENNZAHLEN</a>
+                                </li>
+                                                            <li class="subnav__item">
+                                    <a class="subnav__link" href="../../../rennen/vertungen-und-reglement.html" data-xtclick="dropdown-menu::subnav-link::wertungen" data-clicktype="N">WERTUNGEN</a>
+                                </li>
+                                                            <li class="subnav__item">
+                                    <a class="subnav__link" href="../../../die-trikots-der-tour.html" data-xtclick="dropdown-menu::subnav-link::die-trikots" data-clicktype="N">DIE TRIKOTS</a>
+                                </li>
+                                                            <li class="subnav__item">
+                                    <a class="subnav__link" href="../../../rennen/continental.html" data-xtclick="dropdown-menu::subnav-link::sicherheit" data-clicktype="N">SICHERHEIT</a>
+                                </li>
+                                                            <li class="subnav__item">
+                                    <a class="subnav__link" href="../../../geschichte.html" data-xtclick="dropdown-menu::subnav-link::geschichte" data-clicktype="N">GESCHICHTE</a>
+                                </li>
+                                                            <li class="subnav__item">
+                                    <a class="subnav__link" href="../../../startseite-galerie.html" data-xtclick="dropdown-menu::subnav-link::videos-fotos" data-clicktype="N">VIDEOS &amp; FOTOS</a>
+                                </li>
+                                                            <li class="subnav__item">
+                                    <a class="subnav__link" href="../../../sponsoren.html" data-xtclick="dropdown-menu::subnav-link::sponsoren" data-clicktype="N">SPONSOREN</a>
+                                </li>
+                                                    </ul>
+                    </div>
+                </div>
+            </div>
+            
+                        </div>
+        </div>
+
+        
+
+        
+        
+
+    <div class="header-container__logo"><span class="header-container__uci"><a class="header-container__uci__link" href="https://www.uci.org/" target="_blank"><img class="lazyItem js-lazy"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="/img/global/logo-uci.png|/img/global/logo-uci@2x.png"
+                    alt="UCI Logo"></a></span><a class="header-container__logo__link" href="https://www.letour.fr/de"><img
+            class="main-logo js-logo"
+            src="../../../../img/global/logo%402x.png"
+            data-reversed="/img/global/logo-reversed@2x.png"
+            alt="Tour de France Offizielle Website"></a></div><div class="header-container__dates">
+    <div class="dates">
+        <div class="dates-value">
+                                                26/06
+                    >
+                                18/07/2021
+                    </div>
+    </div>
+</div>
+
+
+
+        <div class="header-container__menu header-container__menu-2">
+            <div class="dropdown nav__item header__lang">
+                                    
+    <a class="nav__link nav__link--arrow js-dropdown dropdown__toggle js-display-click" id="nav-lang-de" data-toggle="dropdown" data-target="dropdown-navlang" aria-haspopup="true" role="button" data-xtclick="header::langue">
+        <span class="flag-wrapper">
+            <span class="flag js-display-lazy flag--de is-loaded" data-class="flag--de"></span>
+            de
+            <span class="arrow-bottom"></span>
+        </span>
+    </a>
+
+        <div class="dropdown__menu header__lang__menu js-dropdown-menu" role="menu" aria-labelledby="nav-lang-de" data-target="dropdown-navlang">
+
+        <ul class="list">
+                                                                                                    
+                                                                    
+                <li class="dropdown__menu__item">
+                    <a class="dropdown__menu__link nav__link" href="../../../../fr/coureur/62/bahrain-mclaren/pello-bilbao-lopez-de-armentia.html" data-lang="fr">
+                        <span class="flag js-display-lazy" data-class="flag--fr"></span> <span class="is-ibl header__lang__label">fr</span>
+                    </a>
+                </li>
+                                                                                                    
+                                                                    
+                <li class="dropdown__menu__item">
+                    <a class="dropdown__menu__link nav__link" href="../../../../en/rider/62/bahrain-mclaren/pello-bilbao-lopez-de-armentia.html" data-lang="en">
+                        <span class="flag js-display-lazy" data-class="flag--en"></span> <span class="is-ibl header__lang__label">en</span>
+                    </a>
+                </li>
+                                                                                                    
+                                                                    
+                <li class="dropdown__menu__item">
+                    <a class="dropdown__menu__link nav__link" href="../../../../es/corredor/62/bahrain-mclaren/pello-bilbao-lopez-de-armentia.html" data-lang="es">
+                        <span class="flag js-display-lazy" data-class="flag--es"></span> <span class="is-ibl header__lang__label">es</span>
+                    </a>
+                </li>
+                        <script>
+                checkCookieForRedirect();
+                var hostname = location.hostname;
+                if (hostname === 'www.dakar.com') {
+                    getJSON(geolocApiUrl, function(data) {
+                        if (data.countryCode === 'PL') {
+                            var idToGet = window.innerWidth < 1280 ? 'js-rewrite-link-mobile' : 'js-rewrite-link',
+                                $linkToRewrite = document.getElementById(idToGet);
+                            $linkToRewrite.setAttribute('href', '/en/visit-the-official-licensee-of-dakar');
+                        }
+                    });
+                }
+            </script>
+        </ul>
+    </div>
+
+            </div>
+                            
+
+<div class="btn btn-lg btn-menu nav__search js-nav-search" id="nav-search">
+    <form role="search" action="https://www.letour.fr/de/suche/*query*" method="GET" class="nav__search__form search">
+        <a role="button" aria-label="Suche" class="icon icon--search nav__search__icon js-btn-search"  href="#" data-xtclick="header-top::nav-search::search" data-clicktype="A"></a>
+        <div class="nav__search__block">
+            <input class="nav__search__input" role="searchbox" aria-label="Geben sie ihre suche ein" type="text" name="q" placeholder="Suche">
+            <span class="nav__search__close js-nav-search-close icon icon--close"></span>
+        </div>
+    </form>
+</div>
+    <script>
+        if (window.innerWidth < 768) {
+            var $navSearch = document.getElementById('nav-search');
+            if (typeof($navSearch) != 'undefined' && $navSearch != null) {
+                $navSearch.remove();
+            }
+        }
+    </script>
+                        <div class="btn btn-lg btn-menu btn-hamburger hamburger hamburger--elastic" id="hamburger-desktop">
+                                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+                </button>
+            </div>
+        </div>
+
+                    
+    
+<div id="14d19e97ef734246bc9b3fbceb124856d">
+        
+        <script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('14d19e97ef734246bc9b3fbceb124856d', 'cycling_sport.block.service.stages_menu');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('14d19e97ef734246bc9b3fbceb124856d', 'cycling_sport.block.service.stages_menu', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET.html", "/de/ajax-block/cycling_sport.block.service.stages_menu/%7B%22menu%22:%22route%22%7D/7f9c402e3372c06c6ff9cec6b7c9b806", true);
+                    xhttp.send();
+                };
+                                    var eventName = 'route';
+                    var newEvent;
+                    if (!customEvents[eventName]) {
+                        newEvent = document.createEvent('Event');
+                        newEvent.initEvent(eventName, true, true);
+                        customEvents[eventName] = newEvent;
+                    }
+                    document.body.addEventListener(eventName, function() {
+                        trigger();
+                    });
+                
+            })()
+
+        </script>
+</div>
+
+    
+<div id="1a8699ba981b4739af51498df58adf4c5">
+        
+        <script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('1a8699ba981b4739af51498df58adf4c5', 'cycling_sport.block.service.teams');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('1a8699ba981b4739af51498df58adf4c5', 'cycling_sport.block.service.teams', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET.html", "/de/ajax-block/cycling_sport.block.service.teams/%7B%22menu%22:%22teams%22%7D/2bc3d3d428168b47c2c7c01334a79d60", true);
+                    xhttp.send();
+                };
+                                    var eventName = 'teams';
+                    var newEvent;
+                    if (!customEvents[eventName]) {
+                        newEvent = document.createEvent('Event');
+                        newEvent.initEvent(eventName, true, true);
+                        customEvents[eventName] = newEvent;
+                    }
+                    document.body.addEventListener(eventName, function() {
+                        trigger();
+                    });
+                
+            })()
+
+        </script>
+</div>
+
+    
+<div id="1a4d704617117d19d968db07e8a959580">
+        
+        <script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('1a4d704617117d19d968db07e8a959580', 'cycling_sport.block.service.stages_menu');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('1a4d704617117d19d968db07e8a959580', 'cycling_sport.block.service.stages_menu', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET.html", "/de/ajax-block/cycling_sport.block.service.stages_menu/%7B%22menu%22:%22tourism%22%7D/6939f8c8b0d298a119b4a6926d69dc2a", true);
+                    xhttp.send();
+                };
+                                    var eventName = 'tourism';
+                    var newEvent;
+                    if (!customEvents[eventName]) {
+                        newEvent = document.createEvent('Event');
+                        newEvent.initEvent(eventName, true, true);
+                        customEvents[eventName] = newEvent;
+                    }
+                    document.body.addEventListener(eventName, function() {
+                        trigger();
+                    });
+                
+            })()
+
+        </script>
+</div>
+
+            </div>
+    <script>
+        if (window.innerWidth < 768) {
+            var $headerMenu = document.getElementById('header-menu');
+            if (typeof($headerMenu) != 'undefined' && $headerMenu != null) {
+                var $emptyElt = $headerMenu.getElementsByClassName('js-empty')[0];
+                if(typeof($emptyElt) != 'undefined' && $emptyElt != null) {
+                    $emptyElt.remove();
+                }
+            }
+            var $burgerDesktop = document.getElementById('hamburger-desktop');
+            if (typeof($burgerDesktop) != 'undefined' && $navSearch != null) {
+                $burgerDesktop.remove();
+            }
+        }
+    </script>
+</div>
+
+    </div>
+    
+<div class="grid-container">
+<main>
+                
+
+                            <div class="pageHeader content-header has-image">
+            <img class="pageHeader__img" src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/62/21595/0:0,2000:465-2000-0-70/da87d" alt="Header: ">
+            
+    
+            
+
+<div class="riderHeader">
+        <div class="riderHeader__profile">
+        <img class="riderProfile__img lazyItem js-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://img.aso.fr/core_app/img-cycling-tdf-png/62/22022/0:0,660:1000-300-0-70/c5dfc" alt="" />
+    </div>
+    
+    <div class="riderInfos riderHeader__infos is-overflow">
+        <span class="riderInfos__personName">
+            <span class="riderInfos__firstName">Pello</span>
+            <span class="riderInfos__fullName">Bilbao</span>
+        </span>
+        <div class="riderInfos__line">
+                            <span class="riderInfos__bib">
+                    <span class="riderInfos__bib__label">Startnr.</span>
+                    <span class="riderInfos__bib__number">N°62</span>
+                </span>
+                        <span class="riderInfos__country">
+                <span class="flag js-display-lazy" data-class="flag--esp"></span>
+                <span class="riderInfos__country__name">(esp)</span>
+            </span>
+        </div>
+                    <span class="riderInfos__birth">
+                geboren am 25/02/1990
+            </span>
+                <span class="riderInfos__settings"></span>
+        <span class="riderInfos__teamName">BAHRAIN - MCLAREN/brn</span>
+
+                
+
+<figure class="pageIntroJerseys">
+    <div class="pageIntroJerseys__wrapper">
+                <a href="../../../mannschaft/TBM/bahrain-mclaren.html"
+            class="pageIntroJerseys__link"
+            data-xtclick="pageIntro::team::logo"
+            data-clicktype="N">
+                                    <img class="pageIntroJerseys__img "
+                    src="https://img.aso.fr/core_app/img-cycling-tdf-png/tbm/19709/0:0,400:400-300-0-70/018dc"
+                    alt="" />
+                            </a>
+            </div>
+
+    <div class="pageIntroJerseys__wrapper">
+        <a href="../../../mannschaft/TBM/bahrain-mclaren.html"
+            class="pageIntroJerseys__link"
+            data-xtclick="pageIntro::team::jersey"
+            data-clicktype="N">
+            <img class="pageIntroJerseys__img"
+                    src="https://img.aso.fr/core_app/img-cycling-tdf-png/tbm/19180/0:0,829:828-300-0-70/1e240"
+                    alt="" />
+        </a>
+    </div>
+</figure>
+    </div>
+</div>
+<div class="pageNav">
+    
+    
+        
+    <div class="pageNav--prev">
+        <a class="pageNav__link"
+           href="../../61/bahrain-mclaren/mikel-landa-meana.html"
+           data-xtclick="pageIntroActus::pageNav::Prev"
+           data-clicktype="N">
+            <span class="icon icon--arrowleft-line"></span>
+            <span class="pageNav__label hidden--xs">Mikel <span>LANDA</span></span>
+        </a>
+    </div>
+
+    
+    
+        
+    <div class="pageNav--next">
+        <a class="pageNav__link"
+           href="../../63/bahrain-mclaren/damiano-caruso.html"
+           data-xtclick="pageIntroActus::pageNav::Next"
+           data-clicktype="N">
+            <span class="icon icon--arrowright-line"></span>
+            <span class="pageNav__label hidden--xs">Damiano <span>CARUSO</span></span>
+        </a>
+    </div>
+
+</div>
+
+    
+    </div>
+
+                
+<section class="riderRanking">
+    <div class="container">
+        <div class="row">
+                        <h2 class="heading heading--2">Klassements
+                        </h2>
+
+                        <table class="riderRanking__table riderRanking__table--flip">
+                <thead>
+                    <tr>
+                        <th>Etappe</th>
+                        <th>Klassement</th>
+                                                                                                                                            <th><span class="jerseyRanking itg "></span></th>
+                                                                                                                                                <th><span class="jerseyRanking ipg "></span></th>
+                                                                                                                                                <th><span class="jerseyRanking img "></span></th>
+                                                                                                                                                <th><span class="jerseyRanking ijg "></span></th>
+                                                                                                                                                <th><span class="jerseyRanking icg "></span></th>
+                                                                        </tr>
+                </thead>
+
+                <tbody>
+                                        <tr>
+                        <td>1</td>
+                                                                                                                                                                                <td><span>161</span></td>
+                                                                                                            
+                                                                                                                                                                                                                                <td><span>155</span></td>
+                                                                                                                                                                                                                                                                                                                    <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                                                                                                                    <td>-</td>
+                                                                        </tr>
+                                        <tr>
+                        <td>2</td>
+                                                                                                                                                                                <td><span>28</span></td>
+                                                                                                            
+                                                                                                                                                                                                                                <td><span>35</span></td>
+                                                                                                                                                                                                                                                                                                                    <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                    </tr>
+                                        <tr>
+                        <td>3</td>
+                                                                                                                                                                                <td><span>114</span></td>
+                                                                                                            
+                                                                                                                                                                                                                                <td><span>35</span></td>
+                                                                                                                                                                                                                                                                                                                    <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                    </tr>
+                                        <tr>
+                        <td>4</td>
+                                                                                                                                                                                <td><span>43</span></td>
+                                                                                                            
+                                                                                                                                                                                                                                <td><span>30</span></td>
+                                                                                                                                                                                                                                                                                                                    <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                    </tr>
+                                        <tr>
+                        <td>5</td>
+                                                                                                                                                                                <td><span>68</span></td>
+                                                                                                            
+                                                                                                                                                                                                                                <td><span>25</span></td>
+                                                                                                                                                                                                                                                                                                                    <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                    </tr>
+                                        <tr>
+                        <td>6</td>
+                                                                                                                                                                                <td><span>40</span></td>
+                                                                                                            
+                                                                                                                                                                                                                                <td><span>24</span></td>
+                                                                                                                                                                                                                                                                                                                    <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                    </tr>
+                                        <tr>
+                        <td>7</td>
+                                                                                                                                                                                <td><span>81</span></td>
+                                                                                                            
+                                                                                                                                                                                                                                <td><span>27</span></td>
+                                                                                                                                                                                                                                                                                                                    <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                    </tr>
+                                        <tr>
+                        <td>8</td>
+                                                                                                                                                                                <td><span>40</span></td>
+                                                                                                            
+                                                                                                                                                                                                                                <td><span>27</span></td>
+                                                                                                                                                                                                                                                                                                                    <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                    </tr>
+                                        <tr>
+                        <td>9</td>
+                                                                                                                                                                                <td><span>72</span></td>
+                                                                                                            
+                                                                                                                                                                                                                                <td><span>32</span></td>
+                                                                                                                                                                                                                                                                                                                    <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                    </tr>
+                                        <tr>
+                        <td>10</td>
+                                                                                                                                                                                <td><span>41</span></td>
+                                                                                                            
+                                                                                                                                                                                                                                <td><span>30</span></td>
+                                                                                                                                                                                                                                                                                                                                                            <td><span>93</span></td>
+                                                                                                                                                                                                                                                                                                                    <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                    </tr>
+                                        <tr>
+                        <td>11</td>
+                                                                                                                                                                                <td><span>64</span></td>
+                                                                                                            
+                                                                                                                                                                                                                                <td><span>28</span></td>
+                                                                                                                                                                                                                                                                                                                                                            <td><span>96</span></td>
+                                                                                                                                                                                                                                                                                                                    <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                    </tr>
+                                        <tr>
+                        <td>12</td>
+                                                                                                                                                                                <td><span>42</span></td>
+                                                                                                            
+                                                                                                                                                                                                                                <td><span>27</span></td>
+                                                                                                                                                                                                                                                                                                                                                            <td><span>100</span></td>
+                                                                                                                                                                                                                                                                                                                    <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                    </tr>
+                                        <tr>
+                        <td>13</td>
+                                                                                                                                                                                <td><span>32</span></td>
+                                                                                                            
+                                                                                                                                                                                                                                <td><span>25</span></td>
+                                                                                                                                                                                                                                                                                                                                                            <td><span>106</span></td>
+                                                                                                                                                                                                                                                                                                                    <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                    </tr>
+                                        <tr>
+                        <td>14</td>
+                                                                                                                                                                                <td><span>33</span></td>
+                                                                                                            
+                                                                                                                                                                                                                                <td><span>23</span></td>
+                                                                                                                                                                                                                                                                                                                                                            <td><span>107</span></td>
+                                                                                                                                                                                                                                                                                                                    <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                    </tr>
+                                        <tr>
+                        <td>15</td>
+                                                                                                                                                                                <td><span>11</span></td>
+                                                                                                            
+                                                                                                                                                                                                                                <td><span>19</span></td>
+                                                                                                                                                                                                                                                                                                                                                            <td><span>97</span></td>
+                                                                                                                                                                                                                                                                                                                    <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                    </tr>
+                                        <tr>
+                        <td>16</td>
+                                                                                                                                                                                <td><span>51</span></td>
+                                                                                                            
+                                                                                                                                                                                                                                <td><span>19</span></td>
+                                                                                                                                                                                                                                                                                                                                                            <td><span>98</span></td>
+                                                                                                                                                                                                                                                                                                                    <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                    </tr>
+                                        <tr>
+                        <td>17</td>
+                                                                                                                                                                                <td><span>22</span></td>
+                                                                                                            
+                                                                                                                                                                                                                                <td><span>17</span></td>
+                                                                                                                                                                                                                                                                                                                                                            <td><span>99</span></td>
+                                                                                                                                                                                                                                                                                                                    <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                    </tr>
+                                        <tr>
+                        <td>18</td>
+                                                                                                                                                                                <td><span>14</span></td>
+                                                                                                            
+                                                                                                                                                                                                                                <td><span>16</span></td>
+                                                                                                                                                                                                                                                                                                                                                            <td><span>92</span></td>
+                                                                                                                                                                                                                                                                                                                                                            <td><span>20</span></td>
+                                                                                                                                                                                                                                                                                                                    <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                    </tr>
+                                        <tr>
+                        <td>19</td>
+                                                                                                                                                                                <td><span>96</span></td>
+                                                                                                            
+                                                                                                                                                                                                                                <td><span>16</span></td>
+                                                                                                                                                                                                                                                                                                                                                            <td><span>86</span></td>
+                                                                                                                                                                                                                                                                                                                                                            <td><span>19</span></td>
+                                                                                                                                                                                                                                                                                                                    <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                    </tr>
+                                        <tr>
+                        <td>20</td>
+                                                                                                                                                                                <td><span>12</span></td>
+                                                                                                            
+                                                                                                                                                                                                                                <td><span>16</span></td>
+                                                                                                                                                                                                                                                                                                                                                            <td><span>79</span></td>
+                                                                                                                                                                                                                                                                                                                                                            <td><span>17</span></td>
+                                                                                                                                                                                                                                                                                                                    <td>-</td>
+                                                                                                                                                                                                                                    <td>-</td>
+                                                                        </tr>
+                                        <tr>
+                        <td>21</td>
+                                                                                                                                                                                <td><span>35</span></td>
+                                                                                                            
+                                                                                                                                                                                                                                <td><span>16</span></td>
+                                                                                                                                                                                                                                                                                                                                                            <td><span>82</span></td>
+                                                                                                                                                                                                                                                                                                                                                            <td><span>17</span></td>
+                                                                                                                                                                                                                                                                                                                    <td>-</td>
+                                                                                                                                                                                                                                                                                <td>-</td>
+                                                                                                                                    </tr>
+                    
+
+                </tbody>
+
+            </table>
+             
+        </div>
+    </div>
+</section>
+
+                
+<section class="victory victory--rider">
+    <div class="container">
+        <div class="row">
+            <ul class="victory__list clearfix">
+                <li class="victory__item col--md--2 col--sm--3 col--xs--6">
+                    <span class="icon icon--sprint"></span>
+                    <span class="victory__label">Zwischensprint</span>
+                    <span class="circle">0</span>
+                </li><!--
+                --><li class="victory__item col--md--2 col--sm--3 col--xs--6">
+                    <span class="icon icon--trophy"></span>
+                    <span class="victory__label">Etappensieg</span>
+                    <span class="circle">0</span>
+                </li><!--
+                --><li class="victory__item col--md--2 col--sm--3 col--xs--6">
+                    <span class="icon icon--victory"></span>
+                    <span class="victory__label">
+                        Siege
+                    </span>
+                    <span class="circle">11</span>
+                </li><!--
+                --><li class="victory__item col--md--2 col--sm--3 col--xs--6">
+                    <span class="icon icon--podium"></span>
+                    <span class="victory__label">
+                        Podiums
+                    </span>
+                    <span class="circle">26</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+                
+            <section class="riderBiography">
+        <div class="container">
+            <div class="row">
+                <div class="js-tabs-wrapper">
+                    <div class="is-relative">
+                        <div class="slider slider--navTab dateTabs js-slider" data-slider-type="navtab" data-slides="4" role="tablist">
+                                                                                                                                                                                                    <div class="dateTabs__item js-tabs-parent">
+                                        <button class="dateTabs__link js-tabs"
+                                                data-tabs-target="2018"
+                                                data-xtclick="riderBiography::dateTabs::item::link::2018"
+                                                data-clicktype="A">2018</button>
+                                    </div>
+                                                                                                                                                                                                        <div class="dateTabs__item js-tabs-parent">
+                                        <button class="dateTabs__link js-tabs"
+                                                data-tabs-target="2019"
+                                                data-xtclick="riderBiography::dateTabs::item::link::2019"
+                                                data-clicktype="A">2019</button>
+                                    </div>
+                                                                                                                                                                                                        <div class="dateTabs__item js-tabs-parent is-active">
+                                        <button class="dateTabs__link js-tabs"
+                                                data-tabs-target="2020"
+                                                data-xtclick="riderBiography::dateTabs::item::link::2020"
+                                                data-clicktype="A">2020</button>
+                                    </div>
+                                                                                    </div>
+                        <div class="dateTabs__arrows js-slider-nav"></div>
+                    </div>
+
+                    <div class="dateTabs__content">
+                                                <div id="2018"
+                             class="dateTabs__content__item  js-tabs-content">
+
+                                                        <p class="dateTabs__content__title">2018. Astana Pro Team</p>
+                                <div>
+                                                                                                                                                                                                                                <p>
+                                                        1<sup>er</sup>
+                                                        de la sixième étape du Critérium du Dauphiné (Frontenex&gt;La Rosière), de la première étape du Tour des Alpes (Arco&gt;Folgaria)
+                                                        </p>
+                                                                                                            <p>
+                                                        2<sup>e</sup>
+                                                        de la première étape du Tour de Burgos (Burgos&gt;Burgos (Castillo))
+                                                        </p>
+                                                                                                            <p>
+                                                        3<sup>e</sup>
+                                                        de la première étape du Tour du Pays Basque (Zarautz&gt;Zarautz)
+                                                        </p>
+                                                                                                            <p>
+                                                        6<sup>e</sup>
+                                                        du Tour d&#039;Italie, de la première étape du Tour d&#039;Italie (Jerusalem (Isr) [ITT])
+                                                        </p>
+                                                                                                            <p>
+                                                        7<sup>e</sup>
+                                                        de la troisième étape du Tour de Burgos (Sedano&gt;Picon Blanco), du Tour de Valence, de la deuxième étape du Tour de Valence (Bétera&gt;Albuixech), de la quatrième étape du Tour de Valence (Orihuela&gt;Cocentaina), de la deuxième étape du Tour du Pays Basque (Zarautz&gt;Bermeo)
+                                                        </p>
+                                                                                                            <p>
+                                                        8<sup>e</sup>
+                                                        du Tour du Pays Basque, de la cinquième étape du Tour du Pays Basque (Vitoria Gasteiz&gt;Eibar)
+                                                        </p>
+                                                                                                            <p>
+                                                        9<sup>e</sup>
+                                                        de la quatrième étape du Tour des Alpes (Chiusa&gt;Lienz (Aut)), de la quatorzième étape du Tour d&#039;Italie (San Vito al Tagliamento&gt;Monte Zoncolan), de la quinzième étape du Tour d&#039;Italie (Tolmezzo&gt;Sappada), de la troisième étape du Tour du Pays Basque (Bermeo&gt;Valdegovia)
+                                                        </p>
+                                                                                                            <p>
+                                                        10<sup>e</sup>
+                                                        de la huitième étape du Tour d&#039;Italie (Praia a Mare&gt;Montevergine di Mercogliano), de la dix-neuvième étape du Tour d&#039;Italie (Venaria Reale&gt;Bardonecchia( Jafferau))
+                                                        </p>
+                                                                                                            <p>
+                                                        11<sup>e</sup>
+                                                        de la quatrième étape du Critérium du Dauphiné (Chazey/Ain&gt;Lans-en-Vercors), de la cinquième étape du Tour d&#039;Italie (Agrigento&gt;Santa Ninfa)
+                                                        </p>
+                                                                                                            <p>
+                                                        12<sup>e</sup>
+                                                        de la vingtième étape du Tour d&#039;Espagne (Andorra&gt;Coll de La Gallina)
+                                                        </p>
+                                                                                                            <p>
+                                                        13<sup>e</sup>
+                                                        de la troisième étape du Tour de Catalogne (Sant Cugat del Valles&gt;Camprodon), de la sixième étape du Tour d&#039;Italie (Caltanissetta&gt;Etna), de la sixième étape du Tour du Pays Basque (Eibar&gt;Arrate)
+                                                        </p>
+                                                                                                            <p>
+                                                        14<sup>e</sup>
+                                                        du Tour des Alpes, de la neuvième étape du Tour d&#039;Italie (Pesco Sannita&gt;Gran Sasso d&#039;Italia (Campo Imperatore))
+                                                        </p>
+                                                                                                            <p>
+                                                        15<sup>e</sup>
+                                                        de la quatrième étape du Tour d&#039;Italie (Catania&gt;Caltagirone)
+                                                        </p>
+                                                                                                            <p>
+                                                        16<sup>e</sup>
+                                                        de la quatrième étape du Tour de Burgos (San Pedro Cardeña&gt;Clunia), de la vingtième étape du Tour d&#039;Italie (Susa&gt;Cervinia)
+                                                        </p>
+                                                                                                            <p>
+                                                        17<sup>e</sup>
+                                                        de la deuxième étape du Tour de Catalogne (Mataro&gt;Valls), de la quinzième étape du Tour d&#039;Espagne (Ribera de Arriba&gt;Lagos de Covadonga), de la septième étape du Tour d&#039;Italie (Pizzo&gt;Praia a Mare), de la dix-huitième étape du Tour d&#039;Italie (Abbiategrasso&gt;Prato Nevoso)
+                                                        </p>
+                                                                                                            <p>
+                                                        18<sup>e</sup>
+                                                        du Clasica San Sebastian, de la sixième étape du Tour de Catalogne (La Pobla de Segur&gt;Torrefarrera)
+                                                        </p>
+                                                                                                            <p>
+                                                        19<sup>e</sup>
+                                                        de la dix-neuvième étape du Tour d&#039;Espagne (Lleida&gt; Andorra)
+                                                        </p>
+                                                                                                            <p>
+                                                        20<sup>e</sup>
+                                                        de la onzième étape du Tour d&#039;Italie (Assisi&gt;Osimo)
+                                                        </p>
+                                                                                                            <p>
+                                                        21<sup>e</sup>
+                                                        de la deuxième étape du Tour des Alpes (Lavarone&gt;Alpe di Pampeago (Fiemme)), de la seizième étape du Tour d&#039;Italie (Trento&gt;Rovereto [ITT])
+                                                        </p>
+                                                                                                            <p>
+                                                        22<sup>e</sup>
+                                                        de la quatorzième étape du Tour d&#039;Espagne (Cistierna&gt;Les Praeres (Nava))
+                                                        </p>
+                                                                                                            <p>
+                                                        23<sup>e</sup>
+                                                        du Tour de Burgos
+                                                        </p>
+                                                                                                                                                                                                                                                            </div>
+                                        </div>
+                                        <div id="2019" class="dateTabs__content__item  js-tabs-content">
+                                            <p class="dateTabs__content__title">2019. Astana Pro Team</p>
+                                            <div>
+                                                                                                                                                                                                <p>
+                                                        1<sup>er</sup>
+                                                        de la première étape du Tour de Murcie (), de la septième étape du Tour d&#039;Italie (), de la vingtième étape du Tour d&#039;Italie ()
+                                                        </p>
+                                                                                                            <p>
+                                                        2<sup>e</sup>
+                                                        du Championnat d&#039;Espagne CLM, de la douzième étape du Tour de France (TOULOUSE  &gt;  BAGNERES-DE-BIGORRE)
+                                                        </p>
+                                                                                                            <p>
+                                                        3<sup>e</sup>
+                                                        du Tour de Murcie, du Tour de Valence, de la quatrième étape du Tour de Valence ()
+                                                        </p>
+                                                                                                            <p>
+                                                        4<sup>e</sup>
+                                                        du Tour d&#039;&#039;Andalousie - Ruta del Sol, de la première étape du Tour des Alpes ()
+                                                        </p>
+                                                                                                            <p>
+                                                        5<sup>e</sup>
+                                                        de la deuxième étape du Tour de Murcie ()
+                                                        </p>
+                                                                                                            <p>
+                                                        6<sup>e</sup>
+                                                        de la première étape du Tour d&#039;&#039;Andalousie - Ruta del Sol (), de la quatrième étape du Tour d&#039;&#039;Andalousie - Ruta del Sol ()
+                                                        </p>
+                                                                                                            <p>
+                                                        7<sup>e</sup>
+                                                        de la troisième étape du Tour d&#039;&#039;Andalousie - Ruta del Sol (), de la première étape du Tour de Valence (), de la vingt-et-unième étape du Tour d&#039;Italie ()
+                                                        </p>
+                                                                                                            <p>
+                                                        8<sup>e</sup>
+                                                        du Championnat d&#039;Espagne
+                                                        </p>
+                                                                                                            <p>
+                                                        9<sup>e</sup>
+                                                        de la deuxième étape du Tour des Alpes (), de la neuvième étape du Tour d&#039;Italie ()
+                                                        </p>
+                                                                                                            <p>
+                                                        11<sup>e</sup>
+                                                        de la troisième étape du Tour de Valence (), de la première étape du Tour d&#039;Italie (), de la première étape du Tour du Pays Basque ()
+                                                        </p>
+                                                                                                            <p>
+                                                        14<sup>e</sup>
+                                                        de la quatrième étape du Tour des Alpes ()
+                                                        </p>
+                                                                                                            <p>
+                                                        17<sup>e</sup>
+                                                        de la cinquième étape du Tour de Catalogne ()
+                                                        </p>
+                                                                                                            <p>
+                                                        25<sup>e</sup>
+                                                        de la troisième étape du Tour du Pays Basque ()
+                                                        </p>
+                                                                                                            <p>
+                                                        19<sup>e</sup>
+                                                        du Clasica San Sebastian
+                                                        </p>
+                                                                                                                                                                                                                                                            </div>
+                                        </div>
+                                        <div id="2020" class="dateTabs__content__item is-active js-tabs-content">
+                                            <p class="dateTabs__content__title">2020. Bahrain - Mclaren</p>
+                                            <div>
+                                                                                                                                                                                                <p>
+                                                        1<sup>er</sup>
+                                                        du Championnat d&#039;Espagne CLM
+                                                        </p>
+                                                                                                            <p>
+                                                        2<sup>e</sup>
+                                                        de la troisième étape du Tour d&#039;&#039;Andalousie - Ruta del Sol ()
+                                                        </p>
+                                                                                                            <p>
+                                                        4<sup>e</sup>
+                                                        de la cinquième étape du Tour d&#039;&#039;Andalousie - Ruta del Sol ()
+                                                        </p>
+                                                                                                            <p>
+                                                        5<sup>e</sup>
+                                                        de la première étape du Tour d&#039;&#039;Andalousie - Ruta del Sol ()
+                                                        </p>
+                                                                                                            <p>
+                                                        6<sup>e</sup>
+                                                        du Tour d&#039;&#039;Andalousie - Ruta del Sol
+                                                        </p>
+                                                                                                            <p>
+                                                        11<sup>e</sup>
+                                                        de la quatrième étape du Tour d&#039;&#039;Andalousie - Ruta del Sol ()
+                                                        </p>
+                                                                                                            <p>
+                                                        13<sup>e</sup>
+                                                        de la deuxième étape du Tour d&#039;&#039;Andalousie - Ruta del Sol (), de la deuxième étape du Tour de Valence ()
+                                                        </p>
+                                                                                                            <p>
+                                                        18<sup>e</sup>
+                                                        du Tour de Valence
+                                                        </p>
+                                                                                                            <p>
+                                                        19<sup>e</sup>
+                                                        de la quatrième étape du Tour de Valence (), de la cinquième étape du Tour de Valence ()
+                                                        </p>
+                                                                                                            <p>
+                                                        24<sup>e</sup>
+                                                        de la première étape du Tour de Valence ()
+                                                        </p>
+                                                                                                                                                                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+                
+
+
+
+                    
+                    
+                    
+                
+
+    <section class="riderTeamFocus">
+        <div class="container">
+            <div class="row">
+
+                <h2 class="heading heading--2">Fahrer BAHRAIN - MCLAREN</h2>
+                <div class="riderTeamFocus__wrapper">
+                    <div class="riderTeamFocus__grid">
+
+                                                                                <div class="thumbnail riderFocus">
+                                                                <a href="../../61/bahrain-mclaren/mikel-landa-meana.html"
+                                    class="thumbnail__link"
+                                    data-xtclick="riderTeam::riderTeam-list::riderTeam-focus::mikel-landa-meana"
+                                    data-clicktype="N">
+
+                                                                                                                                                        
+                                    <img
+                                        alt="Rider Mikel LANDA MEANA"
+                                        class="lazyItem js-lazy"
+                                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                        data-src="https://img.aso.fr/core_app/img-cycling-tdf-png/61/22016/0:0,660:1000-282-0-80/16cb1|https://img.aso.fr/core_app/img-cycling-tdf-png/61/22016/0:0,660:1000-400-0-80/60662"/>
+
+                                    <div class="riderFocus__infos ">
+                                                                                <h3 class="heading heading--3">
+                                            <span class="flag js-display-lazy" data-class="flag--esp"></span>
+                                            M. LANDA
+                                        </h3>
+                                        <p class="riderFocus__feature">
+                                            geboren am 13/12/1989
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                                                                                <div class="thumbnail riderFocus">
+                                                                <a href="pello-bilbao-lopez-de-armentia.html"
+                                    class="thumbnail__link"
+                                    data-xtclick="riderTeam::riderTeam-list::riderTeam-focus::pello-bilbao-lopez-de-armentia"
+                                    data-clicktype="N">
+
+                                                                                                                                                        
+                                    <img
+                                        alt="Rider Pello BILBAO LOPEZ DE ARMENTIA"
+                                        class="lazyItem js-lazy"
+                                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                        data-src="https://img.aso.fr/core_app/img-cycling-tdf-png/62/22022/0:0,660:1000-282-0-80/f0cf6|https://img.aso.fr/core_app/img-cycling-tdf-png/62/22022/0:0,660:1000-400-0-80/661e9"/>
+
+                                    <div class="riderFocus__infos ">
+                                                                                <h3 class="heading heading--3">
+                                            <span class="flag js-display-lazy" data-class="flag--esp"></span>
+                                            P. BILBAO
+                                        </h3>
+                                        <p class="riderFocus__feature">
+                                            geboren am 25/02/1990
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                                                                                <div class="thumbnail riderFocus">
+                                                                <a href="../../63/bahrain-mclaren/damiano-caruso.html"
+                                    class="thumbnail__link"
+                                    data-xtclick="riderTeam::riderTeam-list::riderTeam-focus::damiano-caruso"
+                                    data-clicktype="N">
+
+                                                                                                                                                        
+                                    <img
+                                        alt="Rider Damiano CARUSO"
+                                        class="lazyItem js-lazy"
+                                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                        data-src="https://img.aso.fr/core_app/img-cycling-tdf-png/63/22021/0:0,660:1000-282-0-80/0a4fd|https://img.aso.fr/core_app/img-cycling-tdf-png/63/22021/0:0,660:1000-400-0-80/dc794"/>
+
+                                    <div class="riderFocus__infos ">
+                                                                                <h3 class="heading heading--3">
+                                            <span class="flag js-display-lazy" data-class="flag--ita"></span>
+                                            D. CARUSO
+                                        </h3>
+                                        <p class="riderFocus__feature">
+                                            geboren am 12/10/1987
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                                                                                <div class="thumbnail riderFocus">
+                                                                <a href="../../64/bahrain-mclaren/sonny-colbrelli.html"
+                                    class="thumbnail__link"
+                                    data-xtclick="riderTeam::riderTeam-list::riderTeam-focus::sonny-colbrelli"
+                                    data-clicktype="N">
+
+                                                                                                                                                        
+                                    <img
+                                        alt="Rider Sonny COLBRELLI"
+                                        class="lazyItem js-lazy"
+                                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                        data-src="https://img.aso.fr/core_app/img-cycling-tdf-png/64/22023/0:0,660:1000-282-0-80/572a4|https://img.aso.fr/core_app/img-cycling-tdf-png/64/22023/0:0,660:1000-400-0-80/d077f"/>
+
+                                    <div class="riderFocus__infos ">
+                                                                                <h3 class="heading heading--3">
+                                            <span class="flag js-display-lazy" data-class="flag--ita"></span>
+                                            S. COLBRELLI
+                                        </h3>
+                                        <p class="riderFocus__feature">
+                                            geboren am 17/05/1990
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                                                                                <div class="thumbnail riderFocus">
+                                                                <a href="../../65/bahrain-mclaren/marco-haller.html"
+                                    class="thumbnail__link"
+                                    data-xtclick="riderTeam::riderTeam-list::riderTeam-focus::marco-haller"
+                                    data-clicktype="N">
+
+                                                                                                                                                        
+                                    <img
+                                        alt="Rider Marco HALLER"
+                                        class="lazyItem js-lazy"
+                                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                        data-src="https://img.aso.fr/core_app/img-cycling-tdf-png/65/22018/0:0,660:1000-282-0-80/b56c6|https://img.aso.fr/core_app/img-cycling-tdf-png/65/22018/0:0,660:1000-400-0-80/02ae9"/>
+
+                                    <div class="riderFocus__infos ">
+                                                                                <h3 class="heading heading--3">
+                                            <span class="flag js-display-lazy" data-class="flag--aut"></span>
+                                            M. HALLER
+                                        </h3>
+                                        <p class="riderFocus__feature">
+                                            geboren am 01/04/1991
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                                                                                <div class="thumbnail riderFocus">
+                                                                <a href="../../66/bahrain-mclaren/matej-mohoric.html"
+                                    class="thumbnail__link"
+                                    data-xtclick="riderTeam::riderTeam-list::riderTeam-focus::matej-mohoric"
+                                    data-clicktype="N">
+
+                                                                                                                                                        
+                                    <img
+                                        alt="Rider Matej MOHORIC"
+                                        class="lazyItem js-lazy"
+                                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                        data-src="https://img.aso.fr/core_app/img-cycling-tdf-png/66/22032/0:0,660:1000-282-0-80/459f1|https://img.aso.fr/core_app/img-cycling-tdf-png/66/22032/0:0,660:1000-400-0-80/3c89c"/>
+
+                                    <div class="riderFocus__infos ">
+                                                                                <h3 class="heading heading--3">
+                                            <span class="flag js-display-lazy" data-class="flag--slo"></span>
+                                            M. MOHORIC
+                                        </h3>
+                                        <p class="riderFocus__feature">
+                                            geboren am 19/10/1994
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                                                                                <div class="thumbnail riderFocus">
+                                                                <a href="../../67/bahrain-mclaren/wouter-poels.html"
+                                    class="thumbnail__link"
+                                    data-xtclick="riderTeam::riderTeam-list::riderTeam-focus::wouter-poels"
+                                    data-clicktype="N">
+
+                                                                                                                                                        
+                                    <img
+                                        alt="Rider Wouter POELS"
+                                        class="lazyItem js-lazy"
+                                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                        data-src="https://img.aso.fr/core_app/img-cycling-tdf-png/67/22019/0:0,660:1000-282-0-80/ca718|https://img.aso.fr/core_app/img-cycling-tdf-png/67/22019/0:0,660:1000-400-0-80/9a6f3"/>
+
+                                    <div class="riderFocus__infos ">
+                                                                                <h3 class="heading heading--3">
+                                            <span class="flag js-display-lazy" data-class="flag--ned"></span>
+                                            W. POELS
+                                        </h3>
+                                        <p class="riderFocus__feature">
+                                            geboren am 01/10/1987
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                                                                                <div class="thumbnail riderFocus riderFocus--ko">
+                                                                <a href="../../68/bahrain-mclaren/rafael-valls-ferri.html"
+                                    class="thumbnail__link"
+                                    data-xtclick="riderTeam::riderTeam-list::riderTeam-focus::rafael-valls-ferri"
+                                    data-clicktype="N">
+
+                                                                                                                                                        
+                                    <img
+                                        alt="Rider Rafael VALLS FERRI"
+                                        class="lazyItem js-lazy"
+                                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                        data-src="https://img.aso.fr/core_app/img-cycling-tdf-png/68/22020/0:0,660:1000-282-0-80/3cc27|https://img.aso.fr/core_app/img-cycling-tdf-png/68/22020/0:0,660:1000-400-0-80/06d75"/>
+
+                                    <div class="riderFocus__infos ">
+                                                                                <h3 class="heading heading--3">
+                                            <span class="flag js-display-lazy" data-class="flag--esp"></span>
+                                            R. VALLS FERRI
+                                        </h3>
+                                        <p class="riderFocus__feature">
+                                            geboren am 25/06/1987
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+                
+
+            <section class="subscription">
+            <div class="container">
+                <div class="row">
+                    <h2 class="heading heading--2">Folge uns</h2>
+                    <p class="is-alignCenter legend">Erhalten sie exklusive informationen zur Tour de France</p>
+                    <div class="social social--lg is-alignCenter">
+                                                                                                                    <a href="http://www.letour.fr/le-tour/2017/de/handy-tablet-apps.html"
+                                   aria-label="Phone: In neuem Tab öffnen"
+                                   target="_blank"
+                                   class="icon icon--bg icon--phone"
+                                   data-xtclick="social::subscription::phone" data-clicktype="N">
+                                </a>
+                                                                                            <a href="http://www.facebook.com/letour"
+                                   aria-label="Facebook: In neuem Tab öffnen"
+                                   target="_blank"
+                                   class="icon icon--bg icon--facebook"
+                                   data-xtclick="social::subscription::facebook" data-clicktype="N">
+                                </a>
+                                                                                            <a href="http://www.twitter.com/letour"
+                                   aria-label="Twitter: In neuem Tab öffnen"
+                                   target="_blank"
+                                   class="icon icon--bg icon--twitter"
+                                   data-xtclick="social::subscription::twitter" data-clicktype="N">
+                                </a>
+                                                                                            <a href="https://www.dailymotion.com/tourdefrance"
+                                   aria-label="Dailymotion: In neuem Tab öffnen"
+                                   target="_blank"
+                                   class="icon icon--bg icon--dailymotion"
+                                   data-xtclick="social::subscription::dailymotion" data-clicktype="N">
+                                </a>
+                                                                                            <a href="https://www.instagram.com/letourdefrance"
+                                   aria-label="Instagram: In neuem Tab öffnen"
+                                   target="_blank"
+                                   class="icon icon--bg icon--instagram"
+                                   data-xtclick="social::subscription::instagram" data-clicktype="N">
+                                </a>
+                                                                                            <a href="https://bit.ly/31z9SYy"
+                                   aria-label="Newsletter: In neuem Tab öffnen"
+                                   target="_blank"
+                                   class="icon icon--bg icon--newsletter"
+                                   data-xtclick="social::subscription::newsletter" data-clicktype="N">
+                                </a>
+                                                                        </div>
+                </div>
+            </div>
+        </section>
+    
+        
+
+    
+        
+        
+        
+                    
+<div id="1349f0f647f78b38e19f064d2920be42a">
+        
+        <script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('1349f0f647f78b38e19f064d2920be42a', 'core_partners.block.service.bandeau_partners');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('1349f0f647f78b38e19f064d2920be42a', 'core_partners.block.service.bandeau_partners', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET.html", "/de/ajax-block/core_partners.block.service.bandeau_partners/%5B%5D/83f529db531fbbc4313859efdc525935", true);
+                    xhttp.send();
+                };
+                                    var myAnchor = document.getElementById('1349f0f647f78b38e19f064d2920be42a');
+                    myAnchor.classList.add('asyncBlockOnScreen');
+                    myAnchor.dataset.trigger = trigger;
+                
+            })()
+
+        </script>
+</div>
+        
+<div id="17da43b1a0c7cfe836b054526b5462103">
+        
+        <script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('17da43b1a0c7cfe836b054526b5462103', 'core_partners.block.service.bandeau_partners_bis');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('17da43b1a0c7cfe836b054526b5462103', 'core_partners.block.service.bandeau_partners_bis', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET.html", "/de/ajax-block/core_partners.block.service.bandeau_partners_bis/%7B%22displayTitle%22:false%7D/149260e8741e8722a4ed4e96cb8dd31a", true);
+                    xhttp.send();
+                };
+                                    var myAnchor = document.getElementById('17da43b1a0c7cfe836b054526b5462103');
+                    myAnchor.classList.add('asyncBlockOnScreen');
+                    myAnchor.dataset.trigger = trigger;
+                
+            })()
+
+        </script>
+</div>
+        
+<div id="14ae2a158997a46e58435c5230874dd0a">
+        
+        <script>
+            (function() {
+                var trigger = function(){
+                    var xhttp = new XMLHttpRequest();
+                    if (typeof asyncBlockWillLoad !== 'undefined') {
+                        asyncBlockWillLoad('14ae2a158997a46e58435c5230874dd0a', 'core_partners.block.service.bandeau_partners_ter');
+                    }
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState === 4 && this.status === 200) {
+                            asyncBlockLoaded('14ae2a158997a46e58435c5230874dd0a', 'core_partners.block.service.bandeau_partners_ter', this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET.html", "/de/ajax-block/core_partners.block.service.bandeau_partners_ter/%7B%22displayTitle%22:false%7D/9eea853b8a8459ade81803ac65afb000", true);
+                    xhttp.send();
+                };
+                                    var myAnchor = document.getElementById('14ae2a158997a46e58435c5230874dd0a');
+                    myAnchor.classList.add('asyncBlockOnScreen');
+                    myAnchor.dataset.trigger = trigger;
+                
+            })()
+
+        </script>
+</div>
+    
+    </main>
+
+            
+    <div class="footer">
+        <div class="footer-container container">
+                            <div class="footer-container__logo">
+                    <img alt="Logo" class="lazyItem js-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/img/global/logo_aso.png|/img/global/logo_aso@2x.png" width="150" height="40">
+                </div>
+            
+            <div class="footer-container__links  footer-container__links--no-sub">
+                                    <div class="footer-container__links__item">
+                        <a href="../../../profi-bereich.html"><h2 class="footer-container__title">Profi-Bereich</h2></a>
+                                            </div>
+                                    <div class="footer-container__links__item">
+                        <a href="https://registering.aso.fr/Authentification"><h2 class="footer-container__title">Akkreditierungen</h2></a>
+                                            </div>
+                                    <div class="footer-container__links__item">
+                        <a href="http://www.aso.fr/us/tour-de-france.html"><h2 class="footer-container__title">Kontakte</h2></a>
+                                            </div>
+                                    <div class="footer-container__links__item">
+                        <a href="../../../rennen/die-mobilitaet-der-zukunft.html"><h2 class="footer-container__title">Die mobilität der zukunft</h2></a>
+                                            </div>
+                                    <div class="footer-container__links__item">
+                        <a href="../../../anforderungsmanagement.html"><h2 class="footer-container__title">Ihre GDPR-Rechte</h2></a>
+                                            </div>
+                            </div>
+
+                                        
+                                            
+                                                                                                        
+
+        </div>
+
+        
+
+<div class="footer__bottom">
+    <div class="container">
+        <div class="row footer__bottom__wrapper">
+            <div class="col--xs--10 col--sm--10 footer__bottom__links">
+                <a href="../../../impressum.html" class="footer__bottom__link"  data-xtclick="footer::bottom::link::impressum">impressum</a>
+                                    <a class="footer__bottom__link ot-sdk-show-settings" data-xtclick="footer::bottom::link::cookie-einstellungen" data-clicktype="A">Cookie-Einstellungen</a>
+                            </div>
+            <div class="col--xs--2 col--sm--2 footer__bottom__social">
+                
+<div class="footer-container__social">
+                        <a href="http://www.facebook.com/letour"
+               target="_blank"
+               class="icon icon--facebook"
+               data-xtclick="footer::subscription::facebook" data-clicktype="N">
+            </a>
+                    <a href="http://www.twitter.com/letour"
+               target="_blank"
+               class="icon icon--twitter"
+               data-xtclick="footer::subscription::twitter" data-clicktype="N">
+            </a>
+                    <a href="https://www.instagram.com/letourdefrance"
+               target="_blank"
+               class="icon icon--instagram"
+               data-xtclick="footer::subscription::instagram" data-clicktype="N">
+            </a>
+                    <a href="https://www.dailymotion.com/tourdefrance"
+               target="_blank"
+               class="icon icon--dailymotion"
+               data-xtclick="footer::subscription::dailymotion" data-clicktype="N">
+            </a>
+                    <a href="https://bit.ly/31z9SYy"
+               target="_blank"
+               class="icon icon--newsletter"
+               data-xtclick="footer::subscription::newsletter" data-clicktype="N">
+            </a>
+            </div>
+
+            </div>
+        </div>
+    </div>
+</div>    </div>
+
+
+    
+    <script>
+        var url = location.protocol == 'https:' ? 'https://logs4' : 'http://logc17';
+        xtnv = document;
+        xtsd = url;
+        xtsite = '259106';
+                    xtpage = 'coureur::pello-bilbao-lopez-de-armentia';      //page name (with the use of :: to create chapters)
+            xtn2 = '3';
+                xtdi = '1';                 //implication degree
+    </script><noscript><img alt="" width="1" height="1" src="https://logs4.xiti.com/hit.xiti?s=259106&amp;s2=3&amp;p=coureur::[Firstname]_[Lastname]&amp;di=1"></noscript>
+
+    <script>
+    var wamid = '5464'; /* Wam Account ID */
+    var typ = '1'; /* Event Type default 1 */
+    var Wvar = {
+                "xtpage" : "coureur::[Firstname]_[Lastname]",
+            };
+    (function(){
+        var w = document.createElement("script");
+        w.type = "text/javascript";
+        w.src = document.location.protocol + "//cstatic.weborama.fr/js/wam/customers/wamfactory_dpm.wildcard.min.js?rnd="+ new Date().getTime();
+        w.async = true;
+        var body = document.getElementsByTagName('script')[0];
+        body.parentNode.insertBefore(w,body);
+    })();
+</script>
+<script src="../../../../dist/js/scripts.jquery.db424ca.js"></script>
+    <script src="../../../../dist/js/scripts.runtime.e4ce55e.js"></script>
+    <script src="../../../../dist/js/scripts.vendors.5205df1.js"></script>
+<script src="../../../../dist/js/scripts.vendor.c010164.js"></script>
+
+
+<script src="../../../../dist/js/scripts.main.72f6c6e.js"></script>
+
+
+
+                        
+
+
+
+            
+                            <script type="text/javascript" src="../../../../../cdn.cookielaw.org/consent/e3e840cd-98d6-46ac-b5a0-a7072d19591d/OtAutoBlock.js" ></script>
+        <script src="../../../../../cdn.cookielaw.org/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="e3e840cd-98d6-46ac-b5a0-a7072d19591d" ></script>
+                <script>
+            function OptanonWrapper() {
+                var targetingActiveGroup = RegExp(',4,').test(OnetrustActiveGroups);
+                if (typeof googletag.pubads !== 'undefined') {
+                    if (!targetingActiveGroup) {
+                        googletag.pubads().setRequestNonPersonalizedAds(1);
+                    } else {
+                        googletag.pubads().setRequestNonPersonalizedAds(0);
+                    }
+                    googletag.pubads().refresh();
+                }
+            }
+        </script>
+    
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"cf66f13e0d","applicationID":"216096607,216096608","transactionName":"Y11bbUNWCkEHVxdaVloXeFpFXgtcSVcaUFVdVl5mQkcLQBJHPFFMWlxVXG5UC18WURdaTVtKF11U","queueTime":0,"applicationTime":281,"atts":"TxpYGwtMGU8=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from www.letour.fr/de/rennfahrer/62/bahrain-mclaren/pello-bilbao-lopez-de-armentia by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 10:03:33 GMT -->
+</html>
