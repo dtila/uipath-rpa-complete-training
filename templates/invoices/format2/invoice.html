@@ -1,0 +1,185 @@
+﻿@model dynamic
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/dtila/uipath-rpa-complete-training/templates/invoices/format1/styles.css">
+
+    <style type="text/css">
+        .invoice-box {
+            max-width: 800px;
+            margin: auto;
+            padding: 30px;
+            border: 1px solid #eee;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+            font-size: 16px;
+            line-height: 24px;
+            font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+            color: #555;
+            background-color: white;
+        }
+
+        .invoice-box .title img {
+            width: 100%;
+            max-width: 200px;
+        }
+
+        .invoice-box table {
+            width: 100%;
+            line-height: inherit;
+            text-align: left;
+        }
+
+        .invoice-box table td {
+            padding: 5px;
+            vertical-align: top;
+        }
+
+        .invoice-box table tr.top table td {
+            padding-bottom: 20px;
+        }
+
+        .invoice-box table tr.top table td.title {
+            font-size: 45px;
+            line-height: 45px;
+            color: #333;
+        }
+
+        .invoice-box table tr.information table td {
+            padding-bottom: 40px;
+        }
+
+        .invoice-box table tr.heading td {
+            background: #eee;
+            border-bottom: 1px solid #ddd;
+            font-weight: bold;
+        }
+
+        .invoice-box table tr.details td {
+            padding-bottom: 20px;
+        }
+
+        .invoice-box table tr.item td {
+            border-bottom: 1px solid #eee;
+        }
+
+        .invoice-box table tr.item.last td {
+            border-bottom: none;
+        }
+
+		footer {
+			margin-bottom: 20px;
+		}
+		footer .thanks {
+			margin-bottom: 40px;
+			color: #555;
+			font-size: 1.16666666666667em;
+			font-weight: 600;
+		}
+		footer .notice {
+			margin-bottom: 25px;
+		}
+		footer .end {
+			padding-top: 5px;
+			border-top: 2px solid #555;
+			text-align: center;
+		}
+
+        .fit {
+            width: 100%;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .text-important {
+            border-top: 2px solid #eee;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="invoice-box">
+        <table cellpadding="0" cellspacing="0">
+            <tr class="top">
+                <td colspan="3">
+                    <table>
+                        <tr>
+                            <td class="title">
+                                <img
+                                    src="https://raw.githubusercontent.com/dtila/uipath-rpa-complete-training/main/logos/foorpa.png">
+                            </td>
+
+                            <td class="text-right">
+                                Invoice #: @Model.Number<br>
+                                Created: @Model.CreatedDate<br>
+                                Due: @Model.DueDate
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr class="information">
+                <td colspan="3">
+                    <table>
+                        <tr>
+                            <td>
+                                Sparksuite, Inc.<br>
+                                12345 Sunny Road<br>
+                                Sunnyville, CA 12345
+                            </td>
+
+                            <td class="text-right">
+                                @Model.CompanyName<br>
+                                @Model.CompanyRepresentative<br>
+                                @Model.CompanyContact
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr class="heading">
+                <td>Item</td>
+                <td class="text-right">Quantity</td>
+                <td class="text-right">Price</td>
+            </tr>
+
+            @foreach (var kvp in Model.Items)
+            {
+            <tr class="item">
+                <td class="fit">@kvp.Name</td>
+                <td class="text-right">@kvp.Quantity</td>
+                <td class="text-right">@kvp.Price</td>
+            </tr>
+            }
+
+            <tr class="total">
+                <td></td>
+                <td></td>
+
+                <td class="text-right text-important">
+                    Total: @Model.Amount
+                </td>
+            </tr>
+        </table>
+
+        <footer>
+            <div class="container">
+                <div class="thanks">Thank you!</div>
+                <div class="notice">
+                    <div>NOTICE:</div>
+                    <div>A finance charge of 1.5% will be made on unpaid balances after 30 days.</div>
+                </div>
+                <div class="end">Invoice was created on a computer and is valid without the signature and seal.</div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
