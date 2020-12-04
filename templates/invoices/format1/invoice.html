@@ -5,29 +5,24 @@
 <head>
     <meta charset="utf-8">
 
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/dtila/uipath-rpa-complete-training/main/templates/invoices/format1/styles.css">
-
-    <style type="text/css">
+    <style>
         .invoice-box {
             max-width: 800px;
             margin: auto;
             padding: 30px;
             border: 1px solid #eee;
             box-shadow: 0 0 10px rgba(0, 0, 0, .15);
-            font-size: 16px;
-            line-height: 24px;
+            font-size: 12pt;
+            line-height: 14pt;
             font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
             color: #555;
             background-color: white;
         }
 
-        .text-right {
-            text-align: right;
-        }
-
         .invoice-box .title img {
             width: 100%;
             max-width: 200px;
+            display: block;
         }
 
         .invoice-box table {
@@ -39,10 +34,6 @@
         .invoice-box table td {
             padding: 5px;
             vertical-align: top;
-        }
-
-        .invoice-box table tr td:nth-child(2) {
-            text-align: right;
         }
 
         .invoice-box table tr.top table td {
@@ -65,10 +56,6 @@
             font-weight: bold;
         }
 
-        .invoice-box table tr.details td {
-            padding-bottom: 20px;
-        }
-
         .invoice-box table tr.item td {
             border-bottom: 1px solid #eee;
         }
@@ -77,22 +64,18 @@
             border-bottom: none;
         }
 
-        .invoice-box table tr.total td:nth-child(2) {
+        .right {
+            text-align: right;
+        }
+
+        .important {
             border-top: 2px solid #eee;
             font-weight: bold;
         }
 
-        .rtl {
-            direction: rtl;
-            font-family: Tahoma, 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
-        }
-
-        .rtl table {
-            text-align: right;
-        }
-
-        .rtl table tr td:nth-child(2) {
-            text-align: left;
+        .nowrap {
+            overflow: hidden;
+            white-space: nowrap;
         }
     </style>
 </head>
@@ -105,11 +88,10 @@
                     <table>
                         <tr>
                             <td class="title">
-                                <img
-                                    src="https://raw.githubusercontent.com/dtila/uipath-rpa-complete-training/main/logos/foorpa.png">
+                                <img src="https://raw.githubusercontent.com/dtila/uipath-rpa-complete-training/main/logos/foorpa.png" />
                             </td>
 
-                            <td class="text-right">
+                            <td class="right">
                                 Invoice #: @Model.Number<br>
                                 Created: @Model.CreatedDate<br>
                                 Due: @Model.DueDate
@@ -129,7 +111,7 @@
                                 Sunnyville, CA 12345
                             </td>
 
-                            <td class="text-right">
+                            <td class="right">
                                 @Model.CompanyName<br>
                                 @Model.CompanyRepresentative<br>
                                 @Model.CompanyContact
@@ -141,21 +123,21 @@
 
             <tr class="heading">
                 <td>Item</td>
-                <td class="text-right">Price</td>
+                <td class="right">Price</td>
             </tr>
 
             @foreach (var kvp in Model.Items)
             {
             <tr class="item">
                 <td>@kvp.Name</td>
-                <td class="text-right">@kvp.Price</td>
+                <td class="right">@kvp.Price</td>
             </tr>
             }
 
             <tr class="total">
                 <td></td>
 
-                <td class="text-right">
+                <td class="right important">
                     Total: @Model.Amount
                 </td>
             </tr>
