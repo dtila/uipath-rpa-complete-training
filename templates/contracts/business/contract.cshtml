@@ -1,0 +1,145 @@
+@model dynamic
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <style type="text/css">
+        .container {
+            max-width: 800px;
+            margin: auto;
+            font-size: 12pt;
+            line-height: 14pt;
+            font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+            color: #555;
+            background-color: white;
+        }
+
+        p {
+            word-spacing: 100%;
+        }
+
+        footer {
+			margin-bottom: 20px;
+		}
+		footer .thanks {
+			margin-bottom: 40px;
+			color: #555;
+			font-size: 1.16666666666667em;
+			font-weight: 600;
+		}
+		footer .notice {
+			margin-bottom: 25px;
+		}
+		footer .end {
+			padding-top: 5px;
+			border-top: 2px solid #555;
+			text-align: center;
+		}
+
+        .title {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 20pt;
+            text-align: center;
+        }
+
+        .fit {
+            max-width: 100%;
+            min-width: 10%;
+        }
+        
+        .right {
+            text-align: right;
+        }
+
+        .important {
+            border-top: 2px solid #eee;
+            font-weight: bold;
+        }
+
+        .nowrap {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p class="title">BUSINESS CONSULTANT AGREEMENT</p>
+        <br />
+        <br />
+
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This agreement is made between:</p>
+            
+        <p>Acme Corp., whose address is 23, Washington Street, identified with number 1983123, referred to as
+        "Company"</p>
+        <p>AND</p>
+        <p>@Model.CompanyName, whose address is @Model.CompanyAddress, referred to as "Consultant."</p> 
+
+        <p>1. Consultation Services. The company hereby employs the consultant to perform the
+        following services in accordance with the terms and conditions set forth in this agreement: The
+        consultant will consult with the officers and employees of the company concerning matters
+        relating to the management and organization of the company, their financial policies, the terms
+        and conditions of employment, and generally any matter arising out of the business affairs of the
+        company.</p>
+
+        <p>2. Terms of Agreement. This agreement will begin from @Model.StartDate and will
+        end at @Model.EndDate. Either party may cancel this agreement on thirty (30) days
+        notice to the other party in writing, by certified mail or personal delivery.</p>
+        
+        <p>3. Time Devoted by Consultant. It is anticipated the consultant will spend approximately
+        90 in fulfilling its obligations under this contract. The particular amount of
+        time may vary from day to day or week to week. However, the consultant shall devote a minimum
+        of @Model.HoursPerMonth per month to its duties in accordance with this agreement.</p>
+
+        <p>4. Place Where Services Will Be Rendered. The consultant will perform most services in
+        accordance with this contract. In addition the consultant will
+        perform services on the telephone and at such other places as designated by the company to
+        perform these services in accordance with this agreement.</p>
+
+        <p>5. Payment to Consultant. The consultant will be paid at the rate of @Model.HourlyRate per hour, 
+        for work performed in accordance with this agreement. The consultant will submit an itemized statement
+        setting forth the time spent and services rendered, and the company will pay the consultant the
+        amounts due as indicated by statements submitted by the consultant within ten (10) days of
+        receipt.</p>
+
+        <p>6. Independent Contractor. Both the company and the consultant agree that the
+        consultant will act as an independent contractor in the performance of its duties under this
+        contract. Accordingly, the consultant shall be responsible for payment of all taxes including
+        Federal, State and local taxes arising out of the consultant's activities in accordance with this
+        contract, including by way of illustration but not limitation, Federal and State income tax, Social
+        Security tax, Unemployment Insurance taxes, and any other taxes or business license fee as
+        required.</p>
+        
+        <p>7. Confidential Information. The consultant agrees that any information received by the
+        consultant during any furtherance of the consultant's obligations in accordance with this contract,
+        which concerns the personal, financial or other affairs of the company will be treated by the
+        consultant in full confidence and will not be revealed to any other persons, firms or organizations.</p>
+
+        <p>8. Employment of Others. The company may from time to time request that the
+        consultant arrange for the services of others. All costs to the consultant for those services will be
+        paid by the company but in no event shall the consultant employ others without the prior
+        authorization of the company.</p>
+
+        <p>9. Signatures. Both the company and the consultant agree to the above contract.</p>
+        <p>Witnessed by:</p>
+        <p>COMPANY</p>
+        <p>Acme Corp., represented by John Doe
+        <p>By:
+        <p>@Model.CompanyName, represented by @Model.CompanyOwner,
+
+        <p>CONSULTANT</p>
+        <br/><br />
+        <p>NOTICE</p>
+        <p>The information in this document is designed to provide an outline that you can follow
+        when formulating business or personal plans. Due to the variances of many local, city, county
+        and state laws, we recommend that you seek professional legal counseling before entering into
+        any contract or agreement.</p>
+       
+    </div>
+</body>
+
+</html>
