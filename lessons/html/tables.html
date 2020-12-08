@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        .divTable {
+            display: table;
+            width: 100%;
+        }
+
+        .divTableRow {
+            display: table-row;
+        }
+
+        .divTableHeading {
+            font-weight: bold;
+            text-align: center;
+         }
+
+        .divTableCell,
+        .divTableHead {
+            border: 0px solid #999999;
+            display: table-cell;
+            padding: 3px 10px;
+        }
+
+        .divTableBody {
+            display: table-row-group;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <h1>Table using table element</h1>
+    <table style="width:100%">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Doe</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+
+    <h1>Table using alternative elements</h1>
+    <div class="divTable">
+        <div class="divTableBody">
+            <div class="divTableRow divTableHeading">
+                <div class="divTableCell">First name</div>
+                <div class="divTableCell">Lastname</div>
+                <div class="divTableCell">Age</div>
+            </div>
+            <div class="divTableRow">
+                <div class="divTableCell">Jill</div>
+                <div class="divTableCell">Doe</div>
+                <div class="divTableCell">50</div>
+            </div>
+            <div class="divTableRow">
+                <div class="divTableCell">Eve</div>
+                <div class="divTableCell">Jackson</div>
+                <div class="divTableCell">60</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
